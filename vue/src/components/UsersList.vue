@@ -22,7 +22,6 @@ import Vue from 'vue';
 import { usersListStore } from '../store/users-list.store';
 
 import axios from 'axios';
-import store from '../store';
 
 export default Vue.extend({
   name: 'UsersList',

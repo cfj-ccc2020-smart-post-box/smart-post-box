@@ -11,12 +11,13 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Slack Notification [START]
           command: |
-            curl $SLACK_WEBHOOK \
+            if [ -z $SLACK_WEBHOOK ];then echo "SLACK_WEBHOOK is not configured.";else curl $SLACK_WEBHOOK \
             -s \
             -X POST \
             -H "Content-Type: application/json" \
-            -d "{ \"text\": \":arrow_forward: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" } >/dev/null 2>&1"
+            -d "{ \"text\": \":arrow_forward: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" }";fi
       - run:
           name: Install Docker Compose
           command: |
@@ -32,37 +33,17 @@ jobs:
           name: lint for express
           command: |
             set -x
-            docker-compose exec app yarn lint-express
+            docker-compose exec app yarn lint-code-express
       - run:
           name: lint for vue
           command: |
             set -x
-            docker-compose exec app yarn lint-vue
+            docker-compose exec app yarn lint-code-vue
       - run:
-          name: test for express
+          name: migration:run
           command: |
             set -x
-            docker-compose exec app yarn test-express
-      - run:
-          name: test for vue
-          command: |
-            set -x
-            docker-compose exec app yarn test-vue
-      - run:
-          name: set codecov env
-          command: |
-            set -x
-            docker-compose exec app export
-      - run:
-          name: codecov for express
-          command: |
-            set -x
-            docker-compose exec app yarn codecov-express
-      - run:
-          name: codecov for vue
-          command: |
-            set -x
-            docker-compose exec app yarn codecov-vue
+            docker-compose exec app yarn migration:run
       - run:
           name: build for express
           command: |
@@ -74,20 +55,42 @@ jobs:
             set -x
             docker-compose exec app yarn build-vue
       - run:
+          name: test for express
+          command: |
+            set -x
+            docker-compose exec app yarn test-express
+      - run:
+          name: test for vue
+          command: |
+            set -x
+            docker-compose exec app yarn test-vue
+      - run:
+          name: codecov for express
+          command: |
+            set -x
+            docker-compose exec app yarn codecov-express
+      - run:
+          name: codecov for vue
+          command: |
+            set -x
+            docker-compose exec app yarn codecov-vue
+      - run:
           name: docker-compose down
           command: docker-compose down
       - run:
+          name: Slack Notification [FINISH]
           command: |
-            curl $SLACK_WEBHOOK \
+            if [ -z $SLACK_WEBHOOK ];then echo "SLACK_WEBHOOK is not configured.";else curl $SLACK_WEBHOOK \
             -s \
             -X POST \
             -H "Content-Type: application/json" \
-            -d "{ \"text\": \":tada: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(sleep 3 && curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" } >/dev/null 2>&1"
+            -d "{ \"text\": \":tada: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(sleep 3 && curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" }";fi
       - run:
+          name: Slack Notification [ERROR]
           command: |
-            curl $SLACK_WEBHOOK \
+            if [ -z $SLACK_WEBHOOK ];then echo "SLACK_WEBHOOK is not configured.";else curl $SLACK_WEBHOOK \
             -s \
             -X POST \
             -H "Content-Type: application/json" \
-            -d "{ \"text\": \":boom: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" } >/dev/null 2>&1"
+            -d "{ \"text\": \":boom: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" }";fi
           when: on_fail

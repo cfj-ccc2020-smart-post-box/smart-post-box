@@ -12,7 +12,7 @@ import swaggerDocument from './swagger.json';
 import * as line from '@line/bot-sdk';
 import { LineEvRouter } from '../line';
 import * as slackBolt from '@slack/bolt';
-import { createConnection, Connection } from 'typeorm';
+import { createConnection, Connection, getConnectionManager } from 'typeorm';
 
 class ExpressServer {
   private app = express();
@@ -52,7 +52,15 @@ class ExpressServer {
   }
 
   public async connectToDB(): Promise<void> {
-    this.dbConnection = await createConnection();
+    try {
+      this.dbConnection = await createConnection();
+    } catch (err) {
+      if (err.name !== 'AlreadyHasActiveConnectionError') {
+        throw new Error(err);
+      }
+
+      this.dbConnection = getConnectionManager().get('default');
+    }
   }
 
   public async closeDbConnection(): Promise<void> {

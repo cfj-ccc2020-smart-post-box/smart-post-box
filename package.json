@@ -51,6 +51,7 @@
     "lint-txt": "yarn lint-txt-express && yarn lint-txt-vue",
     "lint-txt-express": "textlint --fix ./express/*.md --config .textlintrc",
     "lint-txt-vue": "textlint --fix ./vue/*.md --config .textlintrc",
+    "migration:run": "cd ./express && npx ts-node ./node_modules/typeorm/cli.js migration:run",
     "readme": "npx readme-md-generator",
     "sort-package-json": "npx sort-package-json && yarn sort-package-json-express && yarn sort-package-json-vue",
     "sort-package-json-express": "cd ./express && npx sort-package-json",
