@@ -1,0 +1,97 @@
+{
+  "name": "cow-stack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The template to use ESP-32, Arduino, PlatformIO, Vue, PWA, Express, Slack, LINE, LINE-LIFF, TypeScript ...etc",
+  "keywords": [
+    "ESP-32",
+    "PlatformIO",
+    "Arduino",
+    "Vue",
+    "PWA",
+    "Express",
+    "Slack",
+    "LINE",
+    "LINE-LIFF",
+    "TypeScript"
+  ],
+  "homepage": "https://github.com/waricoma/cow-stack#readme",
+  "bugs": {
+    "url": "https://github.com/waricoma/cow-stack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waricoma/cow-stack.git"
+  },
+  "license": "GPL-2.0-only",
+  "author": "waricoma <waricoma@devne.co>",
+  "contributors": [
+    "waricoma <waricoma@devne.co>"
+  ],
+  "scripts": {
+    "build": "yarn build-express && yarn build-vue",
+    "build-express": "cd ./express && yarn build",
+    "build-vue": "cd ./vue && export IN_DOCKER=true && yarn build",
+    "codecov": "yarn codecov-express && yarn codecov-vue",
+    "codecov-express": "cd ./express && ../node_modules/codecov/bin/codecov",
+    "codecov-vue": "cd ./vue && ../node_modules/codecov/bin/codecov",
+    "commit": "git cz",
+    "ignore": "curl https://raw.githubusercontent.com/microsoft/TypeScript/master/.gitignore | add-text-to-markdown ./.gitignore --section 'microsoft/TypeScript:.gitignore' --write",
+    "preinstall": "npx only-allow yarn",
+    "license": "license-checker --json > ./licenses.json && yarn license-express && yarn license-vue",
+    "license-express": "cd ./express && license-checker --json > ./licenses.json",
+    "license-vue": "cd ./vue && license-checker --json > ./licenses.json",
+    "lint": "yarn sort-package-json && yarn lint-md && yarn lint-txt && yarn lint-code",
+    "lint-code": "yarn lint-code-express && yarn lint-code-vue",
+    "lint-code-express": "cd ./express && yarn lint",
+    "lint-code-vue": "cd ./vue && yarn lint",
+    "lint-md": "yarn lint-md-express && yarn lint-md-vue",
+    "lint-md-express": "markdownlint ./express/*.md --fix",
+    "lint-md-vue": "markdownlint ./vue/*.md --fix",
+    "lint-txt": "yarn lint-txt-express && yarn lint-txt-vue",
+    "lint-txt-express": "textlint --fix ./express/*.md --config .textlintrc",
+    "lint-txt-vue": "textlint --fix ./vue/*.md --config .textlintrc",
+    "readme": "npx readme-md-generator",
+    "sort-package-json": "npx sort-package-json && yarn sort-package-json-express && yarn sort-package-json-vue",
+    "sort-package-json-express": "cd ./express && npx sort-package-json",
+    "sort-package-json-vue": "cd ./vue && npx sort-package-json",
+    "test": "yarn test-express && yarn test-vue",
+    "test-express": "cd ./express && yarn test",
+    "test-vue": "cd ./vue && yarn test:unit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn code && yarn license",
+      "pre-push": "#"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  },
+  "devDependencies": {
+    "@textlint/textlint-plugin-markdown": "^5.2.6",
+    "@vue/cli": "^4.5.4",
+    "add-text-to-markdown": "^2.0.0",
+    "codecov": "^3.7.2",
+    "commitizen": "^4.2.1",
+    "cz-emoji": "^1.2.2",
+    "generator-express-no-stress-typescript": "^10.0.1",
+    "husky": "^4.2.5",
+    "license-checker": "^25.0.1",
+    "markdownlint": "^0.20.4",
+    "markdownlint-cli": "^0.23.2",
+    "only-allow": "^1.0.0",
+    "readme-md-generator": "^1.0.0",
+    "textlint": "^11.7.6",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-no-dead-link": "^4.7.0",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0",
+    "yo": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=12.18.3",
+    "yarn": ">=1.22.4"
+  }
+}

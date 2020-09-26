@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.html.erb": "html",
+    "*.tcc": "cpp",
+    "string": "cpp",
+    "random": "cpp"
+  }
+}

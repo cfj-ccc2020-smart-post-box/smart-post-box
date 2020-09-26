@@ -1,0 +1,32 @@
+version: "3.7"
+volumes:
+  app_pkg:
+  express_pkg:
+  vue_pkg:
+services:
+  app:
+    build:
+      context: ./
+    depends_on:
+      - postgres
+    ports:
+      - 3000:3000
+      - 8080:8080
+    tty: true
+    volumes:
+      - ./:/work
+      - app_pkg:/work/node_modules
+      - express_pkg:/work/express/node_modules
+      - vue_pkg:/work/vue/node_modules
+    container_name: app
+  postgres:
+    image: postgres:12.2-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: development
+    ports:
+      - 5433:5432
+    volumes:
+      - ./pg-data:/var/lib/psotgresql/data
+    container_name: postgres
