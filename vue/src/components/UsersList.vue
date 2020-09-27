@@ -49,7 +49,7 @@ export default Vue.extend({
     async getUsersListAndRenderList() {
       const result = await axios.post('./api/users');
 
-      result.data.forEach((user: { name: string, iconUrl: string }, index: number) => {
+      result.data.forEach((user: { name: string; iconUrl: string }, index: number) => {
         usersListStore.commit('setUserInfo', { index, name: user.name, iconUrl: user.iconUrl });
       });
     },

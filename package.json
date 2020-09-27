@@ -54,18 +54,21 @@
     "lint-txt-express": "textlint --fix ./express/*.md --config .textlintrc",
     "lint-txt-vue": "textlint --fix ./vue/*.md --config .textlintrc",
     "migration:run": "cd ./express && npx ts-node ./node_modules/typeorm/cli.js migration:run",
+    "pkg": "yarn pkg-express && yarn pkg-vue",
+    "pkg-express": "cd ./express && yarn",
+    "pkg-vue": "cd ./vue && yarn",
     "readme": "npx readme-md-generator",
     "sort-package-json": "npx sort-package-json && yarn sort-package-json-express && yarn sort-package-json-vue",
     "sort-package-json-express": "cd ./express && npx sort-package-json",
     "sort-package-json-vue": "cd ./vue && npx sort-package-json",
-    "start": "yarn build && cd ./express && yarn start",
+    "start": "yarn pkg && yarn build && cd ./express && yarn start",
     "test": "yarn test-express && yarn test-vue",
     "test-express": "cd ./express && yarn test",
     "test-vue": "cd ./vue && yarn test:unit"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && yarn code && yarn license",
+      "pre-commit": "yarn lint && yarn license",
       "pre-push": "#"
     }
   },
@@ -82,7 +85,7 @@
     "commitizen": "4.2.1",
     "cz-emoji": "1.2.2",
     "generator-express-no-stress-typescript": "10.0.1",
-    "husky": "4.2.5",
+    "husky": "4.3.0",
     "license-checker": "25.0.1",
     "markdownlint": "0.21.0",
     "markdownlint-cli": "0.23.2",
