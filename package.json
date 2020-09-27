@@ -56,6 +56,7 @@
     "sort-package-json": "npx sort-package-json && yarn sort-package-json-express && yarn sort-package-json-vue",
     "sort-package-json-express": "cd ./express && npx sort-package-json",
     "sort-package-json-vue": "cd ./vue && npx sort-package-json",
+    "start": "yarn build && cd ./express && yarn start",
     "test": "yarn test-express && yarn test-vue",
     "test-express": "cd ./express && yarn test",
     "test-vue": "cd ./vue && yarn test:unit"
@@ -78,8 +79,8 @@
     "codecov": "3.7.2",
     "commitizen": "4.2.1",
     "cz-emoji": "1.2.2",
-    "generator-express-no-stress-typescript": "10.0.2",
-    "husky": "4.3.0",
+    "generator-express-no-stress-typescript": "10.0.1",
+    "husky": "4.2.5",
     "license-checker": "25.0.1",
     "markdownlint": "0.20.4",
     "markdownlint-cli": "0.23.2",

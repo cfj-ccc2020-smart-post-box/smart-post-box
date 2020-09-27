@@ -1,1 +1,1 @@
-web: node ./dist/express/index.js
+web: yarn start
