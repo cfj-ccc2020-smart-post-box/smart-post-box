@@ -54,7 +54,7 @@
     "lint-txt-express": "textlint --fix ./express/*.md --config .textlintrc",
     "lint-txt-vue": "textlint --fix ./vue/*.md --config .textlintrc",
     "migration:run": "cd ./express && npx ts-node ./node_modules/typeorm/cli.js migration:run",
-    "pkg": "yarn pkg-express && yarn pkg-vue",
+    "pkg": "export YARN_PRODUCTION=false && yarn pkg-express && yarn pkg-vue",
     "pkg-express": "cd ./express && yarn",
     "pkg-vue": "cd ./vue && yarn",
     "readme": "npx readme-md-generator",
