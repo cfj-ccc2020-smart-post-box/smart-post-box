@@ -6,6 +6,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/waricoma/cow-stack/graphs/commit-activity)
 [![License: GPL--2.0--only](https://img.shields.io/github/license/waricoma/cow-stack)](https://github.com/waricoma/cow-stack/blob/master/LICENSE)
 [![Twitter: waritocomatta](https://img.shields.io/twitter/follow/waritocomatta.svg?style=social)](https://twitter.com/waritocomatta)
+[![CircleCI](https://circleci.com/gh/waricoma/cow-stack.svg?style=svg)](https://circleci.com/gh/waricoma/cow-stack)
+[![codecov](https://codecov.io/gh/waricoma/cow-stack/branch/master/graph/badge.svg)](https://codecov.io/gh/waricoma/cow-stack)
 
 > The template to use ESP-32, Arduino, PlatformIO, Vue, PWA, Express, Slack, LINE, LINE-LIFF, TypeScript ...etc
 
