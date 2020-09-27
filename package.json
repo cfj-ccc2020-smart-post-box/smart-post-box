@@ -29,7 +29,7 @@
     "waricoma <waricoma@devne.co>"
   ],
   "scripts": {
-    "build": "yarn build-express && yarn build-vue",
+    "build": "yarn pkg && yarn build-express && yarn build-vue",
     "build-express": "cd ./express && yarn build",
     "build-vue": "cd ./vue && yarn build",
     "codecov": "yarn codecov-express && yarn codecov-vue",
@@ -61,7 +61,7 @@
     "sort-package-json": "npx sort-package-json && yarn sort-package-json-express && yarn sort-package-json-vue",
     "sort-package-json-express": "cd ./express && npx sort-package-json",
     "sort-package-json-vue": "cd ./vue && npx sort-package-json",
-    "start": "yarn pkg && yarn build && cd ./express && yarn start",
+    "start": "cd ./express && yarn start",
     "test": "yarn test-express && yarn test-vue",
     "test-express": "cd ./express && yarn test",
     "test-vue": "cd ./vue && yarn test:unit"
