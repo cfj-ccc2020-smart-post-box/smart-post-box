@@ -79,7 +79,7 @@
     "commitizen": "4.2.1",
     "cz-emoji": "1.2.2",
     "generator-express-no-stress-typescript": "10.0.2",
-    "husky": "4.2.5",
+    "husky": "4.3.0",
     "license-checker": "25.0.1",
     "markdownlint": "0.20.4",
     "markdownlint-cli": "0.23.2",
