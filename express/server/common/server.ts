@@ -26,6 +26,7 @@ class ExpressServer {
         directives: {
           defaultSrc: ["'self'"],
           objectSrc: ["'none'"],
+          scriptSrc: ["'self'", 'https://storage.googleapis.com'],
           imgSrc: ["'self'", 'https://profile.line-scdn.net'],
         },
       })

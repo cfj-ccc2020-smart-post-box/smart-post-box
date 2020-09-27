@@ -29,7 +29,7 @@
     "waricoma <waricoma@devne.co>"
   ],
   "scripts": {
-    "build": "yarn pkg && yarn build-express && yarn build-vue",
+    "build": "yarn pkg && yarn build-express && yarn build-vue && yarn migrate",
     "build-express": "cd ./express && yarn build",
     "build-vue": "cd ./vue && yarn build",
     "codecov": "yarn codecov-express && yarn codecov-vue",
@@ -53,6 +53,7 @@
     "lint-txt": "yarn lint-txt-express && yarn lint-txt-vue",
     "lint-txt-express": "textlint --fix ./express/*.md --config .textlintrc",
     "lint-txt-vue": "textlint --fix ./vue/*.md --config .textlintrc",
+    "migrate": "cd ./express && npx ts-node ./node_modules/typeorm/cli.js migration:run",
     "migration:run": "cd ./express && npx ts-node ./node_modules/typeorm/cli.js migration:run",
     "pkg": "export YARN_PRODUCTION=false && yarn pkg-express && yarn pkg-vue",
     "pkg-express": "cd ./express && yarn",

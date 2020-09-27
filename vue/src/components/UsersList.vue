@@ -47,11 +47,15 @@ export default Vue.extend({
   },
   methods: {
     async getUsersListAndRenderList() {
-      const result = await axios.post('./api/users');
+      try {
+        const result = await axios.post('./api/users');
 
-      result.data.forEach((user: { name: string; iconUrl: string }, index: number) => {
-        usersListStore.commit('setUserInfo', { index, name: user.name, iconUrl: user.iconUrl });
-      });
+        result.data.forEach((user: { name: string; iconUrl: string }, index: number) => {
+          usersListStore.commit('setUserInfo', { index, name: user.name, iconUrl: user.iconUrl });
+        });
+      } catch (err) {
+        throw new Error(err);
+      }
     },
   },
   async mounted() {
