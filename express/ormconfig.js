@@ -12,7 +12,10 @@ const ormConfig = {
   },
 };
 
-if ('DATABASE_URL' in process.env) {
+if ('SQLITE' in process.env && process.env.SQLITE === 'true') {
+  ormConfig.type = 'sqlite';
+  ormConfig.database = './db.sqlite';
+} else if ('DATABASE_URL' in process.env) {
   ormConfig.url = process.env.DATABASE_URL;
 } else {
   ormConfig.host = 'postgres';

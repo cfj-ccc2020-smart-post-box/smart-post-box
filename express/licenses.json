@@ -1333,6 +1333,15 @@
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/bindings",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/bindings/LICENSE.md"
   },
+  "block-stream@0.0.9": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/block-stream",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/block-stream",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/block-stream/LICENSE"
+  },
   "bluebird@3.7.2": {
     "licenses": "MIT",
     "repository": "https://github.com/petkaantonov/bluebird",
@@ -3262,6 +3271,15 @@
     "url": "http://blog.izs.me/",
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/fs.realpath",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/fs.realpath/LICENSE"
+  },
+  "fstream@1.0.12": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/fstream",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/fstream",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/fstream/LICENSE"
   },
   "function-bind@1.1.1": {
     "licenses": "MIT",
@@ -5606,11 +5624,17 @@
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/deasync/node_modules/node-addon-api",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/deasync/node_modules/node-addon-api/LICENSE.md"
   },
-  "node-addon-api@3.0.0": {
+  "node-addon-api@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/nodejs/node-addon-api",
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-addon-api",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-addon-api/LICENSE.md"
+  },
+  "node-addon-api@3.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nodejs/node-addon-api",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/bcrypt/node_modules/node-addon-api",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/bcrypt/node_modules/node-addon-api/LICENSE.md"
   },
   "node-fetch@1.7.3": {
     "licenses": "MIT",
@@ -5618,6 +5642,15 @@
     "publisher": "David Frank",
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-fetch",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-fetch/LICENSE.md"
+  },
+  "node-gyp@3.8.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nodejs/node-gyp",
+    "publisher": "Nathan Rajlich",
+    "email": "nathan@tootallnate.net",
+    "url": "http://tootallnate.net",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-gyp",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-gyp/LICENSE"
   },
   "node-int64@0.4.0": {
     "licenses": "MIT",
@@ -5642,6 +5675,14 @@
     "publisher": "Mikael Brevik",
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-notifier",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-notifier/LICENSE"
+  },
+  "node-pre-gyp@0.11.0": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/mapbox/node-pre-gyp",
+    "publisher": "Dane Springmeyer",
+    "email": "dane@mapbox.com",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/sqlite3/node_modules/node-pre-gyp",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/sqlite3/node_modules/node-pre-gyp/LICENSE"
   },
   "node-pre-gyp@0.15.0": {
     "licenses": "BSD-3-Clause",
@@ -7256,11 +7297,17 @@
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/pg/node_modules/semver",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/pg/node_modules/semver/LICENSE"
   },
+  "semver@5.3.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/npm/node-semver",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-gyp/node_modules/semver",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-gyp/node_modules/semver/LICENSE"
+  },
   "semver@5.7.1": {
     "licenses": "ISC",
     "repository": "https://github.com/npm/node-semver",
-    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/jsonwebtoken/node_modules/semver",
-    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/jsonwebtoken/node_modules/semver/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/semver",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/semver/LICENSE"
   },
   "semver@6.3.0": {
     "licenses": "ISC",
@@ -7271,8 +7318,8 @@
   "semver@7.3.2": {
     "licenses": "ISC",
     "repository": "https://github.com/npm/node-semver",
-    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/semver",
-    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/semver/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/jest-snapshot/node_modules/semver",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/jest-snapshot/node_modules/semver/LICENSE"
   },
   "send@0.17.1": {
     "licenses": "MIT",
@@ -7619,6 +7666,14 @@
     "url": "http://alexei.ro/",
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/sprintf-js",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/sprintf-js/LICENSE"
+  },
+  "sqlite3@5.0.0": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/mapbox/node-sqlite3",
+    "publisher": "MapBox",
+    "url": "https://mapbox.com/",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/sqlite3",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/sqlite3/LICENSE"
   },
   "sshpk@1.16.1": {
     "licenses": "MIT",
@@ -8005,6 +8060,15 @@
     "url": "http://gajus.com",
     "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/table",
     "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/table/LICENSE"
+  },
+  "tar@2.2.2": {
+    "licenses": "ISC",
+    "repository": "https://github.com/isaacs/node-tar",
+    "publisher": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
+    "url": "http://blog.izs.me/",
+    "path": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-gyp/node_modules/tar",
+    "licenseFile": "/home/waricoma/Documents/devspace/cow-stack/express/node_modules/node-gyp/node_modules/tar/LICENSE"
   },
   "tar@4.4.13": {
     "licenses": "ISC",
