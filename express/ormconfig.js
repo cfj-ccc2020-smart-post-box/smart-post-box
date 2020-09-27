@@ -1,10 +1,5 @@
-module.exports = {
+const ormConfig = {
   type: 'postgres',
-  host: 'postgres',
-  port: 5432,
-  username: 'postgres',
-  password: 'postgres',
-  database: 'development',
   synchronize: process.env.NODE_ENV === 'test',
   keepConnectionAlive: true,
   entities: [process.env.TS_NODE === 'true' ? './server/api/entities/*.entity.ts' : './dist/api/entities/*.entity.js'],
@@ -16,3 +11,15 @@ module.exports = {
     subscribersDir: './server/api/db/subscribers/',
   },
 };
+
+if ('DATABASE_URL' in process.env) {
+  ormConfig.url = process.env.DATABASE_URL;
+} else {
+  ormConfig.host = 'postgres';
+  ormConfig.port = 5432;
+  ormConfig.username = 'postgres';
+  ormConfig.password = 'postgres';
+  ormConfig.database = 'development';
+}
+
+module.exports = ormConfig;

@@ -28,7 +28,12 @@ jobs:
           name: docker-compose up
           command: |
             set -x
-            docker-compose up --build -d
+            export COMPOSE_FILE=docker-compose.dev.yml && docker-compose up --build -d
+      - run:
+          name: Explain than in the docker
+          command: |
+            set -x
+            docker-compose exec app yarn docker:in
       - run:
           name: lint for express
           command: |
