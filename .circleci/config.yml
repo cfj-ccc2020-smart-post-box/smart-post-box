@@ -65,20 +65,15 @@ jobs:
             set -x
             docker-compose exec app yarn test-vue
       - run:
-          name: set the codecov env
-          command: |
-            set -x
-            if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else docker-compose exec app /bin/sh -c "export CODECOV_TOKEN=$CODECOV_TOKEN";fi
-      - run:
           name: codecov for express
           command: |
             set -x
-            if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else docker-compose exec app yarn codecov-express;fi
+            if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else docker-compose exec app yarn codecov-express --token=$CODECOV_TOKEN;fi
       - run:
           name: codecov for vue
           command: |
             set -x
-            if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else docker-compose exec app yarn codecov-vue;fi
+            if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else docker-compose exec app yarn codecov-vue --token=$CODECOV_TOKEN;fi
       - run:
           name: docker-compose down
           command: docker-compose down
