@@ -196,7 +196,7 @@ class ExpressServer {
     const welcome = (p: number) => (): void =>
       L.info(`up and running in ${process.env.NODE_ENV || 'development'} @: ${os.hostname()} on port: ${p}}`);
 
-    http.createServer(this.app).listen(port || 3000, welcome(port || 3000));
+    http.createServer(this.app).listen(port || 5000, welcome(port || 5000));
   }
 }
 
