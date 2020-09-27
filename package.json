@@ -47,7 +47,7 @@
     "lint-code": "yarn lint-code-express && yarn lint-code-vue",
     "lint-code-express": "cd ./express && yarn lint",
     "lint-code-vue": "cd ./vue && yarn lint",
-    "lint-md": "yarn lint-md-express && yarn lint-md-vue",
+    "lint-md": "# yarn lint-md-express && yarn lint-md-vue",
     "lint-md-express": "markdownlint ./express/*.md --fix",
     "lint-md-vue": "markdownlint ./vue/*.md --fix",
     "lint-txt": "yarn lint-txt-express && yarn lint-txt-vue",

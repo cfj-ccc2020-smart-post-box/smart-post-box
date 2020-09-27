@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "no-dead-link": true,
+    "spellcheck-tech-word": true,
+  },
+  "filters": {
+    "comments": true
+  },
+  "plugins": {
+    "@textlint/markdown": true
+  }
+}
