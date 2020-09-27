@@ -38,6 +38,8 @@
     "commit": "git cz",
     "docker:in": "export IN_DOCKER=true",
     "docker:out": "export IN_DOCKER=false",
+    "dokku:in": "export IN_DOKKU=true",
+    "dokku:out": "export IN_DOKKU=false",
     "ignore": "curl https://raw.githubusercontent.com/microsoft/TypeScript/master/.gitignore | add-text-to-markdown ./.gitignore --section 'microsoft/TypeScript:.gitignore' --write",
     "preinstall": "npx only-allow yarn",
     "license": "license-checker --json > ./licenses.json && yarn license-express && yarn license-vue",

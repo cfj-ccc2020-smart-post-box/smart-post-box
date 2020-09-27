@@ -1,6 +1,6 @@
 const ormConfig = {
   type: 'postgres',
-  synchronize: process.env.NODE_ENV === 'test',
+  synchronize: process.env.NODE_ENV === 'test' || process.env.IN_DOKKU === 'true',
   keepConnectionAlive: true,
   entities: [process.env.TS_NODE === 'true' ? './server/api/entities/*.entity.ts' : './dist/api/entities/*.entity.js'],
   migrations: [process.env.TS_NODE === 'true' ? './server/api/db/migrations/*.ts' : './dist/api/db/migrations/*.js'],
