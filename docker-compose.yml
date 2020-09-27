@@ -20,7 +20,7 @@ services:
       - vue_pkg:/work/vue/node_modules
     container_name: app
   postgres:
-    image: postgres:12.2-alpine
+    image: postgres:12.4-alpine
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
