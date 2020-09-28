@@ -24,4 +24,14 @@ export class MachinesModel {
 
     return machine;
   }
+
+  public async getMachineByUniqueCode(uniqueCode: string): Promise<MachinesEntity> {
+    L.info('getMachineByUniqueCode');
+
+    const machineRepository = getRepository(MachinesEntity);
+
+    const machine = await machineRepository.findOne({ uniqueCode, using: true });
+
+    return machine;
+  }
 }

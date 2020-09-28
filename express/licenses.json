@@ -952,6 +952,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/ansi-styles",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/ansi-styles/license"
   },
+  "any-base@1.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/HarasimowiczKamil/any-base",
+    "publisher": "Kamil Harasimowicz",
+    "email": "mifczu@gmail.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/any-base",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/any-base/LICENSE"
+  },
   "any-promise@1.3.0": {
     "licenses": "MIT",
     "repository": "https://github.com/kevinbeaty/any-promise",
@@ -7411,6 +7419,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/shellwords",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/shellwords/LICENSE"
   },
+  "short-uuid@4.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/oculus42/short-uuid",
+    "publisher": "Samuel Rouse",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/short-uuid",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/short-uuid/LICENSE"
+  },
   "should-equal@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/shouldjs/equal",
@@ -8688,8 +8703,8 @@
   "uuid@8.3.0": {
     "licenses": "MIT",
     "repository": "https://github.com/uuidjs/uuid",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/node-notifier/node_modules/uuid",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/node-notifier/node_modules/uuid/LICENSE.md"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/short-uuid/node_modules/uuid",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/short-uuid/node_modules/uuid/LICENSE.md"
   },
   "v8-compile-cache@2.1.1": {
     "licenses": "MIT",
