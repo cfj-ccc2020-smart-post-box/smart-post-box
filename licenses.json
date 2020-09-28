@@ -5873,6 +5873,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/growly",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/growly/README.md"
   },
+  "handlebars@4.7.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/wycats/handlebars.js",
+    "publisher": "Yehuda Katz",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/handlebars",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/handlebars/LICENSE"
+  },
   "har-schema@2.0.0": {
     "licenses": "ISC",
     "repository": "https://github.com/ahmadnassri/har-schema",
@@ -6031,6 +6038,14 @@
     "url": "http://blakeembrey.me",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/header-case",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/header-case/LICENSE"
+  },
+  "highlight.js@10.2.0": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/highlightjs/highlight.js",
+    "publisher": "Ivan Sagalaev",
+    "email": "maniac@softwaremaniacs.org",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/highlight.js",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/highlight.js/LICENSE"
   },
   "home-dir@1.0.0": {
     "licenses": "MIT",
@@ -8149,6 +8164,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/lru-cache",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/lru-cache/LICENSE"
   },
+  "lunr@2.3.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/olivernn/lunr.js",
+    "publisher": "Oliver Nightingale",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/lunr",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/lunr/LICENSE"
+  },
   "macos-release@2.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/sindresorhus/macos-release",
@@ -8319,6 +8341,13 @@
     "url": "https://dlaa.me/",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/markdownlint",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/markdownlint/LICENSE"
+  },
+  "marked@1.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/markedjs/marked",
+    "publisher": "Christopher Jeffrey",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/marked",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/marked/LICENSE.md"
   },
   "matcher@3.0.0": {
     "licenses": "MIT",
@@ -10012,6 +10041,14 @@
     "repository": "https://github.com/calvinmetcalf/process-nextick-args",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/process-nextick-args",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/process-nextick-args/license.md"
+  },
+  "progress@2.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/visionmedia/node-progress",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/progress",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/progress/LICENSE"
   },
   "prompts@2.3.2": {
     "licenses": "MIT",
@@ -12512,6 +12549,25 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedarray",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedarray/LICENSE"
   },
+  "typedoc-default-themes@0.11.4": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/TypeStrong/typedoc-default-themes",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedoc-default-themes",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedoc-default-themes/LICENSE"
+  },
+  "typedoc-plugin-markdown@3.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/tgreyuk/typedoc-plugin-markdown",
+    "publisher": "Thomas Grey",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedoc-plugin-markdown",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedoc-plugin-markdown/LICENSE"
+  },
+  "typedoc@0.19.2": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/TypeStrong/TypeDoc",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedoc",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/typedoc/LICENSE"
+  },
   "typescript@3.9.7": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/Microsoft/TypeScript",
@@ -12524,6 +12580,15 @@
     "repository": "https://github.com/markdown-it/uc.micro",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/uc.micro",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/uc.micro/LICENSE.txt"
+  },
+  "uglify-js@3.11.0": {
+    "licenses": "BSD-2-Clause",
+    "repository": "https://github.com/mishoo/UglifyJS",
+    "publisher": "Mihai Bazon",
+    "email": "mihai.bazon@gmail.com",
+    "url": "http://lisperator.net/",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/uglify-js",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/uglify-js/LICENSE"
   },
   "unbzip2-stream@1.4.3": {
     "licenses": "MIT",
@@ -13186,6 +13251,15 @@
     "url": "https://github.com/jonschlinkert",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/word-wrap",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/word-wrap/LICENSE"
+  },
+  "wordwrap@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/substack/node-wordwrap",
+    "publisher": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/wordwrap",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/wordwrap/LICENSE"
   },
   "wrap-ansi@2.1.0": {
     "licenses": "MIT",

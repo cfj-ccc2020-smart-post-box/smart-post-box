@@ -9,7 +9,7 @@ import {
 } from 'typeorm';
 
 @Entity({ name: 'users-lines' })
-@Unique(['userId', 'lineId'])
+@Unique(['lineId'])
 export class UsersLinesEntity extends BaseEntity {
   @PrimaryGeneratedColumn()
   readonly id: number;
@@ -34,6 +34,9 @@ export class UsersLinesEntity extends BaseEntity {
 
   @Column({ name: 'using', default: true, nullable: false })
   public using: boolean;
+
+  @Column({ name: 'status', default: '', nullable: false })
+  public status: string;
 
   @CreateDateColumn()
   readonly created?: Date;

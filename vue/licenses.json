@@ -1624,8 +1624,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/ansi-styles",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/ansi-styles/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-styles",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-styles/license"
   },
   "ansi-styles@3.2.1": {
     "licenses": "MIT",
@@ -2551,8 +2551,8 @@
   "chalk@1.1.3": {
     "licenses": "MIT",
     "repository": "https://github.com/chalk/chalk",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/chalk",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/chalk/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/chalk",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/chalk/license"
   },
   "chalk@2.4.2": {
     "licenses": "MIT",
@@ -10147,8 +10147,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/strip-ansi",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/strip-ansi/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi/license"
   },
   "strip-ansi@4.0.0": {
     "licenses": "MIT",
@@ -10254,8 +10254,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/supports-color",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/supports-color/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/supports-color",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/supports-color/license"
   },
   "supports-color@5.5.0": {
     "licenses": "MIT",

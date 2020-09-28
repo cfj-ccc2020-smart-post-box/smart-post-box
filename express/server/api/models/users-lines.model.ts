@@ -24,7 +24,6 @@ export class UsersLinesModel {
     L.info('createNewUserFromLine');
 
     const usersLinesRepository = getRepository(UsersLinesEntity);
-
     let user = await usersLinesRepository.findOne({ lineId });
 
     if (user) {
@@ -47,8 +46,9 @@ export class UsersLinesModel {
   }
 
   public async closeUserFromLine(lineId: string): Promise<UsersLinesEntity> {
-    const usersLinesRepository = getRepository(UsersLinesEntity);
+    L.info('closeUserFromLine');
 
+    const usersLinesRepository = getRepository(UsersLinesEntity);
     let user = await usersLinesRepository.findOne({ lineId });
 
     if (user) {
@@ -59,10 +59,20 @@ export class UsersLinesModel {
   }
 
   public async getUsersList(): Promise<UsersLinesEntity[]> {
-    const usersLinesRepository = getRepository(UsersLinesEntity);
+    L.info('getUsersList');
 
+    const usersLinesRepository = getRepository(UsersLinesEntity);
     const users = await usersLinesRepository.find();
 
     return users;
+  }
+
+  public async getUserByLineId(lineId: string): Promise<UsersLinesEntity> {
+    L.info('getUserByLineId');
+
+    const usersLinesRepository = getRepository(UsersLinesEntity);
+    const user = await usersLinesRepository.findOne({ lineId });
+
+    return user;
   }
 }

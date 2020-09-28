@@ -60,6 +60,16 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^アカウントの停止をします。$/),
+      task: async (event) => {
+        lineClient.replyMessage(event.replyToken, {
+          type: 'text',
+          text: 'この操作は DM でのみ可能です。',
+        });
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^本当にアカウントの停止をします。$/),
       source: {
         type: 'user',
@@ -74,23 +84,57 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
-      type: new MsgTypeText(/^ポスト観測機の追加や設定をします。$/),
+      type: new MsgTypeText(/^ポスト観測機の追加をします。$/),
       source: {
         type: 'user',
       },
       task: async (event) => {
+        lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('DM'));
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機の追加をします。$/),
+      source: {
+        type: 'group',
+      },
+      task: async (event) => {
+        lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('グループ'));
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機の追加をします。$/),
+      source: {
+        type: 'room',
+      },
+      task: async (event) => {
+        lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('ルーム'));
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機の追加を続行します。$/),
+      task: async (event) => {
+        const msg = await usersLinesService.replyMsgWhenAddedMachine({
+          lineId: event.source.userId,
+          destinationType: event.source.type,
+          destinationId: event.source[event.source.type + 'Id'],
+        });
+        lineClient.replyMessage(event.replyToken, msg);
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機の設定をします。$/),
+      task: async (event) => {
         lineClient.replyMessage(event.replyToken, {
           type: 'template',
-          altText: '【ポスト観測機の追加や設定】',
+          altText: '【ポスト観測機の設定】',
           template: {
             type: 'buttons',
-            text: '【ポスト観測機の追加や設定】',
+            text: '【ポスト観測機の設定】',
             actions: [
-              {
-                type: 'message',
-                label: '追加・停止',
-                text: 'ポスト観測機の追加・停止をします。',
-              },
               {
                 type: 'message',
                 label: '名前変更',
@@ -106,6 +150,11 @@ export class LineEvRouter {
                 label: '撮影頻度の変更',
                 text: 'ポスト観測機の撮影頻度の変更をします。',
               },
+              {
+                type: 'message',
+                label: '停止',
+                text: 'ポスト観測機の停止をします。',
+              },
             ],
           },
         });
@@ -113,7 +162,7 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
-      type: new MsgTypeText(/^ポスト観測機の追加・停止をします。$/),
+      type: new MsgTypeText(/^ポスト観測機の停止をします。$/),
       source: {
         type: 'user',
       },
@@ -170,5 +219,28 @@ export class LineEvRouter {
 
   public async hears(event: line.WebhookEvent): Promise<void> {
     return lineEvRoutingHelper.hears(event);
+  }
+
+  private confirmAddingNewMachine(destinationType: 'DM' | 'グループ' | 'ルーム'): line.TemplateMessage {
+    return {
+      type: 'template',
+      altText: `観測機からこの ${destinationType} へ通知が行われます。\n支障ありませんか。`,
+      template: {
+        type: 'confirm',
+        text: `観測機からこの ${destinationType} へ通知が行われます。\n支障ありませんか。`,
+        actions: [
+          {
+            type: 'message',
+            label: 'ない',
+            text: 'ポスト観測機の追加を続行します。',
+          },
+          {
+            type: 'message',
+            label: 'キャンセル',
+            text: '観測機の追加をキャンセルします。',
+          },
+        ],
+      },
+    };
   }
 }

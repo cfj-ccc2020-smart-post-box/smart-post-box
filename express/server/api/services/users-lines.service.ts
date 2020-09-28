@@ -1,10 +1,13 @@
 import L from '../../common/logger';
 import { UsersLinesModel } from '../models/users-lines.model';
 import { UsersLinesEntity } from '../entities/users-lines.entity';
+import { MachinesModel } from '../models/machines.model';
+import { MachinesEntity } from '../entities/machines.entity';
 import * as line from '@line/bot-sdk';
 
 export class UsersLinesService {
   readonly usersLinesModel: UsersLinesModel;
+  readonly machinesModel: MachinesModel;
 
   readonly topMenuTemp: line.TemplateMessage = {
     type: 'template',
@@ -15,8 +18,13 @@ export class UsersLinesService {
       actions: [
         {
           type: 'message',
-          label: 'ポスト観測機の追加や設定',
-          text: 'ポスト観測機の追加や設定をします。',
+          label: 'ポスト観測機の追加',
+          text: 'ポスト観測機の追加をします。',
+        },
+        {
+          type: 'message',
+          label: 'ポスト観測機の設定',
+          text: 'ポスト観測機の設定をします。',
         },
         {
           type: 'uri',
@@ -42,6 +50,7 @@ export class UsersLinesService {
 
   constructor(usersLinesModel: UsersLinesModel) {
     this.usersLinesModel = usersLinesModel;
+    this.machinesModel = new MachinesModel();
   }
 
   public async replyMsgWhenSingUpUser(event: {
@@ -107,5 +116,61 @@ export class UsersLinesService {
     });
 
     return convertedType;
+  }
+
+  public async replyMsgWhenAddedMachine(ops: {
+    lineId: string;
+    destinationType: string;
+    destinationId: string;
+  }): Promise<line.TextMessage> {
+    L.info('replyMsgWhenAddedMachine');
+
+    let user: UsersLinesEntity;
+    let machine: MachinesEntity;
+    let replyMsg: line.TextMessage;
+
+    try {
+      user = await this.usersLinesModel.getUserByLineId(ops.lineId);
+
+      if (!user) {
+        replyMsg = {
+          type: 'text',
+          text: '登録されていない LINE アカウントのため、スマポートポストボックスの観測機の追加に失敗しました。',
+        };
+
+        return replyMsg;
+      }
+    } catch (err) {
+      L.info(err);
+
+      replyMsg = {
+        type: 'text',
+        text: '何だかの事情でスマポートポストボックスの観測機の追加に失敗しました... ><',
+      };
+
+      return replyMsg;
+    }
+
+    try {
+      machine = await this.machinesModel.addNewMachine({
+        usersLinesId: user.id,
+        destinationType: ops.destinationType,
+        destinationId: ops.destinationId,
+      });
+
+      replyMsg = {
+        type: 'text',
+        text: `【スマポートポストボックスの観測機の追加完了】\n\n合言葉『${machine.uniqueCode}』\n\n上記をスマポートポストボックスの観測機に設定することで通知が送られるようになります。\n詳しくは「メニュー」から「ホームページ」をご確認下さると幸いです。\nこのメッセージをまるごとコピーしておきましょう。`,
+      };
+    } catch (err) {
+      L.info(err);
+
+      replyMsg = {
+        type: 'text',
+        text: '何だかの事情でスマポートポストボックスの観測機の追加に失敗しました... ><',
+      };
+    }
+
+    return replyMsg;
   }
 }
