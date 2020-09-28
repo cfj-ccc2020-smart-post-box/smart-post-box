@@ -7,5 +7,10 @@
 //   public async getLastPhotoByMachineId(): PhotosEntity {
 //     L.log('getLastPhotoByMachineId');
 //     const photosRepository = getRepository(PhotosEntity);
+//     photosRepository.find({
+//       order: {
+//         id: 'DESC',
+//       },
+//     });
 //   }
 // }

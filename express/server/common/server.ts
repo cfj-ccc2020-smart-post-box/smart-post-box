@@ -44,6 +44,7 @@ class ExpressServer {
     this.app.use(helmet.xssFilter());
     this.app.use(cookieParser(process.env.SESSION_SECRET || 'mySecret'));
     this.app.use(express.static(`${root}/../vue/dist`));
+    this.setPhotoReceiver();
 
     // Define app's routing
     RegisterRoutes(this.app);
@@ -195,7 +196,7 @@ class ExpressServer {
   }
 
   public setPhotoReceiver(): void {
-    this.app.post('/photo-receiver/:uniqueCode', (req) => {
+    this.app.post('/photo-receiver/:uniqueCode', (req, res) => {
       const data = [];
       let totalLength = 0;
 
@@ -205,9 +206,9 @@ class ExpressServer {
           totalLength += chunk.length;
         })
         .on('end', () => {
-          console.log(req.query.uniqueCode);
           const b = Buffer.concat(data, totalLength);
           fs.writeFileSync(path.join(__dirname, '..', '..', '..', 'vue', 'dist', 'img', 'foo.jpg'), b);
+          res.send(req.query.uniqueCode);
         });
     });
   }
