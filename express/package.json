@@ -1,8 +1,8 @@
 {
-  "name": "cow-stack-express",
+  "name": "smart-post-box-express",
   "version": "1.0.0",
   "private": true,
-  "description": "cow-stack-express",
+  "description": "smart-post-box-express",
   "keywords": [
     "Express",
     "Slack",
@@ -13,13 +13,13 @@
     "openapi3",
     "TypeScript"
   ],
-  "homepage": "https://github.com/waricoma/cow-stack#readme",
+  "homepage": "https://github.com/smart-post-box/smart-post-box#readme",
   "bugs": {
-    "url": "https://github.com/waricoma/cow-stack/issues"
+    "url": "https://github.com/smart-post-box/smart-post-box/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waricoma/cow-stack.git"
+    "url": "git+https://github.com/smart-post-box/smart-post-box.git"
   },
   "license": "MIT",
   "author": "waricoma <waricoma@devne.co>",

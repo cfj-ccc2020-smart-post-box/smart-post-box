@@ -1,5 +1,5 @@
 {
-  "name": "cow-stack",
+  "name": "smart-post-box",
   "version": "1.0.0",
   "private": true,
   "description": "The template to use ESP-32, Arduino, PlatformIO, Vue, PWA, Express, Slack, LINE, LINE-LIFF, TypeScript ...etc",
@@ -15,13 +15,13 @@
     "LINE-LIFF",
     "TypeScript"
   ],
-  "homepage": "https://github.com/waricoma/cow-stack#readme",
+  "homepage": "https://github.com/waricoma/smart-post-box#readme",
   "bugs": {
-    "url": "https://github.com/waricoma/cow-stack/issues"
+    "url": "https://github.com/waricoma/smart-post-box/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waricoma/cow-stack.git"
+    "url": "git+https://github.com/waricoma/smart-post-box.git"
   },
   "license": "GPL-2.0-only",
   "author": "waricoma <waricoma@devne.co>",
@@ -61,6 +61,8 @@
     "pkg-express": "cd ./express && yarn",
     "pkg-vue": "cd ./vue && yarn",
     "readme": "npx readme-md-generator",
+    "readme-express": "cd ./express && npx readme-md-generator",
+    "readme-vue": "cd ./vue && npx readme-md-generator",
     "sort-package-json": "npx sort-package-json && yarn sort-package-json-express && yarn sort-package-json-vue",
     "sort-package-json-express": "cd ./express && npx sort-package-json",
     "sort-package-json-vue": "cd ./vue && npx sort-package-json",

@@ -1,101 +1,64 @@
-# express
+# Welcome to smart-post-box-express 👋
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
+![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.18.3-blue.svg)
+![Prerequisite](https://img.shields.io/badge/yarn-%3E%3D1.22.4-blue.svg)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/smart-post-box/smart-post-box#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/smart-post-box/smart-post-box/graphs/commit-activity)
+[![License: GPL--2.0--only](https://img.shields.io/github/license/waricoma/smart-post-box-express)](https://github.com/smart-post-box/smart-post-box/blob/master/LICENSE)
+[![Twitter: waritocomatta](https://img.shields.io/twitter/follow/waritocomatta.svg?style=social)](https://twitter.com/waritocomatta)
 
-cow-stack-express
+> smart-post-box-express
 
-## Quick Start
+### 🏠 [Homepage](https://github.com/smart-post-box/smart-post-box#readme)
 
-Get started developing...
+## Prerequisites
 
-```shell
-# install deps
-npm install
+- node >=12.18.3
+- yarn >=1.22.4
 
-# run in development mode
-npm run dev
+## Install
 
-# run tests
-npm run test
+```sh
+yarn install
 ```
 
----
+## Usage
 
-## How do I modify the example API and make it my own
-
-There are two key files:
-
-1. `server/routes.js` - This references the implementation of all of your routes. Add as many routes as you like and point each route your express handler functions.
-2. `server/common/api.yaml` - This file contains your [OpenAPI spec](https://swagger.io/specification/). Describe your API here. It's recommended that you to declare any and all validation logic in this YAML. `express-no-stress-typescript`  uses [express-openapi-validator](https://github.com/cdimascio/express-openapi-validator) to automatically handle all API validation based on what you've defined in the spec.
-
-## Install Dependencies
-
-Install all package dependencies (one time operation)
-
-```shell
-npm install
+```sh
+yarn run start
 ```
 
-## Run It
+## Run tests
 
-#### Run in *development* mode
-
-Runs the application is development mode. Should not be used in production
-
-```shell
-npm run dev
+```sh
+yarn run test
 ```
 
-or debug it
+## Author
 
-```shell
-npm run dev:debug
-```
+👤 **waricoma <waricoma@devne.co>**
 
-#### Run in *production* mode
+* Website: https://www.wantedly.com/users/18472356
+* Twitter: [@waritocomatta](https://twitter.com/waritocomatta)
+* Github: [@waricoma](https://github.com/waricoma)
+* LinkedIn: [@motone-adachi-b92955145](https://linkedin.com/in/motone-adachi-b92955145)
 
-Compiles the application and starts it in production production mode.
+## 🤝 Contributing
 
-```shell
-npm run compile
-npm start
-```
+Contributions, issues and feature requests are welcome!
 
-## Test It
+Feel free to check [issues page](https://github.com/smart-post-box/smart-post-box/issues). You can also take a look at the [contributing guide](https://github.com/smart-post-box/smart-post-box/blob/master/CONTRIBUTING.md).
 
-Run the Mocha unit tests
+## Show your support
 
-```shell
-npm test
-```
+Give a ⭐️ if this project helped you!
 
-or debug them
 
-```shell
-npm run test:debug
-```
+## 📝 License
 
-## Try It
+Copyright © 2020 [waricoma <waricoma@devne.co>](https://github.com/waricoma).
 
-* Open you're browser to [http://localhost:3000](http://localhost:3000)
-* Invoke the `/examples` endpoint
+This project is [GPL--2.0--only](https://github.com/smart-post-box/smart-post-box/blob/master/LICENSE) licensed.
 
-  ```shell
-  curl http://localhost:3000/api/v1/examples
-  ```
-
-## Debug It
-
-#### Debug the server
-
-```
-npm run dev:debug
-```
-
-#### Debug Tests
-
-```
-npm run test:debug
-```
-
-#### Debug with VSCode
-
-Add these [contents](https://github.com/cdimascio/generator-express-no-stress/blob/next/assets/.vscode/launch.json) to your `.vscode/launch.json` file
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
