@@ -13,6 +13,7 @@ import * as line from '@line/bot-sdk';
 import { LineEvRouter } from '../line';
 import * as slackBolt from '@slack/bolt';
 import { createConnection, Connection, getConnectionManager } from 'typeorm';
+import fs from 'fs';
 
 class ExpressServer {
   private app = express();
@@ -190,6 +191,24 @@ class ExpressServer {
       } else {
         res.redirect('https://' + req.headers.host + req.url);
       }
+    });
+  }
+
+  public setPhotoReceiver(): void {
+    this.app.post('/photo-receiver/:uniqueCode', (req) => {
+      const data = [];
+      let totalLength = 0;
+
+      req
+        .on('data', (chunk) => {
+          data.push(chunk);
+          totalLength += chunk.length;
+        })
+        .on('end', () => {
+          console.log(req.query.uniqueCode);
+          const b = Buffer.concat(data, totalLength);
+          fs.writeFileSync(path.join(__dirname, '..', '..', '..', 'vue', 'dist', 'img', 'foo.jpg'), b);
+        });
     });
   }
 

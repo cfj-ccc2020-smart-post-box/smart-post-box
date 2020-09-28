@@ -25,6 +25,34 @@
   },
   "openapi": "3.0.0",
   "paths": {
+    "/photos/last-title/{uniqueCode}": {
+      "get": {
+        "operationId": "ReceiveNotification",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Ok"
+          }
+        },
+        "security": [],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "uniqueCode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
     "/post-box/receiver/{uniqueCode}": {
       "get": {
         "operationId": "ReceiveNotification",
