@@ -3683,15 +3683,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/husky/node_modules/cosmiconfig",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/husky/node_modules/cosmiconfig/LICENSE"
   },
-  "cow-stack@1.0.0": {
-    "licenses": "UNLICENSED",
-    "private": true,
-    "repository": "https://github.com/waricoma/cow-stack",
-    "publisher": "waricoma",
-    "email": "waricoma@devne.co",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/LICENSE"
-  },
   "create-error-class@3.0.2": {
     "licenses": "MIT",
     "repository": "https://github.com/floatdrop/create-error-class",
@@ -11261,6 +11252,15 @@
     "url": "http://blog.izs.me/",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/slide",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/node_modules/slide/LICENSE"
+  },
+  "smart-post-box@1.0.0": {
+    "licenses": "UNLICENSED",
+    "private": true,
+    "repository": "https://github.com/waricoma/smart-post-box",
+    "publisher": "waricoma",
+    "email": "waricoma@devne.co",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/LICENSE"
   },
   "snake-case@3.0.3": {
     "licenses": "MIT",

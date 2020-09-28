@@ -1984,15 +1984,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/core-util-is",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/core-util-is/LICENSE"
   },
-  "cow-stack-express@1.0.0": {
-    "licenses": "UNLICENSED",
-    "private": true,
-    "repository": "https://github.com/waricoma/cow-stack",
-    "publisher": "waricoma",
-    "email": "waricoma@devne.co",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/README.md"
-  },
   "cross-spawn@5.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/IndigoUnited/node-cross-spawn",
@@ -7508,6 +7499,15 @@
     "repository": "https://github.com/chalk/slice-ansi",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/slice-ansi",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/slice-ansi/license"
+  },
+  "smart-post-box-express@1.0.0": {
+    "licenses": "UNLICENSED",
+    "private": true,
+    "repository": "https://github.com/smart-post-box/smart-post-box",
+    "publisher": "waricoma",
+    "email": "waricoma@devne.co",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/README.md"
   },
   "snapdragon-node@2.1.1": {
     "licenses": "MIT",

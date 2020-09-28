@@ -1,3 +1,7 @@
+**smart-post-box-express**
+
+> README / [Globals](globals.md)
+
 # Welcome to smart-post-box-express 👋
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 ![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.18.3-blue.svg)
@@ -52,7 +56,6 @@ Feel free to check [issues page](https://github.com/smart-post-box/smart-post-bo
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
 
 ## 📝 License
 

@@ -38,6 +38,9 @@
     "commit": "git cz",
     "docker:in": "export IN_DOCKER=true",
     "docker:out": "export IN_DOCKER=false",
+    "document": "yarn document-express && yarn document-vue",
+    "document-express": "cd ./express && ../node_modules/typedoc/bin/typedoc --plugin typedoc-plugin-markdown --out ./docs/ ./server/**/*.ts",
+    "document-vue": "# cd ./vue && ../node_modules/typedoc/bin/typedoc --plugin typedoc-plugin-markdown --out ./docs/ ./src/**/*.ts",
     "dokku:in": "export IN_DOKKU=true",
     "dokku:out": "export IN_DOKKU=false",
     "ignore": "curl https://raw.githubusercontent.com/microsoft/TypeScript/master/.gitignore | add-text-to-markdown ./.gitignore --section 'microsoft/TypeScript:.gitignore' --write",
@@ -102,6 +105,8 @@
     "textlint-filter-rule-comments": "1.2.2",
     "textlint-rule-no-dead-link": "4.7.0",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
+    "typedoc": "0.19.2",
+    "typedoc-plugin-markdown": "3.0.3",
     "yo": "3.1.1"
   },
   "engines": {
