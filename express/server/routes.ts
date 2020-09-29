@@ -46,13 +46,12 @@ export function RegisterRoutes(app: express.Express) {
             promiseHandler(controller, promise, response, next);
         });
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-    app.post('/api/photos/receiver/:uniqueCode/:index/:length/:base64',
+    app.post('/api/photos/receiver/:uniqueCode/:length/:base64',
         function(request: any, response: any, next: any) {
             const args = {
                 uniqueCode: { "in": "path", "name": "uniqueCode", "required": true, "dataType": "string" },
-                index: { "in": "path", "name": "index", "required": true, "dataType": "double" },
                 length: { "in": "path", "name": "length", "required": true, "dataType": "double" },
-                base64: { "in": "path", "name": "base64", "required": true, "dataType": "string" },
+                req: { "in": "request", "name": "req", "required": true, "dataType": "object" },
             };
 
             // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa

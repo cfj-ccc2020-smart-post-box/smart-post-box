@@ -53,7 +53,7 @@
         ]
       }
     },
-    "/photos/receiver/{uniqueCode}/{index}/{length}/{base64}": {
+    "/photos/receiver/{uniqueCode}/{length}/{base64}": {
       "post": {
         "operationId": "ReceivePhotoData",
         "responses": {
@@ -80,28 +80,11 @@
           },
           {
             "in": "path",
-            "name": "index",
-            "required": true,
-            "schema": {
-              "format": "double",
-              "type": "number"
-            }
-          },
-          {
-            "in": "path",
             "name": "length",
             "required": true,
             "schema": {
               "format": "double",
               "type": "number"
-            }
-          },
-          {
-            "in": "path",
-            "name": "base64",
-            "required": true,
-            "schema": {
-              "type": "string"
             }
           }
         ]

@@ -16,4 +16,6 @@ export class PostBoxController extends Controller {
     lineClient.pushMessage(msg.destinationId, msg.msg);
     return 'received';
   }
+
+  
 }
