@@ -195,6 +195,7 @@ class ExpressServer {
    */
   public setRedirectToHTTPS(): void {
     this.app.use((req, res, next) => {
+      L.info(res.statusCode.toString(), res.statusMessage);
       if (req.secure) {
         next();
       } else {
@@ -209,7 +210,7 @@ class ExpressServer {
         path.join(__dirname, '..', '..', '..', 'vue', 'dist', 'img', 'foo.jpg'),
         req['files']['upfile']['data']
       );
-      console.log(req.params.uniqueCode);
+      L.info(req.statusCode.toString(), req.statusMessage);
       res.end('ok');
     });
   }

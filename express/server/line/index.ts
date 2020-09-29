@@ -24,6 +24,16 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^(SignUp|登録|開始|スタート)$/),
+      task: async (event) => {
+        lineClient.replyMessage(event.replyToken, {
+          type: 'text',
+          text: 'この操作は DM でのみ可能です。',
+        });
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^メニュー$/),
       task: async (event) => {
         lineClient.replyMessage(event.replyToken, usersLinesService.topMenuTemp);
@@ -79,6 +89,16 @@ export class LineEvRouter {
         lineClient.replyMessage(event.replyToken, {
           type: 'text',
           text: msg,
+        });
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^本当にアカウントの停止をします。$/),
+      task: async (event) => {
+        lineClient.replyMessage(event.replyToken, {
+          type: 'text',
+          text: 'この操作は DM でのみ可能です。',
         });
       },
     });

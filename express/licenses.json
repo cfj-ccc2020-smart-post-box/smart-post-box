@@ -1457,6 +1457,14 @@
     "repository": "https://github.com/mscdex/busboy",
     "publisher": "Brian White",
     "email": "mscdex@mscdex.net",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/busboy",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/busboy/LICENSE"
+  },
+  "busboy@0.3.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/mscdex/busboy",
+    "publisher": "Brian White",
+    "email": "mscdex@mscdex.net",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/busboy",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/busboy/LICENSE"
   },
@@ -2316,6 +2324,14 @@
     "repository": "https://github.com/mscdex/dicer",
     "publisher": "Brian White",
     "email": "mscdex@mscdex.net",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/dicer",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/dicer/LICENSE"
+  },
+  "dicer@0.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/mscdex/dicer",
+    "publisher": "Brian White",
+    "email": "mscdex@mscdex.net",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dicer",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dicer/LICENSE"
   },
@@ -2849,6 +2865,14 @@
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/expect",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/expect/LICENSE"
+  },
+  "express-fileupload@1.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/richardgirges/express-fileupload",
+    "publisher": "Richard Girges",
+    "email": "richardgirges@gmail.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/express-fileupload",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/express-fileupload/LICENSE"
   },
   "express-openapi-validator@3.17.2": {
     "licenses": "MIT",
@@ -6899,8 +6923,8 @@
     "publisher": "Isaac Z. Schlueter",
     "email": "i@izs.me",
     "url": "http://blog.izs.me/",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dicer/node_modules/readable-stream",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dicer/node_modules/readable-stream/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/readable-stream",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/readable-stream/LICENSE"
   },
   "readable-stream@2.3.7": {
     "licenses": "MIT",
@@ -7835,8 +7859,8 @@
   "string_decoder@0.10.31": {
     "licenses": "MIT",
     "repository": "https://github.com/rvagg/string_decoder",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dicer/node_modules/string_decoder",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dicer/node_modules/string_decoder/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/string_decoder",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/multer/node_modules/string_decoder/LICENSE"
   },
   "string_decoder@1.1.1": {
     "licenses": "MIT",
