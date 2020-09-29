@@ -8835,8 +8835,8 @@
     "repository": "https://github.com/bestiejs/punycode.js",
     "publisher": "Mathias Bynens",
     "url": "https://mathiasbynens.be/",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/cypress/node_modules/punycode",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/cypress/node_modules/punycode/LICENSE-MIT.txt"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/node-libs-browser/node_modules/punycode",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/node-libs-browser/node_modules/punycode/LICENSE-MIT.txt"
   },
   "punycode@2.1.1": {
     "licenses": "MIT",

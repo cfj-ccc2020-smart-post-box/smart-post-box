@@ -4,19 +4,19 @@ import { PhotosEntity } from '../entities/photos.entity';
 
 export class PhotosModel {
   public async getLastPhotoByMachineId(machinesId: number): Promise<PhotosEntity> {
-    L.log('getLastPhotoByMachineId');
+    L.info('getLastPhotoByMachineId');
     const photosRepository = getRepository(PhotosEntity);
 
     return photosRepository
       .createQueryBuilder()
-      .from(PhotosEntity, 'photos')
       .where('machines_id = :machinesId', { machinesId })
       .orderBy('created', 'DESC')
       .getOne();
   }
 
   public async addNewPhoto(machinesId: number, title: string): Promise<PhotosEntity> {
-    L.log('addNewPhoto');
+    L.info('addNewPhoto');
+
     const photosRepository = getRepository(PhotosEntity);
 
     const newPhoto = photosRepository.create({
@@ -24,7 +24,6 @@ export class PhotosModel {
       title,
     });
 
-    const photo = await photosRepository.save(newPhoto);
-    return photo;
+    return await photosRepository.save(newPhoto);
   }
 }

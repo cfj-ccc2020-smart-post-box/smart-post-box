@@ -1309,6 +1309,12 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/base",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/base/LICENSE"
   },
+  "basic-auth@2.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/basic-auth",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/basic-auth",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/basic-auth/LICENSE"
+  },
   "bcrypt-pbkdf@1.0.2": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/joyent/node-bcrypt-pbkdf",
@@ -2292,6 +2298,14 @@
     "email": "doug@somethingdoug.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/depd",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/depd/LICENSE"
+  },
+  "depd@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/dougwilson/nodejs-depd",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/morgan/node_modules/depd",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/morgan/node_modules/depd/LICENSE"
   },
   "destroy@1.0.4": {
     "licenses": "MIT",
@@ -5534,6 +5548,12 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/moment",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/moment/LICENSE"
   },
+  "morgan@1.10.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/expressjs/morgan",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/morgan",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/morgan/LICENSE"
+  },
   "mri@1.1.4": {
     "licenses": "MIT",
     "repository": "https://github.com/lukeed/mri",
@@ -5958,6 +5978,14 @@
     "repository": "https://github.com/jshttp/on-finished",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/on-finished",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/on-finished/LICENSE"
+  },
+  "on-headers@1.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jshttp/on-headers",
+    "publisher": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/on-headers",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/on-headers/LICENSE"
   },
   "once@1.4.0": {
     "licenses": "ISC",

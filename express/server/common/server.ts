@@ -14,8 +14,8 @@ import { LineEvRouter } from '../line';
 import * as slackBolt from '@slack/bolt';
 import { createConnection, Connection, getConnectionManager } from 'typeorm';
 import fileUpload from 'express-fileupload';
-import fs from 'fs';
 import { PhotosService } from '../api/services/photos.service';
+import morgan from 'morgan';
 
 class ExpressServer {
   private app = express();
@@ -52,7 +52,8 @@ class ExpressServer {
         limits: { fileSize: 50 * 1024 * 1024 },
       })
     );
-    this.setPhotoReceiver();
+    this.app.use(morgan('common'));
+    this.photosService = new PhotosService();
 
     // Define app's routing
     RegisterRoutes(this.app);
@@ -195,7 +196,6 @@ class ExpressServer {
    */
   public setRedirectToHTTPS(): void {
     this.app.use((req, res, next) => {
-      L.info(res.statusCode.toString(), res.statusMessage);
       if (req.secure) {
         next();
       } else {
@@ -204,14 +204,19 @@ class ExpressServer {
     });
   }
 
-  public setPhotoReceiver(): void {
-    this.app.post('/photo-receiver/:uniqueCode', (req, res) => {
-      fs.writeFileSync(
-        path.join(__dirname, '..', '..', '..', 'vue', 'dist', 'img', 'foo.jpg'),
+  public setPhotoReceiver(config: line.ClientConfig, photoHost: string): void {
+    const lineClient = new line.Client(config);
+
+    this.app.post('/photo-receiver/:uniqueCode', async (req, res) => {
+      res.end('received');
+
+      const msg = await this.photosService.msgOfNewPhoto(
+        req.params.uniqueCode,
+        photoHost,
         req['files']['upfile']['data']
       );
-      L.info(req.statusCode.toString(), req.statusMessage);
-      res.end('ok');
+
+      await lineClient.pushMessage(msg.destinationId, msg.msg);
     });
   }
 
