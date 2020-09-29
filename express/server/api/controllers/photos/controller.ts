@@ -1,7 +1,5 @@
-import { Request, Controller, Get, Post, Route, Body } from 'tsoa';
+import { Controller, Get, Post, Route, Body } from 'tsoa';
 import { PhotosService } from '../../services/photos.service';
-import express from 'express';
-import multer from 'multer';
 import * as line from '@line/bot-sdk';
 
 const photosService = new PhotosService();

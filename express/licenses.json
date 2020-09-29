@@ -464,6 +464,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@szmarczak/http-timer",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@szmarczak/http-timer/LICENSE"
   },
+  "@tokenizer/token@0.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Borewit/tokenizer-token",
+    "publisher": "Borewit",
+    "url": "https://github.com/Borewit",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@tokenizer/token",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@tokenizer/token/README.md"
+  },
   "@types/babel__core@7.1.9": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
@@ -505,6 +513,12 @@
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/connect",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/connect/LICENSE"
+  },
+  "@types/debug@4.1.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/debug",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/debug/LICENSE"
   },
   "@types/eslint-visitor-keys@1.0.0": {
     "licenses": "MIT",
@@ -3083,14 +3097,23 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-entry-cache",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-entry-cache/LICENSE"
   },
+  "file-type@15.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/file-type",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "https://sindresorhus.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-type",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-type/license"
+  },
   "file-type@7.7.1": {
     "licenses": "MIT",
     "repository": "https://github.com/sindresorhus/file-type",
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-type",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-type/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@line/bot-sdk/node_modules/file-type",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@line/bot-sdk/node_modules/file-type/license"
   },
   "file-uri-to-path@1.0.0": {
     "licenses": "MIT",
@@ -6423,6 +6446,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pct-encode",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pct-encode/LICENSE"
   },
+  "peek-readable@3.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Borewit/peek-readable",
+    "publisher": "Borewit",
+    "url": "https://github.com/Borewit",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/peek-readable",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/peek-readable/LICENSE"
+  },
   "performance-now@2.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/braveg1rl/performance-now",
@@ -6971,6 +7002,14 @@
     "repository": "https://github.com/nodejs/readable-stream",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/split2/node_modules/readable-stream",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/split2/node_modules/readable-stream/LICENSE"
+  },
+  "readable-web-to-node-stream@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Borewit/readable-web-to-node-stream",
+    "publisher": "Borewit",
+    "url": "https://github.com/Borewit",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/readable-web-to-node-stream",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/readable-web-to-node-stream/README.md"
   },
   "readdirp@3.4.0": {
     "licenses": "MIT",
@@ -7998,6 +8037,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/strip-json-comments",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/strip-json-comments/license"
   },
+  "strtok3@6.0.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Borewit/strtok3",
+    "publisher": "Borewit",
+    "url": "https://github.com/Borewit",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/strtok3",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/strtok3/LICENSE"
+  },
   "superagent@3.8.3": {
     "licenses": "MIT",
     "repository": "https://github.com/visionmedia/superagent",
@@ -8303,6 +8350,14 @@
     "email": "doug@somethingdoug.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/toidentifier",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/toidentifier/LICENSE"
+  },
+  "token-types@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Borewit/token-types",
+    "publisher": "Borewit",
+    "url": "https://github.com/Borewit",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/token-types",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/token-types/LICENSE"
   },
   "touch@3.1.0": {
     "licenses": "ISC",

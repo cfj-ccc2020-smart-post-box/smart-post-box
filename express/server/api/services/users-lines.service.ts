@@ -174,12 +174,12 @@ export class UsersLinesService {
     return replyMsg;
   }
 
-  public async replyMsgWhenUsingConfUI(lineId: string): Promise<line.TextMessage> {
+  public async replyMsgWhenUsingConfUI(lineId: string): Promise<line.TextMessage | line.FlexMessage> {
     L.info('replyMsgWhenUsingConfUI');
 
     let user: UsersLinesEntity;
     let machines: MachinesEntity[];
-    let replyMsg: line.TextMessage;
+    let replyMsg: line.TextMessage | line.FlexMessage;
 
     try {
       user = await this.usersLinesModel.getUserByLineId(lineId);
@@ -209,31 +209,33 @@ export class UsersLinesService {
       if (machines.length === 0) {
         replyMsg = {
           type: 'text',
-          text: 'アカウントに登録された端末がありません。\n\n「メニュー」から「ポスト観測機の追加」を行って下さい。',
+          text:
+            'アカウントに登録されたポスト観測機がありません。\n\n「メニュー」から「ポスト観測機の追加」を行って下さい。',
         };
 
         return replyMsg;
       }
 
-      const items = machines.map(
-        (machine: MachinesEntity): line.QuickReplyItem => {
+      const flexBubbles = machines.map(
+        (machine: MachinesEntity): line.FlexBubble => {
           return {
-            type: 'action',
-            imageUrl: 'https://img.icons8.com/ios-glyphs/72/mailbox-closed-flag-up.png',
-            action: {
-              type: 'message',
-              label: machine.name === '' ? machine.uniqueCode : `${machine.name}: ${machine.uniqueCode}`,
-              text: 'ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
-            },
+            type: 'bubble',
+            // imageUrl: 'https://img.icons8.com/ios-glyphs/72/mailbox-closed-flag-up.png',
+            // action: {
+            //   type: 'message',
+            //   label: machine.name === '' ? machine.uniqueCode : `${machine.name}: ${machine.uniqueCode}`,
+            //   text: 'ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
+            // },
           };
         }
       );
 
       replyMsg = {
-        type: 'text',
-        text: '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。',
-        quickReply: {
-          items,
+        type: 'flex',
+        altText: '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。',
+        contents: {
+          type: 'carousel',
+          contents: flexBubbles,
         },
       };
     } catch (err) {

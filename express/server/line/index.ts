@@ -3,7 +3,6 @@ import { MsgTypeText } from './interface';
 import { LineEvRoutingHelper } from './helper';
 import { UsersLinesModel } from '../api/models/users-lines.model';
 import { UsersLinesService } from '../api/services/users-lines.service';
-import e from 'express';
 
 const lineEvRoutingHelper = new LineEvRoutingHelper();
 
@@ -140,32 +139,7 @@ export class LineEvRouter {
       },
       task: async (event) => {
         const msg = await usersLinesService.replyMsgWhenUsingConfUI(event.source.userId);
-        this.lineClient.replyMessage(event.replyToken, {
-          type: 'text',
-          text: '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。',
-          quickReply: {
-            items: [
-              {
-                type: 'action',
-                imageUrl: 'https://img.icons8.com/ios-glyphs/72/mailbox-closed-flag-up.png',
-                action: {
-                  type: 'message',
-                  label: 'Tempura',
-                  text: 'ポスト観測機『oca17PJc1i2Bd9nur6EVS2』の設定を開始します。',
-                },
-              },
-              {
-                type: 'action',
-                imageUrl: 'https://example.com/tempura.png',
-                action: {
-                  type: 'message',
-                  label: 'Tempura',
-                  text: 'Tempura',
-                },
-              },
-            ],
-          },
-        });
+        this.lineClient.replyMessage(event.replyToken, msg);
       },
     });
 

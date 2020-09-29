@@ -71,7 +71,10 @@ export class PhotosService {
     const photoData = Buffer.from(photoBase64, 'base64');
     const photoDataInfo = await fileType.fromBuffer(photoData);
 
-    console.log(photoDataInfo.ext, photoDataInfo.mime);
+    // if (photoDataInfo.ext !== 'jpg' || photoDataInfo.mime !== 'image/jpeg') {
+    //   L.info('plz post jpg.');
+    //   throw new Error('plz post jpg.');
+    // }
 
     try {
       fs.writeFileSync(
