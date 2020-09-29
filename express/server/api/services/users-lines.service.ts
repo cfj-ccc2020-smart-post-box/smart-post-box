@@ -42,7 +42,7 @@ export class UsersLinesService {
 
   private getTopMenuTempForCreatedUser(created: Date): line.TemplateMessage {
     const temp = this.topMenuTemp;
-    const addingMsg = `\n\nスマポートポストボックスアカウントの登録は ${created} に完了しました。`;
+    const addingMsg = `\n\nスマートポストボックスアカウントの登録は ${created} に完了しました。`;
     temp.altText += addingMsg;
     temp.template['text'] += addingMsg;
     return temp;
@@ -68,7 +68,7 @@ export class UsersLinesService {
       L.info(err);
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマポートポストボックスアカウントの登録に失敗しました... ><',
+        text: '何だかの事情でスマートポストボックスアカウントの登録に失敗しました... ><',
       } as line.TextMessage;
     }
 
@@ -85,13 +85,13 @@ export class UsersLinesService {
       closedUser = await this.usersLinesModel.closeUserFromLine(event.source.userId);
 
       if (closedUser) {
-        replyMsg = `スマポートポストボックスアカウントの停止が完了しました。 日時: ${closedUser.updated}`;
+        replyMsg = `スマートポストボックスアカウントの停止が完了しました。 日時: ${closedUser.updated}`;
       } else {
-        replyMsg = '登録されていない LINE アカウントのため、スマポートポストボックスアカウントの停止に失敗しました。';
+        replyMsg = '登録されていない LINE アカウントのため、スマートポストボックスアカウントの停止に失敗しました。';
       }
     } catch (err) {
       L.info(err);
-      replyMsg = '何だかの事情でスマポートポストボックスアカウントの登録に失敗しました... ><';
+      replyMsg = '何だかの事情でスマートポストボックスアカウントの登録に失敗しました... ><';
     }
 
     return replyMsg;
@@ -135,7 +135,7 @@ export class UsersLinesService {
       if (!user) {
         replyMsg = {
           type: 'text',
-          text: '登録されていない LINE アカウントのため、スマポートポストボックスの観測機の追加に失敗しました。',
+          text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の追加に失敗しました。',
         };
 
         return replyMsg;
@@ -145,7 +145,7 @@ export class UsersLinesService {
 
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマポートポストボックスの観測機の追加に失敗しました... ><',
+        text: '何だかの事情でスマートポストボックスの観測機の追加に失敗しました... ><',
       };
 
       return replyMsg;
@@ -160,14 +160,14 @@ export class UsersLinesService {
 
       replyMsg = {
         type: 'text',
-        text: `【スマポートポストボックスの観測機の追加完了】\n\n合言葉『${machine.uniqueCode}』\n\n上記をスマポートポストボックスの観測機に設定することで通知が送られるようになります。\n詳しくは「メニュー」から「ホームページ」をご確認下さると幸いです。\nこのメッセージをまるごとコピーしておきましょう。`,
+        text: `【スマートポストボックスの観測機の追加完了】\n\n合言葉『${machine.uniqueCode}』\n\n上記をスマートポストボックスの観測機に設定することで通知が送られるようになります。\n詳しくは「メニュー」から「ホームページ」をご確認下さると幸いです。\nこのメッセージをまるごとコピーしておきましょう。`,
       };
     } catch (err) {
       L.info(err);
 
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマポートポストボックスの観測機の追加に失敗しました... ><',
+        text: '何だかの事情でスマートポストボックスの観測機の追加に失敗しました... ><',
       };
     }
 
@@ -187,7 +187,7 @@ export class UsersLinesService {
       if (!user) {
         replyMsg = {
           type: 'text',
-          text: '登録されていない LINE アカウントのため、スマポートポストボックスの観測機の設定を開始できません。',
+          text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の設定を開始できません。',
         };
 
         return replyMsg;
@@ -197,7 +197,7 @@ export class UsersLinesService {
 
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマポートポストボックスの観測機の設定を開始できません... ><',
+        text: '何だかの事情でスマートポストボックスの観測機の設定を開始できません... ><',
       };
 
       return replyMsg;
@@ -262,7 +262,77 @@ export class UsersLinesService {
 
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマポートポストボックスの観測機の設定を開始できません... ><',
+        text: '何だかの事情でスマートポストボックスの観測機の設定を開始できません... ><',
+      };
+    }
+
+    return replyMsg;
+  }
+
+  public async replyMsgWhenStopMachine(lineId: string, uniqueCode: string): Promise<line.TextMessage> {
+    L.info('replyMsgWhenStopMachine');
+
+    let user: UsersLinesEntity;
+    let replyMsg: line.TextMessage;
+
+    try {
+      user = await this.usersLinesModel.getUserByLineId(lineId);
+
+      if (!user) {
+        replyMsg = {
+          type: 'text',
+          text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の登録解除を開始できません。',
+        };
+
+        return replyMsg;
+      }
+    } catch (err) {
+      L.info(err);
+
+      replyMsg = {
+        type: 'text',
+        text: '何だかの事情でスマートポストボックスの観測機の登録解除を開始できません... ><',
+      };
+
+      return replyMsg;
+    }
+
+    try {
+      const isOwner = await this.machinesModel.isOwnerOfThisMachine(user.id, uniqueCode);
+
+      if (!isOwner) {
+        replyMsg = {
+          type: 'text',
+          text:
+            '選択されたポスト観測機か存在しない、或いは現在のアカウントが所収者ではないため、ポスト観測機の登録解除を完了できませんでした。',
+        };
+
+        return replyMsg;
+      }
+    } catch (err) {
+      L.info(err);
+
+      replyMsg = {
+        type: 'text',
+        text: '何だかの事情でスマートポストボックスの観測機の登録解除を開始できません... ><',
+      };
+
+      return replyMsg;
+    }
+
+    try {
+      await this.machinesModel.stopMachine(uniqueCode);
+
+      replyMsg = {
+        type: 'text',
+        text: 'スマートポストボックスの観測機の登録解除が完了しました。',
+      };
+    } catch (err) {
+      L.info(err);
+
+      replyMsg = {
+        type: 'text',
+        text: '何だかの事情でスマートポストボックスの観測機の登録解除を開始できません... ><',
       };
     }
 

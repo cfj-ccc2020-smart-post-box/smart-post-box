@@ -149,12 +149,15 @@ class ExpressServer {
       if (req.xhr || req.headers['user-agent'] === 'ESP' || req.headers['user-agent'].indexOf('curl') === 0) {
         res.status(404);
 
-        return res.json({
+        const report = {
           method: req.method,
           protocol: req.protocol,
           version: req.httpVersion,
           url: req.url,
-        });
+        };
+
+        L.info(report);
+        res.json(report);
       }
 
       res.redirect(301, '/');
@@ -169,7 +172,7 @@ class ExpressServer {
       if (req.xhr || req.headers['user-agent'] === 'ESP' || req.headers['user-agent'].indexOf('curl') === 0) {
         res.status(500);
 
-        res.json({
+        const report = {
           method: req.method,
           protocol: req.protocol,
           version: req.httpVersion,
@@ -177,9 +180,10 @@ class ExpressServer {
           name: err.name,
           message: err.message,
           stack: err.stack,
-        });
+        };
 
-        return;
+        L.info(report);
+        res.json(report);
       }
 
       res.redirect(301, '/');

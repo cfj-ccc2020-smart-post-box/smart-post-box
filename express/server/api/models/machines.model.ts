@@ -44,4 +44,25 @@ export class MachinesModel {
 
     return machines;
   }
+
+  public async isOwnerOfThisMachine(usersLinesId: number, uniqueCode: string): Promise<boolean> {
+    L.info('isOwnerOfThisMachine');
+
+    const machineRepository = getRepository(MachinesEntity);
+
+    const machine = await machineRepository.findOne({ usersLinesId, uniqueCode, using: true });
+
+    return machine !== null;
+  }
+
+  public async stopMachine(uniqueCode: string): Promise<void> {
+    L.info('stopMachine');
+
+    const machineRepository = getRepository(MachinesEntity);
+
+    const machine = await machineRepository.findOne({ uniqueCode, using: true });
+    machine.using = false;
+
+    await machineRepository.save(machine);
+  }
 }

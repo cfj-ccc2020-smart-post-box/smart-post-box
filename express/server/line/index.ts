@@ -199,23 +199,25 @@ export class LineEvRouter {
       source: {
         type: 'user',
       },
-      task: async (event) => {
+      task: (event) => {
+        const uniqueCode = event.message.text.split(/『|』/)[1];
+
         this.lineClient.replyMessage(event.replyToken, {
           type: 'template',
-          altText: '本当にポスト観測機の登録を解除しますか。',
+          altText: '本当にポスト観測機の登録解除をしますか。',
           template: {
             type: 'confirm',
-            text: '本当にアカウントの停止をしますか。',
+            text: '本当にポスト観測機の登録解除をしますか。\n\n※投函されても通知が行われなくなります。',
             actions: [
               {
                 type: 'message',
                 label: 'はい',
-                text: '本当にアカウントの停止をします。',
+                text: `本当にポスト観測機『${uniqueCode}』の登録解除をします。`,
               },
               {
                 type: 'message',
                 label: 'いいえ',
-                text: 'アカウントの停止をキャンセルします。',
+                text: 'ポスト観測機の登録解除をキャンセルします。',
               },
             ],
           },
@@ -226,6 +228,25 @@ export class LineEvRouter {
     lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^ポスト観測機『.+』の登録解除をします。$/),
       task: async (event) => this.replyMsgOfOnlyDM(event.replyToken),
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^本当にポスト観測機『.+』の登録解除をします。$/),
+      source: {
+        type: 'user',
+      },
+      task: async (event) => {
+        const uniqueCode = event.message.text.split(/『|』/)[1];
+
+        const msg = await usersLinesService.replyMsgWhenStopMachine(event.source.userId, uniqueCode);
+
+        this.lineClient.replyMessage(event.replyMessage, msg);
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^本当にポスト観測機『.+』の登録解除をします。$/),
+      task: (event) => this.replyMsgOfOnlyDM(event.replyToken),
     });
 
     lineEvRoutingHelper.msgEv({
