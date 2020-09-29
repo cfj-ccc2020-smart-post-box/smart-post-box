@@ -29,7 +29,9 @@ export class PostBoxService {
       destinationId: machine.destinationId,
       msg: {
         type: 'text',
-        text: `【投函通知】ポストへの投函を検知しました。${machine.name === '' ? '' : 'by ' + machine.name}`,
+        text: `【投函通知】ポストへの投函を検知しました。${machine.name === '' ? '' : 'by ' + machine.name} ${
+          machine.modelName || ''
+        }`,
       },
     };
   }

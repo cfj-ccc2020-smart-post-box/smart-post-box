@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Route, Body } from 'tsoa';
+import { Controller, Get, Post, Route } from 'tsoa';
 import { PhotosService } from '../../services/photos.service';
 import * as line from '@line/bot-sdk';
 
@@ -9,6 +9,8 @@ const lineClient = new line.Client({
   channelSecret: process.env.LINE_CH_SECRET.toString(),
 });
 
+const base64Cache: { [key: string]: string } = {};
+
 @Route('photos')
 export class PhotosController extends Controller {
   @Get('/last-title/{uniqueCode}')
@@ -17,13 +19,25 @@ export class PhotosController extends Controller {
     return lastTitle;
   }
 
-  @Post('/receiver/{uniqueCode}')
-  public async foo(uniqueCode: string, @Body() body: { photoBase64: string }): Promise<string> {
+  @Post('/receiver/{uniqueCode}/{index}/{length}/{base64}')
+  public async receivePhotoData(uniqueCode: string, index: number, length: number, base64: string): Promise<string> {
+    if (!(uniqueCode in base64Cache)) {
+      base64Cache[uniqueCode] = '';
+    }
+
+    base64Cache[uniqueCode] += base64;
+    console.log(base64Cache[uniqueCode]);
+
+    if (index !== length) {
+      return 'received';
+    }
+
     const msg = await photosService.msgOfNewPhoto(
       uniqueCode,
       process.env.SERVER_HOST || 'tmp.cow.kit-victims.org',
-      body.photoBase64
+      base64Cache[uniqueCode]
     );
+    base64Cache[uniqueCode] = null; // GC
     await lineClient.pushMessage(msg.destinationId, msg.msg);
     return 'received';
   }

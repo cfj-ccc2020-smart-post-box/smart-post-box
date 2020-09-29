@@ -240,7 +240,7 @@ export class LineEvRouter {
 
         const msg = await usersLinesService.replyMsgWhenStopMachine(event.source.userId, uniqueCode);
 
-        this.lineClient.replyMessage(event.replyMessage, msg);
+        this.lineClient.replyMessage(event.replyToken, msg);
       },
     });
 

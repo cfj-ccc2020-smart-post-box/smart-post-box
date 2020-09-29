@@ -46,11 +46,13 @@ export function RegisterRoutes(app: express.Express) {
             promiseHandler(controller, promise, response, next);
         });
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-    app.post('/api/photos/receiver/:uniqueCode',
+    app.post('/api/photos/receiver/:uniqueCode/:index/:length/:base64',
         function(request: any, response: any, next: any) {
             const args = {
                 uniqueCode: { "in": "path", "name": "uniqueCode", "required": true, "dataType": "string" },
-                body: { "in": "body", "name": "body", "required": true, "dataType": "nestedObjectLiteral", "nestedProperties": { "photoBase64": { "dataType": "string", "required": true } } },
+                index: { "in": "path", "name": "index", "required": true, "dataType": "double" },
+                length: { "in": "path", "name": "length", "required": true, "dataType": "double" },
+                base64: { "in": "path", "name": "base64", "required": true, "dataType": "string" },
             };
 
             // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -65,7 +67,7 @@ export function RegisterRoutes(app: express.Express) {
             const controller = new PhotosController();
 
 
-            const promise = controller.foo.apply(controller, validatedArgs as any);
+            const promise = controller.receivePhotoData.apply(controller, validatedArgs as any);
             promiseHandler(controller, promise, response, next);
         });
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa

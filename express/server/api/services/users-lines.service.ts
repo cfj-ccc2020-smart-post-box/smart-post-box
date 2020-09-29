@@ -226,7 +226,10 @@ export class UsersLinesService {
               contents: [
                 {
                   type: 'text',
-                  text: machine.name === '' ? machine.uniqueCode : `${machine.name}: ${machine.uniqueCode}`,
+                  text:
+                    machine.name === ''
+                      ? machine.uniqueCode
+                      : `${machine.name}: ${machine.uniqueCode} ${machine.modelName || ''}`,
                 },
               ],
             },

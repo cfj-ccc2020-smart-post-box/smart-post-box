@@ -53,9 +53,9 @@
         ]
       }
     },
-    "/photos/receiver/{uniqueCode}": {
+    "/photos/receiver/{uniqueCode}/{index}/{length}/{base64}": {
       "post": {
-        "operationId": "Foo",
+        "operationId": "ReceivePhotoData",
         "responses": {
           "200": {
             "content": {
@@ -77,17 +77,34 @@
             "schema": {
               "type": "string"
             }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object"
-              }
+          },
+          {
+            "in": "path",
+            "name": "index",
+            "required": true,
+            "schema": {
+              "format": "double",
+              "type": "number"
+            }
+          },
+          {
+            "in": "path",
+            "name": "length",
+            "required": true,
+            "schema": {
+              "format": "double",
+              "type": "number"
+            }
+          },
+          {
+            "in": "path",
+            "name": "base64",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
-        }
+        ]
       }
     },
     "/post-box/receiver/{uniqueCode}": {
