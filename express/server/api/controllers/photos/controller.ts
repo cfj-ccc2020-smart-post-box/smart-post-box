@@ -1,4 +1,4 @@
-import { Request, Controller, Get, Post, Route } from 'tsoa';
+import { Request, Controller, Get, Post, Route, Body } from 'tsoa';
 import { PhotosService } from '../../services/photos.service';
 import express from 'express';
 import multer from 'multer';
@@ -20,26 +20,13 @@ export class PhotosController extends Controller {
   }
 
   @Post('/receiver/{uniqueCode}')
-  public async foo(uniqueCode: string, @Request() req: express.Request): Promise<string> {
-    await this.handleFile(req);
+  public async foo(uniqueCode: string, @Body() body: { photoBase64: string }): Promise<string> {
     const msg = await photosService.msgOfNewPhoto(
       uniqueCode,
       process.env.SERVER_HOST || 'tmp.cow.kit-victims.org',
-      req['files']['upfile']['data']
+      body.photoBase64
     );
     await lineClient.pushMessage(msg.destinationId, msg.msg);
     return 'received';
-  }
-
-  private handleFile(req: express.Request): Promise<unknown> {
-    const multerSingle = multer().single('randomFileIsHere');
-    return new Promise((resolve, reject) => {
-      multerSingle(req, undefined, async (err) => {
-        if (err) {
-          reject(err);
-        }
-        resolve();
-      });
-    });
   }
 }

@@ -7,6 +7,7 @@ import { MachinesEntity } from '../entities/machines.entity';
 import short from 'short-uuid';
 import fs from 'fs';
 import path from 'path';
+import fileType from 'file-type';
 
 export class PhotosService {
   readonly photosModel: PhotosModel;
@@ -49,7 +50,7 @@ export class PhotosService {
   public async msgOfNewPhoto(
     uniqueCode: string,
     photoHost: string,
-    photoData: Buffer
+    photoBase64: string
   ): Promise<{ destinationId: string; msg: line.ImageMessage }> {
     L.info('msgOfNewPhoto');
 
@@ -67,11 +68,15 @@ export class PhotosService {
     }
 
     const title = short.generate();
+    const photoData = Buffer.from(photoBase64, 'base64');
+    const photoDataInfo = await fileType.fromBuffer(photoData);
+
+    console.log(photoDataInfo.ext, photoDataInfo.mime);
 
     try {
       fs.writeFileSync(
         path.join(__dirname, '..', '..', '..', '..', 'vue', 'dist', 'img', 'photos', title + '.jpg'),
-        photoData
+        Buffer.from(photoBase64, 'base64')
       );
     } catch (err) {
       throw new Error(err);

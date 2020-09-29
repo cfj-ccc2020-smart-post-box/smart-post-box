@@ -50,7 +50,7 @@ export function RegisterRoutes(app: express.Express) {
         function(request: any, response: any, next: any) {
             const args = {
                 uniqueCode: { "in": "path", "name": "uniqueCode", "required": true, "dataType": "string" },
-                req: { "in": "request", "name": "req", "required": true, "dataType": "object" },
+                body: { "in": "body", "name": "body", "required": true, "dataType": "nestedObjectLiteral", "nestedProperties": { "photoBase64": { "dataType": "string", "required": true } } },
             };
 
             // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa

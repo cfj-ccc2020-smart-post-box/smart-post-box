@@ -3,13 +3,16 @@ import { MsgTypeText } from './interface';
 import { LineEvRoutingHelper } from './helper';
 import { UsersLinesModel } from '../api/models/users-lines.model';
 import { UsersLinesService } from '../api/services/users-lines.service';
+import e from 'express';
 
 const lineEvRoutingHelper = new LineEvRoutingHelper();
 
 export class LineEvRouter {
+  readonly lineClient: line.Client;
+
   constructor(config: line.ClientConfig) {
-    const lineClient: line.Client = new line.Client(config);
-    const usersLinesModel = new UsersLinesModel(lineClient);
+    this.lineClient = new line.Client(config);
+    const usersLinesModel = new UsersLinesModel(this.lineClient);
     const usersLinesService = new UsersLinesService(usersLinesModel);
 
     lineEvRoutingHelper.msgEv({
@@ -19,24 +22,19 @@ export class LineEvRouter {
       },
       task: async (event) => {
         const msg = await usersLinesService.replyMsgWhenSingUpUser(event);
-        lineClient.replyMessage(event.replyToken, msg);
+        this.lineClient.replyMessage(event.replyToken, msg);
       },
     });
 
     lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^(SignUp|登録|開始|スタート)$/),
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, {
-          type: 'text',
-          text: 'この操作は DM でのみ可能です。',
-        });
-      },
+      task: (event) => this.replyMsgOfOnlyDM(event.replyToken),
     });
 
     lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^メニュー$/),
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, usersLinesService.topMenuTemp);
+      task: (event) => {
+        this.lineClient.replyMessage(event.replyToken, usersLinesService.topMenuTemp);
       },
     });
 
@@ -45,8 +43,8 @@ export class LineEvRouter {
       source: {
         type: 'user',
       },
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, {
+      task: (event) => {
+        this.lineClient.replyMessage(event.replyToken, {
           type: 'template',
           altText: '本当にアカウントの停止をしますか。',
           template: {
@@ -71,12 +69,7 @@ export class LineEvRouter {
 
     lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^アカウントの停止をします。$/),
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, {
-          type: 'text',
-          text: 'この操作は DM でのみ可能です。',
-        });
-      },
+      task: (event) => this.replyMsgOfOnlyDM(event.replyToken),
     });
 
     lineEvRoutingHelper.msgEv({
@@ -86,7 +79,7 @@ export class LineEvRouter {
       },
       task: async (event) => {
         const msg = await usersLinesService.replyMsgWhenClosingUser(event);
-        lineClient.replyMessage(event.replyToken, {
+        this.lineClient.replyMessage(event.replyToken, {
           type: 'text',
           text: msg,
         });
@@ -95,12 +88,7 @@ export class LineEvRouter {
 
     lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^本当にアカウントの停止をします。$/),
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, {
-          type: 'text',
-          text: 'この操作は DM でのみ可能です。',
-        });
-      },
+      task: (event) => this.replyMsgOfOnlyDM(event.replyToken),
     });
 
     lineEvRoutingHelper.msgEv({
@@ -108,8 +96,8 @@ export class LineEvRouter {
       source: {
         type: 'user',
       },
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('DM'));
+      task: (event) => {
+        this.lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('DM'));
       },
     });
 
@@ -118,8 +106,8 @@ export class LineEvRouter {
       source: {
         type: 'group',
       },
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('グループ'));
+      task: (event) => {
+        this.lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('グループ'));
       },
     });
 
@@ -128,8 +116,8 @@ export class LineEvRouter {
       source: {
         type: 'room',
       },
-      task: async (event) => {
-        lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('ルーム'));
+      task: (event) => {
+        this.lineClient.replyMessage(event.replyToken, this.confirmAddingNewMachine('ルーム'));
       },
     });
 
@@ -141,14 +129,60 @@ export class LineEvRouter {
           destinationType: event.source.type,
           destinationId: event.source[event.source.type + 'Id'],
         });
-        lineClient.replyMessage(event.replyToken, msg);
+        this.lineClient.replyMessage(event.replyToken, msg);
       },
     });
 
     lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^ポスト観測機の設定をします。$/),
+      source: {
+        type: 'user',
+      },
       task: async (event) => {
-        lineClient.replyMessage(event.replyToken, {
+        const msg = await usersLinesService.replyMsgWhenUsingConfUI(event.source.userId);
+        this.lineClient.replyMessage(event.replyToken, {
+          type: 'text',
+          text: '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。',
+          quickReply: {
+            items: [
+              {
+                type: 'action',
+                imageUrl: 'https://img.icons8.com/ios-glyphs/72/mailbox-closed-flag-up.png',
+                action: {
+                  type: 'message',
+                  label: 'Tempura',
+                  text: 'ポスト観測機『oca17PJc1i2Bd9nur6EVS2』の設定を開始します。',
+                },
+              },
+              {
+                type: 'action',
+                imageUrl: 'https://example.com/tempura.png',
+                action: {
+                  type: 'message',
+                  label: 'Tempura',
+                  text: 'Tempura',
+                },
+              },
+            ],
+          },
+        });
+      },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機の設定をします。$/),
+      task: (event) => this.replyMsgOfOnlyDM(event.replyToken),
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機『.+』の設定を開始します。$/),
+      source: {
+        type: 'user',
+      },
+      task: (event) => {
+        const uniqueCode = event.message.text.split(/『|』/)[1];
+
+        this.lineClient.replyMessage(event.replyToken, {
           type: 'template',
           altText: '【ポスト観測機の設定】',
           template: {
@@ -158,22 +192,22 @@ export class LineEvRouter {
               {
                 type: 'message',
                 label: '名前変更',
-                text: 'ポスト観測機の名前変更をします。',
+                text: `ポスト観測機『${uniqueCode}』の名前変更をします。`,
               },
               {
                 type: 'message',
                 label: '合言葉更新',
-                text: 'ポスト観測機の合言葉更新をします。',
+                text: `ポスト観測機『${uniqueCode}』の合言葉更新をします。`,
               },
               {
                 type: 'message',
                 label: '撮影頻度の変更',
-                text: 'ポスト観測機の撮影頻度の変更をします。',
+                text: `ポスト観測機『${uniqueCode}』の撮影頻度の変更をします。`,
               },
               {
                 type: 'message',
-                label: '停止',
-                text: 'ポスト観測機の停止をします。',
+                label: '停止・再稼働',
+                text: `ポスト観測機『${uniqueCode}』の停止・再稼働をします。`,
               },
             ],
           },
@@ -182,12 +216,17 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機『.+』の設定を開始します。$/),
+      task: (event) => this.replyMsgOfOnlyDM(event.replyToken),
+    });
+
+    lineEvRoutingHelper.msgEv({
       type: new MsgTypeText(/^ポスト観測機の停止をします。$/),
       source: {
         type: 'user',
       },
       task: async () => {
-        // lineClient.replyMessage(event.replyToken, {});
+        // this.lineClient.replyMessage(event.replyToken, {});
       },
     });
 
@@ -197,7 +236,7 @@ export class LineEvRouter {
         type: 'user',
       },
       task: async () => {
-        // lineClient.replyMessage(event.replyToken, {});
+        // this.lineClient.replyMessage(event.replyToken, {});
       },
     });
 
@@ -207,7 +246,7 @@ export class LineEvRouter {
         type: 'user',
       },
       task: async () => {
-        // lineClient.replyMessage(event.replyToken, {});
+        // this.lineClient.replyMessage(event.replyToken, {});
       },
     });
 
@@ -217,7 +256,7 @@ export class LineEvRouter {
         type: 'user',
       },
       task: async () => {
-        // lineClient.replyMessage(event.replyToken, {});
+        // this.lineClient.replyMessage(event.replyToken, {});
       },
     });
 
@@ -229,7 +268,7 @@ export class LineEvRouter {
       task: async (event) => {
         // TODO: Coming soon...
         const msg = 'Coming soon...'; // await usersLinesService.replyMsgWhenAddingEmail(event);
-        lineClient.pushMessage(event.source.userId, {
+        this.lineClient.replyMessage(event.replyToken, {
           type: 'text',
           text: msg,
         });
@@ -262,5 +301,12 @@ export class LineEvRouter {
         ],
       },
     };
+  }
+
+  private replyMsgOfOnlyDM(replyToken: string): void {
+    this.lineClient.replyMessage(replyToken, {
+      type: 'text',
+      text: 'この操作は DM でのみ可能です。',
+    });
   }
 }

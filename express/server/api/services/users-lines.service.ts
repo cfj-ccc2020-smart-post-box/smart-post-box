@@ -222,8 +222,8 @@ export class UsersLinesService {
             imageUrl: 'https://img.icons8.com/ios-glyphs/72/mailbox-closed-flag-up.png',
             action: {
               type: 'message',
-              label: machine.name === '' ? machine.uniqueCode : 'by ' + machine.name,
-              text: 'Sushi',
+              label: machine.name === '' ? machine.uniqueCode : `${machine.name}: ${machine.uniqueCode}`,
+              text: 'ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
             },
           };
         }

@@ -14,13 +14,11 @@ import { LineEvRouter } from '../line';
 import * as slackBolt from '@slack/bolt';
 import { createConnection, Connection, getConnectionManager } from 'typeorm';
 import fileUpload from 'express-fileupload';
-import { PhotosService } from '../api/services/photos.service';
 import morgan from 'morgan';
 
 class ExpressServer {
   private app = express();
   private dbConnection: Connection;
-  readonly photosService: PhotosService;
 
   constructor() {
     const root = path.normalize(__dirname + '/../..');
@@ -53,7 +51,6 @@ class ExpressServer {
       })
     );
     this.app.use(morgan('common'));
-    this.photosService = new PhotosService();
 
     // Define app's routing
     RegisterRoutes(this.app);
@@ -201,22 +198,6 @@ class ExpressServer {
       } else {
         res.redirect('https://' + req.headers.host + req.url);
       }
-    });
-  }
-
-  public setPhotoReceiver(config: line.ClientConfig, photoHost: string): void {
-    const lineClient = new line.Client(config);
-
-    this.app.post('/photo-receiver/:uniqueCode', async (req, res) => {
-      res.end('received');
-
-      const msg = await this.photosService.msgOfNewPhoto(
-        req.params.uniqueCode,
-        photoHost,
-        req['files']['upfile']['data']
-      );
-
-      await lineClient.pushMessage(msg.destinationId, msg.msg);
     });
   }
 
