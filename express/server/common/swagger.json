@@ -27,7 +27,7 @@
   "paths": {
     "/photos/last-title/{uniqueCode}": {
       "get": {
-        "operationId": "ReceiveNotification",
+        "operationId": "GetLastPhotoTitleByMachineId",
         "responses": {
           "200": {
             "content": {

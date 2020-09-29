@@ -4,16 +4,14 @@ import { MachinesModel } from '../models/machines.model';
 import { MachinesEntity } from '../entities/machines.entity';
 
 export class PostBoxService {
-  readonly lineClient: line.Client;
   readonly machinesModel: MachinesModel;
 
-  constructor(ops: { lineClientConfig: line.ClientConfig }) {
-    this.lineClient = new line.Client(ops.lineClientConfig);
+  constructor() {
     this.machinesModel = new MachinesModel();
   }
 
-  public async sendMsgOfNewMail(uniqueCode: string): Promise<void> {
-    L.info('sendMsgOfNewMail');
+  public async msgOfNewMail(uniqueCode: string): Promise<{ destinationId: string; msg: line.TextMessage }> {
+    L.info('msgOfNewMail');
 
     let machine: MachinesEntity;
 
@@ -24,12 +22,15 @@ export class PostBoxService {
     }
 
     if (!machine) {
-      return;
+      throw new Error('invalid unique code.');
     }
 
-    this.lineClient.pushMessage(machine.destinationId, {
-      type: 'text',
-      text: `【投函通知】ポストへの投函を検知しました。${machine.name === '' ? '' : 'by ' + machine.name}`,
-    });
+    return {
+      destinationId: machine.destinationId,
+      msg: {
+        type: 'text',
+        text: `【投函通知】ポストへの投函を検知しました。${machine.name === '' ? '' : 'by ' + machine.name}`,
+      },
+    };
   }
 }

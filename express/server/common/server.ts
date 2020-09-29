@@ -13,11 +13,14 @@ import * as line from '@line/bot-sdk';
 import { LineEvRouter } from '../line';
 import * as slackBolt from '@slack/bolt';
 import { createConnection, Connection, getConnectionManager } from 'typeorm';
+import fileUpload from 'express-fileupload';
 import fs from 'fs';
+import { PhotosService } from '../api/services/photos.service';
 
 class ExpressServer {
   private app = express();
   private dbConnection: Connection;
+  readonly photosService: PhotosService;
 
   constructor() {
     const root = path.normalize(__dirname + '/../..');
@@ -44,6 +47,11 @@ class ExpressServer {
     this.app.use(helmet.xssFilter());
     this.app.use(cookieParser(process.env.SESSION_SECRET || 'mySecret'));
     this.app.use(express.static(`${root}/../vue/dist`));
+    this.app.use(
+      fileUpload({
+        limits: { fileSize: 50 * 1024 * 1024 },
+      })
+    );
     this.setPhotoReceiver();
 
     // Define app's routing
@@ -197,19 +205,12 @@ class ExpressServer {
 
   public setPhotoReceiver(): void {
     this.app.post('/photo-receiver/:uniqueCode', (req, res) => {
-      const data = [];
-      let totalLength = 0;
-
-      req
-        .on('data', (chunk) => {
-          data.push(chunk);
-          totalLength += chunk.length;
-        })
-        .on('end', () => {
-          const b = Buffer.concat(data, totalLength);
-          fs.writeFileSync(path.join(__dirname, '..', '..', '..', 'vue', 'dist', 'img', 'foo.jpg'), b);
-          res.send(req.query.uniqueCode);
-        });
+      fs.writeFileSync(
+        path.join(__dirname, '..', '..', '..', 'vue', 'dist', 'img', 'foo.jpg'),
+        req['files']['upfile']['data']
+      );
+      console.log(req.params.uniqueCode);
+      res.end('ok');
     });
   }
 

@@ -1,21 +1,60 @@
 import L from '../../common/logger';
 import * as line from '@line/bot-sdk';
+import { PhotosModel } from '../models/photos.model';
+import { PhotosEntity } from '../entities/photos.entity';
 import { MachinesModel } from '../models/machines.model';
 import { MachinesEntity } from '../entities/machines.entity';
+import short from 'short-uuid';
+import fs from 'fs';
+import path from 'path';
 
 export class PhotosService {
-  readonly lineClient: line.Client;
+  readonly photosModel: PhotosModel;
   readonly machinesModel: MachinesModel;
 
-  constructor(ops: { lineClientConfig: line.ClientConfig }) {
-    this.lineClient = new line.Client(ops.lineClientConfig);
+  constructor() {
+    this.photosModel = new PhotosModel();
     this.machinesModel = new MachinesModel();
   }
 
-  public async sendMsgOfNewMail(uniqueCode: string): Promise<void> {
-    L.info('sendMsgOfNewMail');
+  public async getLastPhotoTitleByMachineId(uniqueCode: string): Promise<string> {
+    L.info('getLastPhotoTitleByMachineId');
 
     let machine: MachinesEntity;
+
+    try {
+      machine = await this.machinesModel.getMachineByUniqueCode(uniqueCode);
+      if (!machine) {
+        return 'invalid unique code';
+      }
+    } catch (err) {
+      L.info(err);
+      return 'internal server error';
+    }
+
+    try {
+      const photo = await this.photosModel.getLastPhotoByMachineId(machine.id);
+
+      if (!photo) {
+        return 'there is not that photo.';
+      }
+
+      return photo.title;
+    } catch (err) {
+      L.info(err);
+      return 'internal server error';
+    }
+  }
+
+  public async msgOfNewPhoto(
+    uniqueCode: string,
+    photoHost: string,
+    photoData: Buffer
+  ): Promise<{ destinationId: string; msg: line.ImageMessage }> {
+    L.info('msgOfNewPhoto');
+
+    let machine: MachinesEntity;
+    let photo: PhotosEntity;
 
     try {
       machine = await this.machinesModel.getMachineByUniqueCode(uniqueCode);
@@ -24,12 +63,35 @@ export class PhotosService {
     }
 
     if (!machine) {
-      return;
+      throw new Error('invalid unique code.');
     }
 
-    this.lineClient.pushMessage(machine.destinationId, {
-      type: 'text',
-      text: `【投函通知】ポストへの投函を検知しました。${machine.name === '' ? '' : 'by ' + machine.name}`,
-    });
+    const title = short.generate();
+
+    try {
+      fs.writeFileSync(
+        path.join(__dirname, '..', '..', '..', '..', 'vue', 'dist', 'img', 'photos', title + '.jpg'),
+        photoData
+      );
+    } catch (err) {
+      throw new Error(err);
+    }
+
+    try {
+      photo = await this.photosModel.addNewPhoto(machine.id, title);
+    } catch (err) {
+      throw new Error(err);
+    }
+
+    const imgUrl = 'https://' + photoHost + '/img/photos/' + photo.title + '.jpg';
+
+    return {
+      destinationId: machine.destinationId,
+      msg: {
+        type: 'image',
+        originalContentUrl: imgUrl,
+        previewImageUrl: imgUrl,
+      },
+    };
   }
 }
