@@ -146,7 +146,7 @@ class ExpressServer {
   public async setNotFoundPage(): Promise<void> {
     // 404
     this.app.use((req, res) => {
-      if (req.xhr) {
+      if (req.xhr || req.headers['user-agent'] === 'ESP' || req.headers['user-agent'].indexOf('curl') === 0) {
         res.status(404);
 
         return res.json({
@@ -166,7 +166,7 @@ class ExpressServer {
     this.app.use((err, req, res, next) => {
       console.log(next);
 
-      if (req.xhr) {
+      if (req.xhr || req.headers['user-agent'] === 'ESP' || req.headers['user-agent'].indexOf('curl') === 0) {
         res.status(500);
 
         res.json({

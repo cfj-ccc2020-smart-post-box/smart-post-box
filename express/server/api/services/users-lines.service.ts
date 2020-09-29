@@ -220,12 +220,31 @@ export class UsersLinesService {
         (machine: MachinesEntity): line.FlexBubble => {
           return {
             type: 'bubble',
-            // imageUrl: 'https://img.icons8.com/ios-glyphs/72/mailbox-closed-flag-up.png',
-            // action: {
-            //   type: 'message',
-            //   label: machine.name === '' ? machine.uniqueCode : `${machine.name}: ${machine.uniqueCode}`,
-            //   text: 'ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
-            // },
+            body: {
+              type: 'box',
+              layout: 'vertical',
+              contents: [
+                {
+                  type: 'text',
+                  text: machine.name === '' ? machine.uniqueCode : `${machine.name}: ${machine.uniqueCode}`,
+                },
+              ],
+            },
+            footer: {
+              type: 'box',
+              layout: 'vertical',
+              contents: [
+                {
+                  type: 'text',
+                  text: '選択',
+                  action: {
+                    type: 'message',
+                    label: 'action',
+                    text: 'ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
+                  },
+                },
+              ],
+            },
           };
         }
       );

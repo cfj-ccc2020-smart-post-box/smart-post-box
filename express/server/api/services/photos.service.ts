@@ -68,22 +68,26 @@ export class PhotosService {
     }
 
     const title = short.generate();
-    const photoData = Buffer.from(photoBase64, 'base64');
-    const photoDataInfo = await fileType.fromBuffer(photoData);
+    let photoData = Buffer.from(photoBase64, 'base64');
+    let photoDataInfo = await fileType.fromBuffer(photoData);
 
-    // if (photoDataInfo.ext !== 'jpg' || photoDataInfo.mime !== 'image/jpeg') {
-    //   L.info('plz post jpg.');
-    //   throw new Error('plz post jpg.');
-    // }
+    if (photoDataInfo.ext !== 'jpg' || photoDataInfo.mime !== 'image/jpeg') {
+      L.info('plz post jpg.');
+      throw new Error('plz post jpg.');
+    }
 
     try {
       fs.writeFileSync(
         path.join(__dirname, '..', '..', '..', '..', 'vue', 'dist', 'img', 'photos', title + '.jpg'),
-        Buffer.from(photoBase64, 'base64')
+        photoData
       );
     } catch (err) {
       throw new Error(err);
     }
+
+    photoBase64 = null; // GC
+    photoData = null; // GC
+    photoDataInfo = null; // GC
 
     try {
       photo = await this.photosModel.addNewPhoto(machine.id, title);

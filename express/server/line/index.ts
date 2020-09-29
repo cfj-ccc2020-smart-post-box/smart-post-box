@@ -180,8 +180,8 @@ export class LineEvRouter {
               },
               {
                 type: 'message',
-                label: '停止・再稼働',
-                text: `ポスト観測機『${uniqueCode}』の停止・再稼働をします。`,
+                label: '登録解除',
+                text: `ポスト観測機『${uniqueCode}』の登録解除をします。`,
               },
             ],
           },
@@ -195,13 +195,37 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
-      type: new MsgTypeText(/^ポスト観測機の停止をします。$/),
+      type: new MsgTypeText(/^ポスト観測機『.+』の登録解除をします。$/),
       source: {
         type: 'user',
       },
-      task: async () => {
-        // this.lineClient.replyMessage(event.replyToken, {});
+      task: async (event) => {
+        this.lineClient.replyMessage(event.replyToken, {
+          type: 'template',
+          altText: '本当にポスト観測機の登録を解除しますか。',
+          template: {
+            type: 'confirm',
+            text: '本当にアカウントの停止をしますか。',
+            actions: [
+              {
+                type: 'message',
+                label: 'はい',
+                text: '本当にアカウントの停止をします。',
+              },
+              {
+                type: 'message',
+                label: 'いいえ',
+                text: 'アカウントの停止をキャンセルします。',
+              },
+            ],
+          },
+        });
       },
+    });
+
+    lineEvRoutingHelper.msgEv({
+      type: new MsgTypeText(/^ポスト観測機『.+』の登録解除をします。$/),
+      task: async (event) => this.replyMsgOfOnlyDM(event.replyToken),
     });
 
     lineEvRoutingHelper.msgEv({
