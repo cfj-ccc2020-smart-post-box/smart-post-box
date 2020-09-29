@@ -34,4 +34,14 @@ export class MachinesModel {
 
     return machine;
   }
+
+  public async getMachinesByUsersLineId(usersLinesId: number): Promise<MachinesEntity[]> {
+    L.info('getMachinesByUsersLineId');
+
+    const machineRepository = getRepository(MachinesEntity);
+
+    const machines = await machineRepository.find({ usersLinesId, using: true });
+
+    return machines;
+  }
 }

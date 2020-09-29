@@ -173,4 +173,78 @@ export class UsersLinesService {
 
     return replyMsg;
   }
+
+  public async replyMsgWhenUsingConfUI(lineId: string): Promise<line.TextMessage> {
+    L.info('replyMsgWhenUsingConfUI');
+
+    let user: UsersLinesEntity;
+    let machines: MachinesEntity[];
+    let replyMsg: line.TextMessage;
+
+    try {
+      user = await this.usersLinesModel.getUserByLineId(lineId);
+
+      if (!user) {
+        replyMsg = {
+          type: 'text',
+          text: '登録されていない LINE アカウントのため、スマポートポストボックスの観測機の設定を開始できません。',
+        };
+
+        return replyMsg;
+      }
+    } catch (err) {
+      L.info(err);
+
+      replyMsg = {
+        type: 'text',
+        text: '何だかの事情でスマポートポストボックスの観測機の設定を開始できません... ><',
+      };
+
+      return replyMsg;
+    }
+
+    try {
+      machines = await this.machinesModel.getMachinesByUsersLineId(user.id);
+
+      if (machines.length === 0) {
+        replyMsg = {
+          type: 'text',
+          text: 'アカウントに登録された端末がありません。\n\n「メニュー」から「ポスト観測機の追加」を行って下さい。',
+        };
+
+        return replyMsg;
+      }
+
+      const items = machines.map(
+        (machine: MachinesEntity): line.QuickReplyItem => {
+          return {
+            type: 'action',
+            imageUrl: 'https://img.icons8.com/ios-glyphs/72/mailbox-closed-flag-up.png',
+            action: {
+              type: 'message',
+              label: machine.name === '' ? machine.uniqueCode : 'by ' + machine.name,
+              text: 'Sushi',
+            },
+          };
+        }
+      );
+
+      replyMsg = {
+        type: 'text',
+        text: '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。',
+        quickReply: {
+          items,
+        },
+      };
+    } catch (err) {
+      L.info(err);
+
+      replyMsg = {
+        type: 'text',
+        text: '何だかの事情でスマポートポストボックスの観測機の設定を開始できません... ><',
+      };
+    }
+
+    return replyMsg;
+  }
 }

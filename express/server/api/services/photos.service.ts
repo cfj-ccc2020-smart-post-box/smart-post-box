@@ -83,7 +83,7 @@ export class PhotosService {
       throw new Error(err);
     }
 
-    const imgUrl = 'https://' + photoHost + '/img/photos/' + photo.title + '.jpg';
+    const imgUrl = 'https://' + photoHost.trim() + '/img/photos/' + photo.title + '.jpg';
 
     return {
       destinationId: machine.destinationId,
