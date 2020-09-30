@@ -2,7 +2,7 @@
   "name": "smart-post-box",
   "version": "1.0.0",
   "private": true,
-  "description": "The template to use ESP-32, Arduino, PlatformIO, Vue, PWA, Express, Slack, LINE, LINE-LIFF, TypeScript ...etc",
+  "description": "Code for Japan - Civictech Challenge Cup 2020 Team:ARROW It's using ESP-32, Arduino, PlatformIO, Vue, PWA, Express, Slack, LINE, LINE-LIFF, TypeScript ...etc",
   "keywords": [
     "ESP-32",
     "PlatformIO",
@@ -15,13 +15,13 @@
     "LINE-LIFF",
     "TypeScript"
   ],
-  "homepage": "https://github.com/waricoma/smart-post-box#readme",
+  "homepage": "https://github.com/cfj-ccc2020-smart-post-box/smart-post-box#readme",
   "bugs": {
-    "url": "https://github.com/waricoma/smart-post-box/issues"
+    "url": "https://github.com/cfj-ccc2020-smart-post-box/smart-post-box/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waricoma/smart-post-box.git"
+    "url": "git+https://github.com/cfj-ccc2020-smart-post-box/smart-post-box.git"
   },
   "license": "GPL-2.0-only",
   "author": "waricoma <waricoma@devne.co>",
