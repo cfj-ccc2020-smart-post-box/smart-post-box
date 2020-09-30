@@ -17,8 +17,8 @@ export class PostBoxController extends Controller {
     return 'received';
   }
 
-  @Post('/sync/{uniqueCode}')
-  public async sync(uniqueCode: string): Promise<string> {
+  @Post('/sync/{uniqueCode}/{modelName}/{isCamera}')
+  public async sync(uniqueCode: string, isCamera: 'true' | 'false'): Promise<string> {
     return ''; //await postBoxService.cron
   }
 }
