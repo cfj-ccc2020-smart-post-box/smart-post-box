@@ -1,4 +1,3 @@
-import L from '../../../common/logger';
 import { Controller, Get, Post, Route, Request } from 'tsoa';
 import { PhotosService } from '../../services/photos.service';
 import * as line from '@line/bot-sdk';
@@ -24,8 +23,13 @@ export class PhotosController extends Controller {
     return lastTitle;
   }
 
-  @Post('/receiver/{uniqueCode}/{length}/{base64}')
-  public async receivePhotoData(uniqueCode: string, length: number, @Request() req: express.Request): Promise<string> {
+  @Post('/receiver/{uniqueCode}/{index}/{length}/*')
+  public async receivePhotoData(
+    uniqueCode: string,
+    index: number,
+    length: number,
+    @Request() req: express.Request
+  ): Promise<string> {
     if (!(await machinesModel.getMachineByUniqueCode(uniqueCode))) {
       return 'invalid unique code.';
     }
@@ -34,14 +38,14 @@ export class PhotosController extends Controller {
       return 'plz under 20.';
     }
 
-    if (!(uniqueCode in base64Cache)) {
+    if (!(uniqueCode in base64Cache) || index === 1) {
       base64Cache[uniqueCode] = {
         base64: '',
         count: 0,
       };
     }
 
-    base64Cache[uniqueCode].base64 = req.path.split(`${uniqueCode}/${length}/`)[1];
+    base64Cache[uniqueCode].base64 += req.path.split(`${uniqueCode}/${index}/${length}/`)[1];
     ++base64Cache[uniqueCode].count;
 
     if (length !== base64Cache[uniqueCode].count) {

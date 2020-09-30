@@ -1,4 +1,4 @@
-import { Controller, Get, Route } from 'tsoa';
+import { Controller, Get, Post, Route } from 'tsoa';
 import { PostBoxService } from '../../services/post-box.service';
 import * as line from '@line/bot-sdk';
 
@@ -17,5 +17,8 @@ export class PostBoxController extends Controller {
     return 'received';
   }
 
-  
+  @Post('/sync/{uniqueCode}')
+  public async sync(uniqueCode: string): Promise<string> {
+    return ''; //await postBoxService.cron
+  }
 }

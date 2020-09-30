@@ -53,7 +53,7 @@
         ]
       }
     },
-    "/photos/receiver/{uniqueCode}/{length}/{base64}": {
+    "/photos/receiver/{uniqueCode}/{index}/{length}/*": {
       "post": {
         "operationId": "ReceivePhotoData",
         "responses": {
@@ -80,6 +80,15 @@
           },
           {
             "in": "path",
+            "name": "index",
+            "required": true,
+            "schema": {
+              "format": "double",
+              "type": "number"
+            }
+          },
+          {
+            "in": "path",
             "name": "length",
             "required": true,
             "schema": {
@@ -93,6 +102,34 @@
     "/post-box/receiver/{uniqueCode}": {
       "get": {
         "operationId": "ReceiveNotification",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Ok"
+          }
+        },
+        "security": [],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "uniqueCode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/post-box/sync/{uniqueCode}": {
+      "post": {
+        "operationId": "Sync",
         "responses": {
           "200": {
             "content": {
