@@ -4,8 +4,8 @@ import * as line from '@line/bot-sdk';
 
 const postBoxService = new PostBoxService();
 const lineClient = new line.Client({
-  channelAccessToken: process.env.LINE_CH_ACCESS_TOKEN.toString(),
-  channelSecret: process.env.LINE_CH_SECRET.toString(),
+  channelAccessToken: (process.env.LINE_CH_ACCESS_TOKEN || 'test').toString(),
+  channelSecret: (process.env.LINE_CH_SECRET || 'test').toString(),
 });
 
 @Route('post-box')
