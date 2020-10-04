@@ -39,18 +39,18 @@ describe('UsersLinesService', () => {
 
   it('If visitor already has account, It will reply this.', async () => {
     const replyMsg = await usersLinesService.replyMsgWhenSingUpUser({ source: { userId: lineId } });
-    expect(replyMsg['altText'].indexOf('スマポートポストボックスアカウントの登録は') !== -1).toBe(true);
+    expect(replyMsg['altText'].indexOf('スマートポストボックスアカウントの登録は') !== -1).toBe(true);
   });
 
   it('If user requested to close the account, It will reply this.', async () => {
     const replyMsg = await usersLinesService.replyMsgWhenClosingUser({ source: { userId: lineId } });
-    expect(replyMsg.indexOf('スマポートポストボックスアカウントの停止が完了しました。 日時: ')).toBe(0);
+    expect(replyMsg.indexOf('スマートポストボックスアカウントの停止が完了しました。 日時: ')).toBe(0);
   });
 
   it('If unknown user requested to close the account, It will reply this.', async () => {
     const replyMsg = await usersLinesService.replyMsgWhenClosingUser({ source: { userId: 'unknown' } });
     expect(replyMsg).toBe(
-      '登録されていない LINE アカウントのため、スマポートポストボックスアカウントの停止に失敗しました。'
+      '登録されていない LINE アカウントのため、スマートポストボックスアカウントの停止に失敗しました。'
     );
   });
 });

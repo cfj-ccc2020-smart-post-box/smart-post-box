@@ -61,19 +61,19 @@ jobs:
             - ~/.cache/vue/yarn
           key: yarn-packages-{{ checksum "./vue/yarn.lock" }}
 
-      - run: yarn docker:in && yarn sqlite:on
+      - run: yarn dokku:in && yarn sqlite:on
 
       - run: yarn lint-code-express
 
       - run: yarn lint-code-vue
 
-      - run: yarn migration:run
+      - run: DOKKU_IN=true SQLITE=true yarn migration:run
 
-      - run: yarn build-express
+      - run: DOKKU_IN=true SQLITE=true yarn build-express
 
       - run: yarn build-vue
 
-      - run: yarn test-express
+      - run: DOKKU_IN=true SQLITE=true yarn test-express
 
       - run: yarn test-vue
 
