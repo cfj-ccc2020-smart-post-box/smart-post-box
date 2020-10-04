@@ -29,33 +29,37 @@ jobs:
             -H "Content-Type: application/json" \
             -d "{ \"text\": \":arrow_forward: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" }";fi
 
+      - run: curl -o- -L https://yarnpkg.com/install.sh | bash
+
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "./package.json" }}
-            - v1-dependencies-{{ checksum "./express/package.json" }}
-            - v1-dependencies-{{ checksum "./vue/package.json" }}
+            - yarn-packages-{{ checksum "./yarn.lock" }}
+            - yarn-packages-{{ checksum "./express/yarn.lock" }}
+            - yarn-packages-{{ checksum "./vue/yarn.lock" }}
             # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+            - yarn-packages-
 
-      - run: cd ./express && yarn install
+      - run: yarn install --frozen-lockfile
 
-      - run: cd ./vue && yarn install
+      - run: cd ./express && yarn install --frozen-lockfile
 
-      - save_cache:
-          paths:
-            - ./node_modules
-          key: v1-dependencies-{{ checksum "./package.json" }}
+      - run: cd ./vue && yarn install --frozen-lockfile
 
       - save_cache:
           paths:
-            - ./express/node_modules
-          key: v1-dependencies-{{ checksum "./express/package.json" }}
+            - ~/.cache/yarn
+          key: yarn-packages-{{ checksum "yarn.lock" }}
 
       - save_cache:
           paths:
-            - ./vue/node_modules
-          key: v1-dependencies-{{ checksum "./vue/package.json" }}
+            - ~/.cache/express/yarn
+          key: yarn-packages-{{ checksum "./express/yarn.lock" }}
+
+      - save_cache:
+          paths:
+            - ~/.cache/vue/yarn
+          key: yarn-packages-{{ checksum "./vue/yarn.lock" }}
 
       - run: yarn docker:in && yarn sqlite:on
 

@@ -67,6 +67,6 @@ export class MachinesModel {
   }
 
   public async msgOfSyncing() {
-    return
+    return;
   }
 }

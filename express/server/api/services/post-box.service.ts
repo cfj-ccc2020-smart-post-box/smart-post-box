@@ -36,5 +36,5 @@ export class PostBoxService {
     };
   }
 
-  public async ;
+  public async;
 }
