@@ -41,6 +41,9 @@ export class MachinesEntity extends BaseEntity {
   @Column({ name: 'cron', default: 30, nullable: false })
   public cron: number;
 
+  @Column({ name: 'synced', default: true, nullable: false })
+  public synced: boolean;
+
   @Column({ name: 'using', default: true, nullable: false })
   public using: boolean;
 

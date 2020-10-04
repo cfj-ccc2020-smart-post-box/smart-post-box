@@ -5,11 +5,21 @@
 version: 2
 jobs:
   build:
-    machine:
-      image: circleci/classic:edge
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:12.18.2
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
     working_directory: ~/test
+
     steps:
       - checkout
+      - setup_remote_docker
+
       - run:
           name: Slack Notification [START]
           command: |
@@ -18,70 +28,55 @@ jobs:
             -X POST \
             -H "Content-Type: application/json" \
             -d "{ \"text\": \":arrow_forward: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" }";fi
-      - run:
-          name: Install Docker Compose
-          command: |
-            curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
-            chmod +x ~/docker-compose
-            sudo mv ~/docker-compose /usr/local/bin/docker-compose
-      - run:
-          name: docker-compose up
-          command: |
-            set -x
-            export COMPOSE_FILE=docker-compose.dev.yml && docker-compose up --build -d
-      - run:
-          name: Explain than in the docker
-          command: |
-            set -x
-            docker-compose exec app yarn docker:in
-      - run:
-          name: lint for express
-          command: |
-            set -x
-            docker-compose exec app yarn lint-code-express
-      - run:
-          name: lint for vue
-          command: |
-            set -x
-            docker-compose exec app yarn lint-code-vue
-      - run:
-          name: migration:run
-          command: |
-            set -x
-            docker-compose exec app yarn migration:run
-      - run:
-          name: build for express
-          command: |
-            set -x
-            docker-compose exec app yarn build-express
-      - run:
-          name: build for vue
-          command: |
-            set -x
-            docker-compose exec app yarn build-vue
-      - run:
-          name: test for express
-          command: |
-            set -x
-            docker-compose exec app yarn test-express
-      - run:
-          name: test for vue
-          command: |
-            set -x
-            docker-compose exec app yarn test-vue
-      - run:
-          name: codecov for express
-          command: |
-            set -x
-            if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else docker-compose exec app yarn codecov-express --token=$CODECOV_TOKEN;fi
-      - run:
-          name: codecov for vue
-          command: |
-            set -x
-            if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else docker-compose exec app yarn codecov-vue --token=$CODECOV_TOKEN;fi
-      - run:
-          name: docker-compose down
-          command: docker-compose down
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "./package.json" }}
+            - v1-dependencies-{{ checksum "./express/package.json" }}
+            - v1-dependencies-{{ checksum "./vue/package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: cd ./express && yarn install
+
+      - run: cd ./vue && yarn install
+
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: v1-dependencies-{{ checksum "./package.json" }}
+
+      - save_cache:
+          paths:
+            - ./express/node_modules
+          key: v1-dependencies-{{ checksum "./express/package.json" }}
+
+      - save_cache:
+          paths:
+            - ./vue/node_modules
+          key: v1-dependencies-{{ checksum "./vue/package.json" }}
+
+      - run: yarn docker:in && yarn sqlite:on
+
+      - run: yarn lint-code-express
+
+      - run: yarn lint-code-vue
+
+      - run: yarn migration:run
+
+      - run: yarn build-express
+
+      - run: yarn build-vue
+
+      - run: yarn test-express
+
+      - run: yarn test-vue
+
+      - run: if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else yarn codecov-vue --token=$CODECOV_TOKEN;fi
+
+      - run: if [ -z $CODECOV_TOKEN ];then echo "CODECOV_TOKEN is not configured.";else yarn codecov-express --token=$CODECOV_TOKEN;fi
+
       - run:
           name: Slack Notification [FINISH]
           command: |
@@ -90,6 +85,7 @@ jobs:
             -X POST \
             -H "Content-Type: application/json" \
             -d "{ \"text\": \":tada: ${CIRCLE_BRANCH} of https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> COVERAGE: *$(sleep 3 && curl https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/branch/master/graph/badge.txt)%* https://codecov.io/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}\n> STATUS: https://circleci.com/gh/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.png?r=$(cat /dev/urandom | base64 | fold -w 10 | head -n 1)\" }";fi
+
       - run:
           name: Slack Notification [ERROR]
           command: |

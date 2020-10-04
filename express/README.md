@@ -21,7 +21,7 @@
 
 ### 🏠 [Homepage](https://github.com/cfj-ccc2020-smart-post-box/smart-post-box#readme)
 
-### ✨ [Demo](https://youtu.be/A8zUHC4ug6E)
+### ✨ [Demo](https://www.youtube.com/watch?v=A8zUHC4ug6E&feature=youtu.be)
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ yarn run test
 
 👤 **waricoma <waricoma@devne.co>**
 
-* Website: https://www.wantedly.com/users/18472356
+* Website: https://www.wantedly.com/id/motone_adachi
 * Twitter: [@waritocomamtta](https://twitter.com/waritocomamtta)
 * Github: [@waricoma](https://github.com/waricoma)
 * LinkedIn: [@motone-adachi-b92955145](https://linkedin.com/in/motone-adachi-b92955145)

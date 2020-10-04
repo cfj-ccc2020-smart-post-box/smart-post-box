@@ -65,4 +65,8 @@ export class MachinesModel {
 
     await machineRepository.save(machine);
   }
+
+  public async msgOfSyncing() {
+    return
+  }
 }
