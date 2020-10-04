@@ -7,8 +7,8 @@ import { MachinesModel } from '../../models/machines.model';
 const photosService = new PhotosService();
 
 const lineClient = new line.Client({
-  channelAccessToken: process.env.LINE_CH_ACCESS_TOKEN.toString(),
-  channelSecret: process.env.LINE_CH_SECRET.toString(),
+  channelAccessToken: (process.env.LINE_CH_ACCESS_TOKEN || 'test').toString(),
+  channelSecret: (process.env.LINE_CH_SECRET || 'test').toString(),
 });
 
 const machinesModel = new MachinesModel();
