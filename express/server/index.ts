@@ -2,11 +2,11 @@ import './common/env';
 import { expressServer } from './common/server';
 
 const lineConfig = {
-  channelAccessToken: process.env.LINE_CH_ACCESS_TOKEN.toString(),
-  channelSecret: process.env.LINE_CH_SECRET.toString(),
+  channelAccessToken: (process.env.LINE_CH_ACCESS_TOKEN || 'test').toString(),
+  channelSecret: (process.env.LINE_CH_SECRET || 'test').toString(),
 };
 
-const port = parseInt(process.env.PORT);
+const port = parseInt(process.env.PORT || '5000', 10);
 
 (async (): Promise<void> => {
   await expressServer.connectToDB();

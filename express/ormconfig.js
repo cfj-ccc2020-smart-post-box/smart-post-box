@@ -1,3 +1,7 @@
+process.env.TS_NODE = (process.env.TS_NODE || 'false').toLowerCase();
+process.env.IN_DOKKU = (process.env.IN_DOKKU || 'false').toLowerCase();
+process.env.SQLITE = (process.env.SQLITE || 'false').toLowerCase();
+
 const ormConfig = {
   type: 'postgres',
   synchronize: process.env.NODE_ENV === 'test',

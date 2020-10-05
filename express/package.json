@@ -31,7 +31,7 @@
     "build": "ts-node ./build.ts && tsc --lib es2020",
     "dev": "export TS_NODE='true' && nodemon ./server/index.ts | pino-pretty",
     "dev:debug": "export TS_NODE='true' && nodemon --exec 'node -r ./ts-node/register --inspect-brk' ./server/index.ts | pino-pretty",
-    "e2e": "yarn swagger-yaml && dredd ./server/common/swagger.yaml http://localhost:3000/api -d",
+    "e2e": "yarn swagger-yaml && dredd ./server/common/swagger.yaml http://localhost:5000/api -d",
     "preinstall": "npx only-allow yarn",
     "lint": "tsc --noEmit && eslint './server/**/*.{js,ts,tsx}' './*.{js,ts,tsx}' './.*.{js,ts,tsx}' --config ./.eslintrc.js --no-ignore --cache --color --fix",
     "readme": "node ../node_modules/readme-md-generator/src/index.js",

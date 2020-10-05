@@ -35,9 +35,6 @@ export class MachinesEntity extends BaseEntity {
   @Column({ name: 'destination_id', nullable: false })
   public destinationId: string;
 
-  @Column({ name: 'is_camera', default: false, nullable: false })
-  public isCamera: boolean;
-
   @Column({ name: 'cron', default: 30, nullable: false })
   public cron: number;
 

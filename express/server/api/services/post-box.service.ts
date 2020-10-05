@@ -36,5 +36,27 @@ export class PostBoxService {
     };
   }
 
-  public async;
+  public async sync(uniqueCode: string, modelName: string): Promise<string> {
+    let machine: MachinesEntity;
+
+    try {
+      machine = await this.machinesModel.getMachineByUniqueCode(uniqueCode);
+
+      if (!machine) {
+        return 'invalid unique code.';
+      }
+    } catch (err) {
+      throw new Error(err);
+    }
+
+    let updatedConfig: MachinesEntity;
+
+    try {
+      updatedConfig = await this.machinesModel.updateMachineConfig(machine, modelName);
+    } catch (err) {
+      throw new Error(err);
+    }
+
+    return `${updatedConfig.takePhoto ? 1 : 0},${updatedConfig.cron}`;
+  }
 }

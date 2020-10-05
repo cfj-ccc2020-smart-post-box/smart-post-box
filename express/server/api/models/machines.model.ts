@@ -66,7 +66,13 @@ export class MachinesModel {
     await machineRepository.save(machine);
   }
 
-  public async msgOfSyncing() {
-    return;
+  public async updateMachineConfig(machine: MachinesEntity, modelName: string): Promise<MachinesEntity> {
+    L.info('updateMachineConfig');
+
+    const machinesRepository = getRepository(MachinesEntity);
+    machine.modelName = modelName;
+    const result = await machinesRepository.save(machine);
+
+    return result;
   }
 }

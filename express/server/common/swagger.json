@@ -127,7 +127,7 @@
         ]
       }
     },
-    "/post-box/sync/{uniqueCode}": {
+    "/post-box/sync/{uniqueCode}/{modelName}": {
       "post": {
         "operationId": "Sync",
         "responses": {
@@ -147,6 +147,14 @@
           {
             "in": "path",
             "name": "uniqueCode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "modelName",
             "required": true,
             "schema": {
               "type": "string"

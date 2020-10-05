@@ -1,1 +1,1 @@
-web: yarn dokku:in && yarn start | tee >(split -d -b 100000 -)
+web: DOKKU_IN=true yarn start | tee >(split -d -b 100000 -)
