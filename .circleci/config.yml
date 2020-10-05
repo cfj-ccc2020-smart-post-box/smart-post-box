@@ -67,7 +67,7 @@ jobs:
 
       - run: yarn lint-code-vue
 
-      - run: DOKKU_IN=true SQLITE=true yarn migration:run
+      - run: DOKKU_IN=true SQLITE=true yarn migrate
 
       - run: DOKKU_IN=true SQLITE=true yarn build-express
 

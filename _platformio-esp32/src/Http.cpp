@@ -95,11 +95,12 @@ void Http::test() {
 }
 
 void Http::postMachinesSetting() {
-  String res = "1,60"; /*serverAccess(
+  //String res = "1,60";
+  String res = serverAccess(
     "/api/machines/setting",
-    ", model_id: " + modelId + ", is_camera: false",
-    "GET"  // POST
-  );*/
+    modelId,
+    "POST"
+  );
   res.trim();
   Serial.println(res + "------");
   //resの形式があってればあとは問題ないでしょう、trimとかしてね
