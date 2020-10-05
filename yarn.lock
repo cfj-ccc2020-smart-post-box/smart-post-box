@@ -1997,10 +1997,10 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
 
-"@vue/cli-shared-utils@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.5.4.tgz#ed36b2971dc02653f7f2ad4e66bbe9510e1bd414"
-  integrity sha512-7ZwAvGxl5szGuaJCc4jdPy/2Lb7oJvG847MDF+7pZ7FVl6bURwbUJjiUwL6DTxvpC4vch6B4tXfVvZFjzVP/bw==
+"@vue/cli-shared-utils@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.5.6.tgz#14644972043c95566788d07d9a9367edd438a4d6"
+  integrity sha512-p6ePDlEa7Xc0GEt99KDOCwPZtR7UnoEaZLMfwPYU5LAWkdCmtAw8HPAY/WWcjtoiaAkY4k9tz7ZehQasZ9mJxg==
   dependencies:
     "@hapi/joi" "^15.0.1"
     chalk "^2.4.2"
@@ -2015,23 +2015,23 @@
     semver "^6.1.0"
     strip-ansi "^6.0.0"
 
-"@vue/cli-ui-addon-webpack@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-webpack/-/cli-ui-addon-webpack-4.5.4.tgz#d5719b108a6799b57122c81b9cfac90bb8658083"
-  integrity sha512-J5yYNdrcBvDboYwX+I9KEpv2QdV39X+YoZl2x+mYAgc4d+Forf2mmGipBarnAOgR58d/yapFRrtQLK1dUNpk9A==
+"@vue/cli-ui-addon-webpack@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-webpack/-/cli-ui-addon-webpack-4.5.6.tgz#155c4f31f384e2f9976b086692c8f2f2147236a1"
+  integrity sha512-wjgzU4+cl93YXDrnSdZQmYRHyvCSgq24wPQFsfdXrobfP6a76wx+QedrLm7o2o0/BCHNCkDrTQLHxHvPiVm9PA==
 
-"@vue/cli-ui-addon-widgets@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-widgets/-/cli-ui-addon-widgets-4.5.4.tgz#c844dafa5a86114e4b823a18ef02eafe1d388b81"
-  integrity sha512-/7R3dMrv/tEP4AM22hBDPfXPF24OE/2ddR3cTF1c1fSoHT/LcUvqrlHIb8SlVgl3S7WvF9Prrunp+KzkHW9bSA==
+"@vue/cli-ui-addon-widgets@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-widgets/-/cli-ui-addon-widgets-4.5.6.tgz#63a7e0b642bc0a3749ba64676f3c1583c88c6e92"
+  integrity sha512-4Lpf59lr0pycIzKdTlZsgubJxCHDkAqcc4I60Gp6rggueksuhz2q3rAp7kfxwCzaZlAXXsqy6hoeyj+3sukqDQ==
 
-"@vue/cli-ui@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui/-/cli-ui-4.5.4.tgz#847af0cca893b9785cac337d9c7738aef9576385"
-  integrity sha512-1FXRes+Xl/018OdF8pSZKxQzT+NwUpBm5/DbKkNxcxJOSgEE/sIUGmQjyQPWyYyFs6hugbIsNpEJgdYumUUjbQ==
+"@vue/cli-ui@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui/-/cli-ui-4.5.6.tgz#57e224e5d5ad00830aa1cf3b8597fce9fa406832"
+  integrity sha512-AmirESDgjeeTIvFc/OgQeNtYh1cfollyFdF3JSGaAy27rJJlbWfYRgHJoPFp7SD61FQQuqE+TOyiNjplHHt/Rg==
   dependencies:
     "@akryum/winattr" "^3.0.0"
-    "@vue/cli-shared-utils" "^4.5.4"
+    "@vue/cli-shared-utils" "^4.5.6"
     apollo-server-express "^2.13.1"
     clone "^2.1.1"
     deepmerge "^4.2.2"
@@ -2060,17 +2060,17 @@
     vue-cli-plugin-apollo "^0.21.3"
     watch "^1.0.2"
 
-"@vue/cli@4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@vue/cli/-/cli-4.5.4.tgz#5c9ceb736a871813afe45278c32ce0e210f9eb24"
-  integrity sha512-UFhxsmiKtXxZwvuW0HB+35bEIovAjYg9oiA9uyOMkDh3ZTf90FmyPre09xKviLn0B+0WnzD35P+ZB/bgJZ/HOA==
+"@vue/cli@4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@vue/cli/-/cli-4.5.6.tgz#5c1321bc39893498af347aa5a4730958df234f08"
+  integrity sha512-S3CToCDtuqkcUyPrPTYKdic9aiOsVairCP8dEydyYjvLUIYVVK3GWJqBfThkNdaMjeB/fVPt8qlYjGqvSs55GQ==
   dependencies:
     "@types/ejs" "^2.7.0"
     "@types/inquirer" "^6.5.0"
-    "@vue/cli-shared-utils" "^4.5.4"
-    "@vue/cli-ui" "^4.5.4"
-    "@vue/cli-ui-addon-webpack" "^4.5.4"
-    "@vue/cli-ui-addon-widgets" "^4.5.4"
+    "@vue/cli-shared-utils" "^4.5.6"
+    "@vue/cli-ui" "^4.5.6"
+    "@vue/cli-ui-addon-webpack" "^4.5.6"
+    "@vue/cli-ui-addon-widgets" "^4.5.6"
     boxen "^4.1.0"
     cmd-shim "^3.0.3"
     commander "^2.20.0"
@@ -2095,6 +2095,7 @@
     resolve "^1.17.0"
     shortid "^2.2.15"
     slash "^3.0.0"
+    strip-ansi "^6.0.0"
     validate-npm-package-name "^3.0.0"
     vue "^2.6.11"
     vue-codemod "^0.0.4"
