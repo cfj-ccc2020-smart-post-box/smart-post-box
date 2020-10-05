@@ -616,12 +616,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/minimatch",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/minimatch/LICENSE"
   },
-  "@types/multer@1.4.4": {
-    "licenses": "MIT",
-    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/multer",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/multer/LICENSE"
-  },
   "@types/node@12.12.61": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",

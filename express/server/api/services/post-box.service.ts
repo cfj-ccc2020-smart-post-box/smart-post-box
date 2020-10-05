@@ -31,7 +31,7 @@ export class PostBoxService {
         type: 'text',
         text: `【投函通知】ポストへの投函を検知しました。${machine.name === '' ? '' : 'by ' + machine.name} ${
           machine.modelName || ''
-        }`,
+        }${machine.synced ? '同期済' : '未同期'}`,
       },
     };
   }

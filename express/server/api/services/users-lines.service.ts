@@ -229,7 +229,9 @@ export class UsersLinesService {
                   text:
                     machine.name === ''
                       ? machine.uniqueCode
-                      : `${machine.name}: ${machine.uniqueCode} ${machine.modelName || ''}`,
+                      : `${machine.name}: ${machine.uniqueCode} ${machine.modelName || ''}${
+                          machine.synced ? '同期済' : '未同期'
+                        }`,
                 },
               ],
             },

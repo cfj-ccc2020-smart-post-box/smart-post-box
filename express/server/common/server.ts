@@ -43,7 +43,7 @@ class ExpressServer {
     this.app.use(helmet.permittedCrossDomainPolicies());
     this.app.use(helmet.referrerPolicy());
     this.app.use(helmet.xssFilter());
-    this.app.use(cookieParser(process.env.SESSION_SECRET || 'mySecret'));
+    this.app.use(cookieParser(process.env.SESSION_SECRET));
     this.app.use(express.static(`${root}/../vue/dist`));
     this.app.use(
       fileUpload({

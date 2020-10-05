@@ -44,6 +44,9 @@ export class MachinesEntity extends BaseEntity {
   @Column({ name: 'synced', default: true, nullable: false })
   public synced: boolean;
 
+  @Column({ name: 'stop', default: false, nullable: false })
+  public stop: boolean;
+
   @Column({ name: 'using', default: true, nullable: false })
   public using: boolean;
 
