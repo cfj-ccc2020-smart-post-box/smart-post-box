@@ -667,6 +667,11 @@
     p-queue "^2.4.2"
     p-retry "^4.0.0"
 
+"@sqltools/formatter@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.2.tgz#9390a8127c0dcba61ebd7fdcc748655e191bdd68"
+  integrity sha512-/5O7Fq6Vnv8L6ucmPjaWbVG1XkP4FO+w5glqfkIsq3Xw4oyNAdJddbnYodNDAfjVUvo/rrSCTom4kAND7T1o5Q==
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -1686,7 +1691,7 @@ buffer-writer@2.0.0:
   resolved "https://registry.yarnpkg.com/buffer-writer/-/buffer-writer-2.0.0.tgz#ce7eb81a38f7829db09c873f2fbb792c0c98ec04"
   integrity sha512-a7ZpuTZU1TRtnwyCNW3I5dc0wWNC3VR9S++Ewyk2HHZdrO3CQJqSpd+95Us590V6AL7JqUAH2IwZ/398PmNFgw==
 
-buffer@^5.1.0:
+buffer@^5.5.0:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.6.0.tgz#a31749dc7d81d84db08abf937b6b8c4033f62786"
   integrity sha512-/gDYp/UtU0eA1ys8bOs9J6a+E/KWIY+DZ+Q2WESNUA0jFRsJOc0SNUO6xJ5SGA1xueg3NL65W6s+NY5l9cunuw==
@@ -1796,7 +1801,7 @@ chai@4.2.0:
     pathval "^1.1.0"
     type-detect "^4.0.5"
 
-chalk@2.4.2, chalk@^2.0.0, chalk@^2.4.2:
+chalk@2.4.2, chalk@^2.0.0:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -1824,7 +1829,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0:
+chalk@^4.0.0, chalk@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
@@ -1899,7 +1904,7 @@ cli-cursor@^3.1.0:
   dependencies:
     restore-cursor "^3.1.0"
 
-cli-highlight@^2.0.0:
+cli-highlight@^2.1.4:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/cli-highlight/-/cli-highlight-2.1.4.tgz#098cb642cf17f42adc1c1145e07f960ec4d7522b"
   integrity sha512-s7Zofobm20qriqDoU9sXptQx0t2R9PEgac92mENNm7xaEe1hn71IIMsXMK+6encA6WRCWWxIGQbipr3q998tlQ==
@@ -5470,7 +5475,7 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp@1.x, mkdirp@^1.0.3:
+mkdirp@1.x, mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
@@ -7958,7 +7963,7 @@ ts-node@9.0.0:
     source-map-support "^0.5.17"
     yn "3.1.1"
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.13.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
@@ -8091,26 +8096,27 @@ typedoc@0.19.2:
     shelljs "^0.8.4"
     typedoc-default-themes "^0.11.4"
 
-typeorm@0.2.26:
-  version "0.2.26"
-  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.26.tgz#1027afa13f89ab98bc3d07675fe7268bbefa55a7"
-  integrity sha512-sbKxK6K9sXZPCVF0weEb74UA/z1UW0sRWfI7EoOOtQaRZaLvSEwtgHPqle9t8asxEtD+gzkUdd+NqF7yH7HtIQ==
+typeorm@0.2.28:
+  version "0.2.28"
+  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.28.tgz#828df288d01ca75b38e990fa1628a7cd5a29f39f"
+  integrity sha512-BTtUBGwsFzODvHY+AlWL9pvJ2uEj8qpHwmo03z43RvZkG8BAryQJQ3lZ7HlGvI9IQU8y1IYGWe97HsVr8kXB9g==
   dependencies:
+    "@sqltools/formatter" "1.2.2"
     app-root-path "^3.0.0"
-    buffer "^5.1.0"
-    chalk "^2.4.2"
-    cli-highlight "^2.0.0"
+    buffer "^5.5.0"
+    chalk "^4.1.0"
+    cli-highlight "^2.1.4"
     debug "^4.1.1"
     dotenv "^8.2.0"
-    glob "^7.1.2"
-    js-yaml "^3.13.1"
-    mkdirp "^1.0.3"
+    glob "^7.1.6"
+    js-yaml "^3.14.0"
+    mkdirp "^1.0.4"
     reflect-metadata "^0.1.13"
     sha.js "^2.4.11"
-    tslib "^1.9.0"
-    xml2js "^0.4.17"
+    tslib "^1.13.0"
+    xml2js "^0.4.23"
     yargonaut "^1.1.2"
-    yargs "^13.2.1"
+    yargs "^16.0.3"
 
 typescript-formatter@^7.2.2:
   version "7.2.2"
@@ -8535,7 +8541,7 @@ xml-name-validator@^3.0.0:
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
   integrity sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==
 
-xml2js@^0.4.17, xml2js@^0.4.23:
+xml2js@^0.4.23:
   version "0.4.23"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
   integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
@@ -8610,14 +8616,6 @@ yargs-parser@20.x, yargs-parser@^20.0.0:
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.1.tgz#28f3773c546cdd8a69ddae68116b48a5da328e77"
   integrity sha512-yYsjuSkjbLMBp16eaOt7/siKTjNVjMm3SoJnIg3sEh/JsvqVVDyjRKmaJV4cl+lNIgq6QEco2i3gDebJl7/vLA==
 
-yargs-parser@^13.1.2:
-  version "13.1.2"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-13.1.2.tgz#130f09702ebaeef2650d54ce6e3e5706f7a4fb38"
-  integrity sha512-3lbsNRf/j+A4QuSZfDRA7HRSfWrzO0YjqTJd5kjAq37Zep1CEgaYmrH9Q3GwPiB9cHyd1Y1UwggGhJGoxipbzg==
-  dependencies:
-    camelcase "^5.0.0"
-    decamelize "^1.2.0"
-
 yargs-parser@^15.0.1:
   version "15.0.1"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-15.0.1.tgz#54786af40b820dcb2fb8025b11b4d659d76323b3"
@@ -8640,22 +8638,6 @@ yargs-parser@^7.0.0:
   integrity sha1-jQrELxbqVd69MyyvTEA4s+P139k=
   dependencies:
     camelcase "^4.1.0"
-
-yargs@^13.2.1:
-  version "13.3.2"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.2.tgz#ad7ffefec1aa59565ac915f82dccb38a9c31a2dd"
-  integrity sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==
-  dependencies:
-    cliui "^5.0.0"
-    find-up "^3.0.0"
-    get-caller-file "^2.0.1"
-    require-directory "^2.1.1"
-    require-main-filename "^2.0.0"
-    set-blocking "^2.0.0"
-    string-width "^3.0.0"
-    which-module "^2.0.0"
-    y18n "^4.0.0"
-    yargs-parser "^13.1.2"
 
 yargs@^14.0.0:
   version "14.2.3"
