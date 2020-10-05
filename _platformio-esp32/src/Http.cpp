@@ -64,7 +64,7 @@ String Http::serverAccess(String path, String data, String method) {
     "Content-Length: "+ String(data.length()) +"\r\n\r\n" +
     data+"\r\n\r\n";
   client.print(req);
-  // Serial.println(req);
+  //Serial.println(req);
 
   String header = "";
   while (true) {
@@ -95,24 +95,21 @@ void Http::test() {
 }
 
 void Http::postMachinesSetting() {
-  //String res = "1,60";
   String res = serverAccess(
-    "/api/machines/setting",
+    "/api/post-box/sync",
     modelId,
     "POST"
   );
   res.trim();
-  Serial.println(res + "------");
-  //resの形式があってればあとは問題ないでしょう、trimとかしてね
 
-  cronMs = res.substring(2,res.length()).toInt();
-  takePhoto = String(res[0]).toInt();
+  cronMs = res.substring(3,res.length()).toInt();
+  takePhoto = String(res[1]).toInt();
+
   if(dataStore2.read("/cronMs.txt").toInt() != cronMs) {
     dataStore2.write("/cronMs.txt", String(cronMs));
   }
   if(dataStore2.read("/takePhoto.txt").toInt() != takePhoto) {
     dataStore2.write("/takePhoto.txt", String(takePhoto));
   }
-
-  return;  // voidでよき?
+  return;
 }
