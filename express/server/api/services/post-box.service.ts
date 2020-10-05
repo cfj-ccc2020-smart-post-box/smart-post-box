@@ -29,9 +29,9 @@ export class PostBoxService {
       destinationId: machine.destinationId,
       msg: {
         type: 'text',
-        text: `【投函通知】ポストへの投函を検知しました。${machine.name === '' ? '' : 'by ' + machine.name} ${
-          machine.modelName || ''
-        }${machine.synced ? '同期済' : '未同期'}`,
+        text: `【投函通知】ポストへの投函を検知しました。\n\nfrom\nID: ${machine.uniqueCode}\nName: ${
+          machine.name || 'No name'
+        }\n同期: ${machine.synced ? `済\nModel: ${machine.modelName}` : '未'}`,
       },
     };
   }

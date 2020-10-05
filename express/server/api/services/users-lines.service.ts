@@ -226,12 +226,9 @@ export class UsersLinesService {
               contents: [
                 {
                   type: 'text',
-                  text:
-                    machine.name === ''
-                      ? machine.uniqueCode
-                      : `${machine.name}: ${machine.uniqueCode} ${machine.modelName || ''}${
-                          machine.synced ? '同期済' : '未同期'
-                        }`,
+                  text: `ID: ${machine.uniqueCode}\nName: ${machine.name || 'No name'}\n同期: ${
+                    machine.synced ? `済\nModel: ${machine.modelName}` : '未'
+                  }`,
                 },
               ],
             },
@@ -286,7 +283,7 @@ export class UsersLinesService {
       if (!user) {
         replyMsg = {
           type: 'text',
-          text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の登録解除を開始できません。',
+          text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の停止を開始できません。',
         };
 
         return replyMsg;
@@ -296,7 +293,7 @@ export class UsersLinesService {
 
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマートポストボックスの観測機の登録解除を開始できません... ><',
+        text: '何だかの事情でスマートポストボックスの観測機の停止を開始できません... ><',
       };
 
       return replyMsg;
@@ -309,7 +306,7 @@ export class UsersLinesService {
         replyMsg = {
           type: 'text',
           text:
-            '選択されたポスト観測機か存在しない、或いは現在のアカウントが所収者ではないため、ポスト観測機の登録解除を完了できませんでした。',
+            '選択されたポスト観測機か存在しない、或いは現在のアカウントが所収者ではないため、ポスト観測機の停止を完了できませんでした。',
         };
 
         return replyMsg;
@@ -319,7 +316,7 @@ export class UsersLinesService {
 
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマートポストボックスの観測機の登録解除を開始できません... ><',
+        text: '何だかの事情でスマートポストボックスの観測機の停止を開始できません... ><',
       };
 
       return replyMsg;
@@ -330,14 +327,14 @@ export class UsersLinesService {
 
       replyMsg = {
         type: 'text',
-        text: 'スマートポストボックスの観測機の登録解除が完了しました。',
+        text: 'スマートポストボックスの観測機の停止が完了しました。',
       };
     } catch (err) {
       L.info(err);
 
       replyMsg = {
         type: 'text',
-        text: '何だかの事情でスマートポストボックスの観測機の登録解除を開始できません... ><',
+        text: '何だかの事情でスマートポストボックスの観測機の停止を開始できません... ><',
       };
     }
 

@@ -23,7 +23,7 @@ export class MachinesEntity extends BaseEntity {
   @Column({ name: 'unique_code', default: '', nullable: false })
   public uniqueCode: string;
 
-  @Column({ name: 'take_photo', default: true, nullable: false })
+  @Column({ name: 'take_photo', default: false, nullable: false })
   public takePhoto: boolean;
 
   @Column({ name: 'users_lines_id', nullable: false })
@@ -38,7 +38,7 @@ export class MachinesEntity extends BaseEntity {
   @Column({ name: 'cron', default: 30, nullable: false })
   public cron: number;
 
-  @Column({ name: 'synced', default: true, nullable: false })
+  @Column({ name: 'synced', default: false, nullable: false })
   public synced: boolean;
 
   @Column({ name: 'stop', default: false, nullable: false })

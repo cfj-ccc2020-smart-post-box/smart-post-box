@@ -52,7 +52,7 @@ export class MachinesModel {
 
     const machine = await machineRepository.findOne({ usersLinesId, uniqueCode, using: true });
 
-    return machine !== null;
+    return machine !== undefined;
   }
 
   public async stopMachine(uniqueCode: string): Promise<void> {

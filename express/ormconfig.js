@@ -20,9 +20,9 @@ if (process.env.IN_DOKKU === 'true') {
   ormConfig.synchronize = true;
 }
 
-if ('SQLITE' in process.env && process.env.SQLITE === 'true') {
+if (('SQLITE' in process.env && process.env.SQLITE === 'true') || process.env.NODE_ENV === 'test') {
   ormConfig.type = 'sqlite';
-  ormConfig.database = './db.sqlite';
+  ormConfig.database = process.env.NODE_ENV === 'test' ? './db.test.sqlite' : './db.sqlite';
   // } else if ('DATABASE_URL' in process.env) {
   //   ormConfig.url = process.env.DATABASE_URL;
 } else {
