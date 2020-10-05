@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@line/bot-sdk": "7.0.0",
-    "@slack/bolt": "2.3.0",
+    "@slack/bolt": "2.4.1",
     "axios": "0.20.0",
     "bcrypt": "5.0.0",
     "body-parser": "1.19.0",
