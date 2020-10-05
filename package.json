@@ -93,11 +93,11 @@
     "codecov": "3.7.2",
     "commitizen": "4.2.1",
     "cz-emoji": "1.2.2",
-    "generator-express-no-stress-typescript": "10.0.1",
+    "generator-express-no-stress-typescript": "10.0.2",
     "husky": "4.3.0",
     "license-checker": "25.0.1",
     "markdownlint": "0.21.0",
-    "markdownlint-cli": "0.23.2",
+    "markdownlint-cli": "0.24.0",
     "only-allow": "1.0.0",
     "readme-md-generator": "1.0.0",
     "textlint": "11.7.6",
@@ -105,7 +105,7 @@
     "textlint-rule-no-dead-link": "4.7.0",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
     "typedoc": "0.19.2",
-    "typedoc-plugin-markdown": "3.0.3",
+    "typedoc-plugin-markdown": "3.0.7",
     "yo": "3.1.1"
   },
   "engines": {
