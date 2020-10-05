@@ -226,9 +226,19 @@ export class UsersLinesService {
               contents: [
                 {
                   type: 'text',
-                  text: `ID: ${machine.uniqueCode}\nName: ${machine.name || 'No name'}\n同期: ${
-                    machine.synced ? `済\nModel: ${machine.modelName}` : '未'
-                  }`,
+                  text: 'ID: ' + machine.uniqueCode,
+                },
+                {
+                  type: 'text',
+                  text: `Name: ${machine.name || 'No name'}`,
+                },
+                {
+                  type: 'text',
+                  text: `同期: ${machine.synced ? '済' : '未'}`,
+                },
+                {
+                  type: 'text',
+                  text: `Model: ${machine.modelName || 'Unknown'}`,
                 },
               ],
             },

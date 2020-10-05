@@ -29,7 +29,7 @@ export class PostBoxService {
       destinationId: machine.destinationId,
       msg: {
         type: 'text',
-        text: `【投函通知】ポストへの投函を検知しました。\n\nfrom\nID: ${machine.uniqueCode}\nName: ${
+        text: `【投函通知】ポストへの投函を検知しました。\n\n> FROM\nID: ${machine.uniqueCode}\nName: ${
           machine.name || 'No name'
         }\n同期: ${machine.synced ? `済\nModel: ${machine.modelName}` : '未'}`,
       },

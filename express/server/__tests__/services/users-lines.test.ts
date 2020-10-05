@@ -150,17 +150,39 @@ describe('UsersLinesService', () => {
       '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。'
     );
     expect(replyMsg['contents']['contents'].length).toBe(4);
-    expect(replyMsg['contents']['contents'][0]['body']['contents'][0]['text']).toBe(
-      `ID: ${testMachineOp.uniqueCode}\nName: No name\n同期: 未`
-    );
+
+    expect(replyMsg['contents']['contents'][0]['body']['contents'][0]['text']).toBe('ID: ' + testMachineOp.uniqueCode);
+    expect(replyMsg['contents']['contents'][0]['body']['contents'][1]['text']).toBe('Name: No name');
+    expect(replyMsg['contents']['contents'][0]['body']['contents'][2]['text']).toBe('同期: 未');
+    expect(replyMsg['contents']['contents'][0]['body']['contents'][3]['text']).toBe('Model: Unknown');
+
     expect(replyMsg['contents']['contents'][1]['body']['contents'][0]['text']).toBe(
-      `ID: ${testMachineOfSyncedOp.uniqueCode}\nName: No name\n同期: 済\nModel: ${testMachineOfSyncedOp['modelName']}`
+      'ID: ' + testMachineOfSyncedOp.uniqueCode
     );
+    expect(replyMsg['contents']['contents'][1]['body']['contents'][1]['text']).toBe('Name: No name');
+    expect(replyMsg['contents']['contents'][1]['body']['contents'][2]['text']).toBe('同期: 済');
+    expect(replyMsg['contents']['contents'][1]['body']['contents'][3]['text']).toBe(
+      'Model: ' + testMachineOfSyncedOp['modelName']
+    );
+
     expect(replyMsg['contents']['contents'][2]['body']['contents'][0]['text']).toBe(
-      `ID: ${testMachineOfNamedOp.uniqueCode}\nName: ${testMachineOfNamedOp['name']}\n同期: 未`
+      'ID: ' + testMachineOfNamedOp.uniqueCode
     );
+    expect(replyMsg['contents']['contents'][2]['body']['contents'][1]['text']).toBe(
+      'Name: ' + testMachineOfNamedOp['name']
+    );
+    expect(replyMsg['contents']['contents'][2]['body']['contents'][2]['text']).toBe('同期: 未');
+    expect(replyMsg['contents']['contents'][2]['body']['contents'][3]['text']).toBe('Model: Unknown');
+
     expect(replyMsg['contents']['contents'][3]['body']['contents'][0]['text']).toBe(
-      `ID: ${testMachineOfSyncedNamedOp.uniqueCode}\nName: ${testMachineOfSyncedNamedOp['name']}\n同期: 済\nModel: ${testMachineOfSyncedNamedOp['modelName']}`
+      'ID: ' + testMachineOfSyncedNamedOp.uniqueCode
+    );
+    expect(replyMsg['contents']['contents'][3]['body']['contents'][1]['text']).toBe(
+      'Name: ' + testMachineOfSyncedNamedOp['name']
+    );
+    expect(replyMsg['contents']['contents'][3]['body']['contents'][2]['text']).toBe('同期: 済');
+    expect(replyMsg['contents']['contents'][3]['body']['contents'][3]['text']).toBe(
+      'Model: ' + testMachineOfSyncedNamedOp['modelName']
     );
   });
 
