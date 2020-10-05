@@ -180,8 +180,8 @@ export class LineEvRouter {
               },
               {
                 type: 'message',
-                label: '登録解除',
-                text: `ポスト観測機『${uniqueCode}』の登録解除をします。`,
+                label: '停止',
+                text: `ポスト観測機『${uniqueCode}』の停止をします。`,
               },
             ],
           },
@@ -195,7 +195,7 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
-      type: new MsgTypeText(/^ポスト観測機『.+』の登録解除をします。$/),
+      type: new MsgTypeText(/^ポスト観測機『.+』の停止をします。$/),
       source: {
         type: 'user',
       },
@@ -204,20 +204,20 @@ export class LineEvRouter {
 
         this.lineClient.replyMessage(event.replyToken, {
           type: 'template',
-          altText: '本当にポスト観測機の登録解除をしますか。',
+          altText: '本当にポスト観測機の停止をしますか。',
           template: {
             type: 'confirm',
-            text: '本当にポスト観測機の登録解除をしますか。\n\n※投函されても通知が行われなくなります。',
+            text: '本当にポスト観測機の停止をしますか。\n\n※投函されても通知が行われなくなります。',
             actions: [
               {
                 type: 'message',
                 label: 'はい',
-                text: `本当にポスト観測機『${uniqueCode}』の登録解除をします。`,
+                text: `本当にポスト観測機『${uniqueCode}』の停止をします。`,
               },
               {
                 type: 'message',
                 label: 'いいえ',
-                text: 'ポスト観測機の登録解除をキャンセルします。',
+                text: 'ポスト観測機の停止をキャンセルします。',
               },
             ],
           },
@@ -226,12 +226,12 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
-      type: new MsgTypeText(/^ポスト観測機『.+』の登録解除をします。$/),
+      type: new MsgTypeText(/^ポスト観測機『.+』の停止をします。$/),
       task: async (event) => this.replyMsgOfOnlyDM(event.replyToken),
     });
 
     lineEvRoutingHelper.msgEv({
-      type: new MsgTypeText(/^本当にポスト観測機『.+』の登録解除をします。$/),
+      type: new MsgTypeText(/^本当にポスト観測機『.+』の停止をします。$/),
       source: {
         type: 'user',
       },
@@ -245,7 +245,7 @@ export class LineEvRouter {
     });
 
     lineEvRoutingHelper.msgEv({
-      type: new MsgTypeText(/^本当にポスト観測機『.+』の登録解除をします。$/),
+      type: new MsgTypeText(/^本当にポスト観測機『.+』の停止をします。$/),
       task: (event) => this.replyMsgOfOnlyDM(event.replyToken),
     });
 

@@ -61,7 +61,7 @@ export class MachinesModel {
     const machineRepository = getRepository(MachinesEntity);
 
     const machine = await machineRepository.findOne({ uniqueCode, using: true });
-    machine.using = false;
+    machine.stop = true;
 
     await machineRepository.save(machine);
   }
