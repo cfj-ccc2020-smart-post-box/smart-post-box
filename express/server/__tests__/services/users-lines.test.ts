@@ -146,9 +146,7 @@ describe('UsersLinesService', () => {
     const replyMsg = await usersLinesService.replyMsgWhenUsingConfUI(testUserOp.lineId);
 
     expect(replyMsg.type).toBe('flex');
-    expect(replyMsg['altText']).toBe(
-      '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。'
-    );
+    expect(replyMsg['altText']).toBe('設定するポスト観測機を選択して下さい。');
     expect(replyMsg['contents']['contents'].length).toBe(4);
 
     expect(replyMsg['contents']['contents'][0]['body']['contents'][0]['text']).toBe('ID: ' + testMachineOp.uniqueCode);

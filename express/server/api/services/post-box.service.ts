@@ -25,6 +25,10 @@ export class PostBoxService {
       throw new Error('invalid unique code.');
     }
 
+    if (machine.stop) {
+      throw new Error('this machine is already stopped.');
+    }
+
     return {
       destinationId: machine.destinationId,
       msg: {
@@ -47,6 +51,10 @@ export class PostBoxService {
       }
     } catch (err) {
       throw new Error(err);
+    }
+
+    if (machine.stop) {
+      return 'this machine is already stopped.';
     }
 
     let updatedConfig: MachinesEntity;

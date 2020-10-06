@@ -40,6 +40,20 @@ export class UsersLinesService {
     },
   };
 
+  readonly backToMenu: line.QuickReply = {
+    items: [
+      {
+        type: 'action',
+        imageUrl: 'https://img.icons8.com/android/72/menu.png',
+        action: {
+          type: 'message',
+          label: 'メニュー',
+          text: 'メニュー',
+        },
+      },
+    ],
+  };
+
   private getTopMenuTempForCreatedUser(created: Date): line.TemplateMessage {
     const temp = this.topMenuTemp;
     const addingMsg = `\n\nスマートポストボックスアカウントの登録は ${created} に完了しました。`;
@@ -69,6 +83,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスアカウントの登録に失敗しました... ><',
+        quickReply: this.backToMenu,
       } as line.TextMessage;
     }
 
@@ -136,6 +151,7 @@ export class UsersLinesService {
         replyMsg = {
           type: 'text',
           text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の追加に失敗しました。',
+          quickReply: this.backToMenu,
         };
 
         return replyMsg;
@@ -146,6 +162,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスの観測機の追加に失敗しました... ><',
+        quickReply: this.backToMenu,
       };
 
       return replyMsg;
@@ -161,6 +178,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: `【スマートポストボックスの観測機の追加完了】\n\n合言葉『${machine.uniqueCode}』\n\n上記をスマートポストボックスの観測機に設定することで通知が送られるようになります。\n詳しくは「メニュー」から「ホームページ」をご確認下さると幸いです。\nこのメッセージをまるごとコピーしておきましょう。`,
+        quickReply: this.backToMenu,
       };
     } catch (err) {
       L.info(err);
@@ -168,6 +186,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスの観測機の追加に失敗しました... ><',
+        quickReply: this.backToMenu,
       };
     }
 
@@ -188,6 +207,7 @@ export class UsersLinesService {
         replyMsg = {
           type: 'text',
           text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の設定を開始できません。',
+          quickReply: this.backToMenu,
         };
 
         return replyMsg;
@@ -198,6 +218,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスの観測機の設定を開始できません... ><',
+        quickReply: this.backToMenu,
       };
 
       return replyMsg;
@@ -211,59 +232,143 @@ export class UsersLinesService {
           type: 'text',
           text:
             'アカウントに登録されたポスト観測機がありません。\n\n「メニュー」から「ポスト観測機の追加」を行って下さい。',
+          quickReply: this.backToMenu,
         };
 
         return replyMsg;
       }
 
-      const flexBubbles = machines.map(
-        (machine: MachinesEntity): line.FlexBubble => {
-          return {
-            type: 'bubble',
-            body: {
-              type: 'box',
-              layout: 'vertical',
-              contents: [
-                {
-                  type: 'text',
-                  text: 'ID: ' + machine.uniqueCode,
-                },
-                {
-                  type: 'text',
-                  text: `Name: ${machine.name || 'No name'}`,
-                },
-                {
-                  type: 'text',
-                  text: `同期: ${machine.synced ? '済' : '未'}`,
-                },
-                {
-                  type: 'text',
-                  text: `Model: ${machine.modelName || 'Unknown'}`,
-                },
-              ],
-            },
-            footer: {
-              type: 'box',
-              layout: 'vertical',
-              contents: [
-                {
-                  type: 'text',
-                  text: '選択',
-                  action: {
-                    type: 'message',
-                    label: 'action',
-                    text: 'ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
+      const flexBubbles = machines
+        .filter((machine: MachinesEntity): boolean => !machine.stop)
+        .map(
+          (machine: MachinesEntity): line.FlexBubble => {
+            return {
+              type: 'bubble',
+              body: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'text',
+                    text: 'ID: ' + machine.uniqueCode,
                   },
-                },
-              ],
-            },
-          };
-        }
-      );
+                  {
+                    type: 'text',
+                    text: `Name: ${machine.name || 'No name'}`,
+                  },
+                  {
+                    type: 'text',
+                    text: `同期: ${machine.synced ? '済' : '未'}`,
+                  },
+                  {
+                    type: 'text',
+                    text: `Model: ${machine.modelName || 'Unknown'}`,
+                  },
+                  {
+                    type: 'text',
+                    text: `状態: ${machine.stop ? '停止' : '稼働'}中`,
+                  },
+                  {
+                    type: 'text',
+                    text: `定期撮影: ${machine.takePhoto ? '有効' : '停止中'}又は撮影機能非搭載`,
+                  },
+                  {
+                    type: 'text',
+                    text: `定期頻度: ${machine.cron} 分毎`,
+                  },
+                ],
+              },
+              footer: {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'text',
+                    text: '選択',
+                    action: {
+                      type: 'message',
+                      label: 'action',
+                      text: 'ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
+                    },
+                  },
+                ],
+              },
+            };
+          }
+        )
+        .concat(
+          machines
+            .filter((machine: MachinesEntity): boolean => machine.stop)
+            .map(
+              (machine: MachinesEntity): line.FlexBubble => {
+                return {
+                  type: 'bubble',
+                  body: {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: 'ID: ' + machine.uniqueCode,
+                      },
+                      {
+                        type: 'text',
+                        text: `Name: ${machine.name || 'No name'}`,
+                      },
+                      {
+                        type: 'text',
+                        text: `同期: ${machine.synced ? '済' : '未'}`,
+                      },
+                      {
+                        type: 'text',
+                        text: `Model: ${machine.modelName || 'Unknown'}`,
+                      },
+                      {
+                        type: 'text',
+                        text: `状態: ${machine.stop ? '停止' : '稼働'}中`,
+                      },
+                      {
+                        type: 'text',
+                        text: `定期撮影: ${machine.takePhoto ? '有効' : '停止中'}又は撮影機能非搭載`,
+                      },
+                      {
+                        type: 'text',
+                        text: `定期頻度: ${machine.cron} 分毎`,
+                      },
+                    ],
+                  },
+                  footer: {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'text',
+                        text: '選択',
+                        action: {
+                          type: 'message',
+                          label: 'action',
+                          text: '停止中ポスト観測機『' + machine.uniqueCode + '』の設定を開始します。',
+                        },
+                      },
+                      {
+                        type: 'text',
+                        text: '登録解除',
+                        action: {
+                          type: 'message',
+                          label: 'action',
+                          text: 'ポスト観測機『' + machine.uniqueCode + '』の登録解除をします。',
+                        },
+                      },
+                    ],
+                  },
+                };
+              }
+            )
+        );
 
       replyMsg = {
         type: 'flex',
-        altText: '設定するポスト観測機を選択して下さい。\n\n※選択ボタンはスマートフォンで閲覧できます。',
+        altText: '設定するポスト観測機を選択して下さい。',
         contents: {
           type: 'carousel',
           contents: flexBubbles,
@@ -275,6 +380,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスの観測機の設定を開始できません... ><',
+        quickReply: this.backToMenu,
       };
     }
 
@@ -294,6 +400,7 @@ export class UsersLinesService {
         replyMsg = {
           type: 'text',
           text: '登録されていない LINE アカウントのため、スマートポストボックスの観測機の停止を開始できません。',
+          quickReply: this.backToMenu,
         };
 
         return replyMsg;
@@ -304,6 +411,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスの観測機の停止を開始できません... ><',
+        quickReply: this.backToMenu,
       };
 
       return replyMsg;
@@ -317,6 +425,7 @@ export class UsersLinesService {
           type: 'text',
           text:
             '選択されたポスト観測機か存在しない、或いは現在のアカウントが所収者ではないため、ポスト観測機の停止を完了できませんでした。',
+          quickReply: this.backToMenu,
         };
 
         return replyMsg;
@@ -327,6 +436,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスの観測機の停止を開始できません... ><',
+        quickReply: this.backToMenu,
       };
 
       return replyMsg;
@@ -338,6 +448,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: 'スマートポストボックスの観測機の停止が完了しました。',
+        quickReply: this.backToMenu,
       };
     } catch (err) {
       L.info(err);
@@ -345,6 +456,7 @@ export class UsersLinesService {
       replyMsg = {
         type: 'text',
         text: '何だかの事情でスマートポストボックスの観測機の停止を開始できません... ><',
+        quickReply: this.backToMenu,
       };
     }
 

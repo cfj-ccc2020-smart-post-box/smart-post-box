@@ -33,6 +33,10 @@ export class PhotosService {
       return 'internal server error';
     }
 
+    if (machine.stop) {
+      return 'this machine is already stopped.';
+    }
+
     try {
       const photo = await this.photosModel.getLastPhotoByMachineId(machine.id);
 
@@ -65,6 +69,10 @@ export class PhotosService {
 
     if (!machine) {
       throw new Error('invalid unique code.');
+    }
+
+    if (machine.stop) {
+      throw new Error('this machine is already stopped.');
     }
 
     const title = short.generate();
