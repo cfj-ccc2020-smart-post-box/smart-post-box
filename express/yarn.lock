@@ -1159,7 +1159,7 @@ ajv@^5.0.1:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
+ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4, ajv@^6.12.5:
   version "6.12.5"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.5.tgz#19b0e8bae8f476e5ba666300387775fb1a00a4da"
   integrity sha512-lRF8RORchjpKG50/WFf8xmg7sgCLFiYNNnqdKflk63whMQcWR5ngGjiSXkL9bjxy6B2npOK2HSMN49jEBMSkag==
@@ -3020,12 +3020,12 @@ express-fileupload@1.2.0:
   dependencies:
     busboy "^0.3.1"
 
-express-openapi-validator@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.1.0.tgz#eab34b64d4d4186ff7fec7bea972c9e31b1c7369"
-  integrity sha512-hnV6/WgwzvP097cO81DOVTrvWEM8UAtH86eP+GIfiqQF463T8gFVfzNLHWkWYUIBrrMAmyk4LOVIT3ZytbclqA==
+express-openapi-validator@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.2.0.tgz#e26e9bd62eed7a176eb9dd2e6912a50f7d405f85"
+  integrity sha512-MBnk/vG+WJ+Fe1E7VRZkj4tuXDH1SQRtWnyw8F81Db/ULl8FPnXTnBfhAVK2rmjiv1iyMaXQRwkjzns9iAWEag==
   dependencies:
-    ajv "^6.12.4"
+    ajv "^6.12.5"
     content-type "^1.0.4"
     js-yaml "^3.14.0"
     json-schema-ref-parser "^9.0.6"
