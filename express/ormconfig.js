@@ -16,7 +16,7 @@ const ormConfig = {
   },
 };
 
-if (process.env.IN_DOKKU === 'true') {
+if (process.env.IN_DOKKU === 'true' || process.env.NODE_ENV === 'test') {
   ormConfig.synchronize = true;
 }
 

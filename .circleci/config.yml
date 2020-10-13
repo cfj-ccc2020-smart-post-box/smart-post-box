@@ -73,7 +73,7 @@ jobs:
 
       - run: yarn build-vue
 
-      - run: DOKKU_IN=true SQLITE=true yarn test-express
+      - run: yarn test-express
 
       - run: yarn test-vue
 

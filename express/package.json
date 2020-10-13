@@ -38,7 +38,7 @@
     "start": "export TS_NODE='false' && node ./dist/index.js",
     "swagger-yaml": "api-spec-converter --from openapi_3 --to openapi_3 --syntax=yaml --order=openapi --source=./server/common/swagger.json > ./server/common/swagger.yaml",
     "test": "export TS_NODE='true' && jest",
-    "test:debug": "export TS_NODE='false' && jest --watch"
+    "test:debug": "export TS_NODE='true' && jest --watch"
   },
   "dependencies": {
     "@line/bot-sdk": "7.0.0",
