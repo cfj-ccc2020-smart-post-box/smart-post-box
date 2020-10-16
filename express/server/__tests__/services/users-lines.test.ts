@@ -1,11 +1,10 @@
-import '../../common/env.ts';
 import * as line from '@line/bot-sdk';
 import { UsersLinesService } from '../../api/services/users-lines.service';
 import { UsersLinesModel } from '../../api/models/users-lines.model';
-import { getRepository } from 'typeorm';
+import { getRepository, createConnection, Connection } from 'typeorm';
 import { UsersLinesEntity } from '../../api/entities/users-lines.entity';
 import { MachinesEntity } from '../../api/entities/machines.entity';
-import { expressServer } from '../../common/server';
+import path from 'path';
 
 const lineClient: line.Client = new line.Client({
   channelAccessToken: 'test',
@@ -48,25 +47,26 @@ testMachineOfSyncedNamedOp['synced'] = true;
 testMachineOfSyncedNamedOp['modelName'] = 'Test Model of Synced, Named';
 testMachineOfSyncedNamedOp['name'] = 'Test Machine of Synced, Named';
 
+let connection: Connection;
+
 describe('UsersLinesService', () => {
   beforeEach(async () => {
-    await expressServer.connectToDB();
+    connection = await createConnection({
+      type: 'sqlite',
+      database: path.join(__dirname, '..', '..', '..', `db.${__filename.split(/[\\/]services[\\/]|\.ts$/)[1]}.splite`),
+      entities: [UsersLinesEntity, MachinesEntity],
+      synchronize: true,
+    });
+
     const usersLinesRepository = getRepository(UsersLinesEntity);
     const machinesRepository = getRepository(MachinesEntity);
 
-    const newUser = usersLinesRepository.create(testUserOp);
-    const newUserOfNotHavingMachine = usersLinesRepository.create(testUserOfNotHavingMachineOp);
-    const newMachine = machinesRepository.create(testMachineOp);
-    const newMachineOfSynced = machinesRepository.create(testMachineOfSyncedOp);
-    const newMachineOfNamed = machinesRepository.create(testMachineOfNamedOp);
-    const newMachineOfSyncedNamed = machinesRepository.create(testMachineOfSyncedNamedOp);
-
-    await usersLinesRepository.save(newUser);
-    await usersLinesRepository.save(newUserOfNotHavingMachine);
-    await machinesRepository.save(newMachine);
-    await machinesRepository.save(newMachineOfSynced);
-    await machinesRepository.save(newMachineOfNamed);
-    await machinesRepository.save(newMachineOfSyncedNamed);
+    await usersLinesRepository.save(usersLinesRepository.create(testUserOp));
+    await usersLinesRepository.save(usersLinesRepository.create(testUserOfNotHavingMachineOp));
+    await machinesRepository.save(machinesRepository.create(testMachineOp));
+    await machinesRepository.save(machinesRepository.create(testMachineOfSyncedOp));
+    await machinesRepository.save(machinesRepository.create(testMachineOfNamedOp));
+    await machinesRepository.save(machinesRepository.create(testMachineOfSyncedNamedOp));
   });
 
   afterEach(async () => {
@@ -77,7 +77,7 @@ describe('UsersLinesService', () => {
     const machinesRepository = getRepository(MachinesEntity);
     await machinesRepository.delete({ destinationId: testMachineOp.destinationId });
 
-    await expressServer.closeDbConnection();
+    await connection.close();
   });
 
   it('If visitor already has account, It will reply this.', async () => {

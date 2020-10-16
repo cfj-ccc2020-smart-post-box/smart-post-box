@@ -296,61 +296,61 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@istanbuljs/schema",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@istanbuljs/schema/LICENSE"
   },
-  "@jest/console@26.3.0": {
+  "@jest/console@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/console",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/console/LICENSE"
   },
-  "@jest/core@26.4.2": {
+  "@jest/core@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/core",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/core/LICENSE"
   },
-  "@jest/environment@26.3.0": {
+  "@jest/environment@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/environment",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/environment/LICENSE"
   },
-  "@jest/fake-timers@26.3.0": {
+  "@jest/fake-timers@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/fake-timers",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/fake-timers/LICENSE"
   },
-  "@jest/globals@26.4.2": {
+  "@jest/globals@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/globals",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/globals/LICENSE"
   },
-  "@jest/reporters@26.4.1": {
+  "@jest/reporters@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/reporters",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/reporters/LICENSE"
   },
-  "@jest/source-map@26.3.0": {
+  "@jest/source-map@26.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/source-map",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/source-map/LICENSE"
   },
-  "@jest/test-result@26.3.0": {
+  "@jest/test-result@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/test-result",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/test-result/LICENSE"
   },
-  "@jest/test-sequencer@26.4.2": {
+  "@jest/test-sequencer@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/test-sequencer",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/test-sequencer/LICENSE"
   },
-  "@jest/transform@26.3.0": {
+  "@jest/transform@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/transform",
@@ -363,6 +363,12 @@
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/jest/node_modules/@jest/types/LICENSE"
   },
   "@jest/types@26.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/jest",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/ts-jest/node_modules/@jest/types",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/ts-jest/node_modules/@jest/types/LICENSE"
+  },
+  "@jest/types@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@jest/types",
@@ -422,7 +428,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@sinonjs/fake-timers",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@sinonjs/fake-timers/LICENSE"
   },
-  "@slack/bolt@2.3.0": {
+  "@slack/bolt@2.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/slackapi/bolt",
     "publisher": "Slack Technologies, Inc.",
@@ -456,6 +462,12 @@
     "publisher": "Slack Technologies, Inc.",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@slack/web-api",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@slack/web-api/README.md"
+  },
+  "@sqltools/formatter@1.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/mtxr/vscode-sqltools",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@sqltools/formatter",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@sqltools/formatter/LICENSE"
   },
   "@szmarczak/http-timer@1.1.2": {
     "licenses": "MIT",
@@ -496,6 +508,12 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/babel__traverse",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/babel__traverse/LICENSE"
   },
+  "@types/babel__traverse@7.0.15": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-snapshot/node_modules/@types/babel__traverse",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-snapshot/node_modules/@types/babel__traverse/LICENSE"
+  },
   "@types/body-parser@1.19.0": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
@@ -519,12 +537,6 @@
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/debug",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/debug/LICENSE"
-  },
-  "@types/eslint-visitor-keys@1.0.0": {
-    "licenses": "MIT",
-    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/eslint-visitor-keys",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/eslint-visitor-keys/LICENSE"
   },
   "@types/express-serve-static-core@4.17.12": {
     "licenses": "MIT",
@@ -658,7 +670,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/pino-std-serializers",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/pino-std-serializers/LICENSE"
   },
-  "@types/pino@6.3.1": {
+  "@types/pino@6.3.2": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/pino",
@@ -712,7 +724,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/sonic-boom",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/sonic-boom/LICENSE"
   },
-  "@types/stack-utils@1.0.1": {
+  "@types/stack-utils@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/stack-utils",
@@ -736,17 +748,11 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/yargs",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/yargs/LICENSE"
   },
-  "@typescript-eslint/eslint-plugin@3.10.1": {
+  "@typescript-eslint/eslint-plugin@4.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/eslint-plugin",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/eslint-plugin/LICENSE"
-  },
-  "@typescript-eslint/experimental-utils@3.10.1": {
-    "licenses": "MIT",
-    "repository": "https://github.com/typescript-eslint/typescript-eslint",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/experimental-utils",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/experimental-utils/LICENSE"
   },
   "@typescript-eslint/experimental-utils@4.2.0": {
     "licenses": "MIT",
@@ -754,7 +760,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/experimental-utils",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/experimental-utils/LICENSE"
   },
-  "@typescript-eslint/parser@3.10.1": {
+  "@typescript-eslint/experimental-utils@4.4.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/experimental-utils",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/experimental-utils/LICENSE"
+  },
+  "@typescript-eslint/parser@4.4.1": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/parser",
@@ -763,26 +775,26 @@
   "@typescript-eslint/scope-manager@4.2.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/scope-manager",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/scope-manager/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/scope-manager",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/scope-manager/LICENSE"
   },
-  "@typescript-eslint/types@3.10.1": {
+  "@typescript-eslint/scope-manager@4.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/experimental-utils/node_modules/@typescript-eslint/types",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/experimental-utils/node_modules/@typescript-eslint/types/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/scope-manager",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/scope-manager/LICENSE"
   },
   "@typescript-eslint/types@4.2.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/types",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/types/LICENSE"
+  },
+  "@typescript-eslint/types@4.4.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/types",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/types/LICENSE"
-  },
-  "@typescript-eslint/typescript-estree@3.10.1": {
-    "licenses": "BSD-2-Clause",
-    "repository": "https://github.com/typescript-eslint/typescript-eslint",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/typescript-estree",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/typescript-estree/LICENSE"
   },
   "@typescript-eslint/typescript-estree@4.2.0": {
     "licenses": "BSD-2-Clause",
@@ -790,17 +802,23 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/typescript-estree",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-plugin-jest/node_modules/@typescript-eslint/typescript-estree/LICENSE"
   },
-  "@typescript-eslint/visitor-keys@3.10.1": {
-    "licenses": "MIT",
+  "@typescript-eslint/typescript-estree@4.4.1": {
+    "licenses": "BSD-2-Clause",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/visitor-keys",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/typescript-estree/node_modules/@typescript-eslint/visitor-keys/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/typescript-estree",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/typescript-estree/LICENSE"
   },
   "@typescript-eslint/visitor-keys@4.2.0": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/visitor-keys",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/visitor-keys/LICENSE"
+  },
+  "@typescript-eslint/visitor-keys@4.4.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/scope-manager/node_modules/@typescript-eslint/visitor-keys",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/scope-manager/node_modules/@typescript-eslint/visitor-keys/LICENSE"
   },
   "JSONSelect@0.4.0": {
     "licenses": "Custom: http://jsonselect.org",
@@ -927,8 +945,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/node_modules/ansi-regex",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/node_modules/ansi-regex/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/ansi-regex",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/ansi-regex/license"
   },
   "ansi-regex@5.0.0": {
     "licenses": "MIT",
@@ -954,8 +972,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/node_modules/ansi-styles",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/node_modules/ansi-styles/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/ansi-styles",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/ansi-styles/license"
   },
   "ansi-styles@4.2.1": {
     "licenses": "MIT",
@@ -1265,7 +1283,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/axios",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/axios/LICENSE"
   },
-  "babel-jest@26.3.0": {
+  "babel-jest@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/babel-jest",
@@ -1278,7 +1296,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/babel-plugin-istanbul",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/babel-plugin-istanbul/LICENSE"
   },
-  "babel-plugin-jest-hoist@26.2.0": {
+  "babel-plugin-jest-hoist@26.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/babel-plugin-jest-hoist",
@@ -1292,7 +1310,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/babel-preset-current-node-syntax",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/babel-preset-current-node-syntax/LICENSE"
   },
-  "babel-preset-jest@26.3.0": {
+  "babel-preset-jest@26.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/babel-preset-jest",
@@ -1351,15 +1369,6 @@
     "url": "sindresorhus.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/binary-extensions",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/binary-extensions/license"
-  },
-  "bindings@1.5.0": {
-    "licenses": "MIT",
-    "repository": "https://github.com/TooTallNate/node-bindings",
-    "publisher": "Nathan Rajlich",
-    "email": "nathan@tootallnate.net",
-    "url": "http://tootallnate.net",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/bindings",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/bindings/LICENSE.md"
   },
   "block-stream@0.0.9": {
     "licenses": "ISC",
@@ -1601,8 +1610,8 @@
   "chalk@2.4.2": {
     "licenses": "MIT",
     "repository": "https://github.com/chalk/chalk",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/chalk",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/chalk/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@babel/highlight/node_modules/chalk",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@babel/highlight/node_modules/chalk/license"
   },
   "chalk@3.0.0": {
     "licenses": "MIT",
@@ -1730,16 +1739,24 @@
     "repository": "https://github.com/yargs/cliui",
     "publisher": "Ben Coe",
     "email": "ben@npmjs.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/cliui",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/cliui/LICENSE.txt"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/cliui",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/cliui/LICENSE.txt"
   },
   "cliui@6.0.0": {
     "licenses": "ISC",
     "repository": "https://github.com/yargs/cliui",
     "publisher": "Ben Coe",
     "email": "ben@npmjs.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/cliui",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/cliui/LICENSE.txt"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/cliui",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/cliui/LICENSE.txt"
+  },
+  "cliui@7.0.1": {
+    "licenses": "ISC",
+    "repository": "https://github.com/yargs/cliui",
+    "publisher": "Ben Coe",
+    "email": "ben@npmjs.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/cliui",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/cliui/LICENSE.txt"
   },
   "clone-response@1.0.2": {
     "licenses": "MIT",
@@ -1793,8 +1810,8 @@
     "repository": "https://github.com/Qix-/color-convert",
     "publisher": "Heather Arthur",
     "email": "fayearthur@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/node_modules/color-convert",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/node_modules/color-convert/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/color-convert",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/color-convert/LICENSE"
   },
   "color-convert@2.0.1": {
     "licenses": "MIT",
@@ -1809,8 +1826,8 @@
     "repository": "https://github.com/dfcreative/color-name",
     "publisher": "DY",
     "email": "dfcreative@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/node_modules/color-name",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/node_modules/color-name/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/color-name",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/color-name/LICENSE"
   },
   "color-name@1.1.4": {
     "licenses": "MIT",
@@ -2123,14 +2140,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dateformat",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dateformat/LICENSE"
   },
-  "deasync@0.1.20": {
-    "licenses": "MIT",
-    "repository": "https://github.com/abbr/deasync",
-    "publisher": "Vladimir Kurchatkin",
-    "email": "vladimir.kurchatkin@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/deasync",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/deasync/LICENSE"
-  },
   "debug@2.6.9": {
     "licenses": "MIT",
     "repository": "https://github.com/visionmedia/debug",
@@ -2369,7 +2378,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/jest/node_modules/diff-sequences",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/jest/node_modules/diff-sequences/LICENSE"
   },
-  "diff-sequences@26.3.0": {
+  "diff-sequences@26.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/diff-sequences",
@@ -2527,16 +2536,16 @@
     "repository": "https://github.com/mathiasbynens/emoji-regex",
     "publisher": "Mathias Bynens",
     "url": "https://mathiasbynens.be/",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/emoji-regex",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/emoji-regex/LICENSE-MIT.txt"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/emoji-regex",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/emoji-regex/LICENSE-MIT.txt"
   },
   "emoji-regex@8.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/mathiasbynens/emoji-regex",
     "publisher": "Mathias Bynens",
     "url": "https://mathiasbynens.be/",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/emoji-regex",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/emoji-regex/LICENSE-MIT.txt"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/emoji-regex",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/emoji-regex/LICENSE-MIT.txt"
   },
   "encodeurl@1.0.2": {
     "licenses": "MIT",
@@ -2639,6 +2648,15 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/raml-parser/node_modules/es6-promise",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/raml-parser/node_modules/es6-promise/LICENSE"
   },
+  "escalade@3.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/lukeed/escalade",
+    "publisher": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/escalade",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/escalade/license"
+  },
   "escape-goat@2.1.1": {
     "licenses": "MIT",
     "repository": "https://github.com/sindresorhus/escape-goat",
@@ -2697,7 +2715,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-config-prettier",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-config-prettier/LICENSE"
   },
-  "eslint-plugin-jest@24.0.2": {
+  "eslint-plugin-jest@24.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/jest-community/eslint-plugin-jest",
     "publisher": "Jonathan Kim",
@@ -2731,18 +2749,18 @@
     "repository": "https://github.com/eslint/eslint-visitor-keys",
     "publisher": "Toru Nagashima",
     "url": "https://github.com/mysticatea",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-visitor-keys",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-visitor-keys/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/espree/node_modules/eslint-visitor-keys",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/espree/node_modules/eslint-visitor-keys/LICENSE"
   },
   "eslint-visitor-keys@2.0.0": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/eslint/eslint-visitor-keys",
     "publisher": "Toru Nagashima",
     "url": "https://github.com/mysticatea",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-visitor-keys",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/eslint-visitor-keys/LICENSE"
   },
-  "eslint@7.9.0": {
+  "eslint@7.11.0": {
     "licenses": "MIT",
     "repository": "https://github.com/eslint/eslint",
     "publisher": "Nicholas C. Zakas",
@@ -2888,7 +2906,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/expand-brackets",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/expand-brackets/LICENSE"
   },
-  "expect@26.4.2": {
+  "expect@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/expect",
@@ -2902,7 +2920,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/express-fileupload",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/express-fileupload/LICENSE"
   },
-  "express-openapi-validator@3.17.2": {
+  "express-openapi-validator@4.2.0": {
     "licenses": "MIT",
     "repository": "https://github.com/cdimascio/express-openapi-validator",
     "publisher": "Carmine DiMascio",
@@ -3033,7 +3051,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fast-levenshtein",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fast-levenshtein/LICENSE.md"
   },
-  "fast-redact@2.0.0": {
+  "fast-redact@3.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/davidmarkclements/fast-redact",
     "publisher": "David Mark Clements",
@@ -3108,15 +3126,6 @@
     "url": "sindresorhus.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@line/bot-sdk/node_modules/file-type",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@line/bot-sdk/node_modules/file-type/license"
-  },
-  "file-uri-to-path@1.0.0": {
-    "licenses": "MIT",
-    "repository": "https://github.com/TooTallNate/file-uri-to-path",
-    "publisher": "Nathan Rajlich",
-    "email": "nathan@tootallnate.net",
-    "url": "http://n8.io/",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-uri-to-path",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/file-uri-to-path/LICENSE"
   },
   "fill-keys@1.0.2": {
     "licenses": "MIT",
@@ -3261,6 +3270,15 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@slack/web-api/node_modules/form-data",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@slack/web-api/node_modules/form-data/License"
   },
+  "form-data@3.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/form-data/form-data",
+    "publisher": "Felix Geisendörfer",
+    "email": "felix@debuggable.com",
+    "url": "http://debuggable.com/",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/form-data",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/form-data/License"
+  },
   "format-util@1.0.5": {
     "licenses": "MIT",
     "repository": "https://github.com/tmpfs/format-util",
@@ -3303,16 +3321,16 @@
     "repository": "https://github.com/jprichardson/node-fs-extra",
     "publisher": "JP Richardson",
     "email": "jprichardson@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/fs-extra",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/fs-extra/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fs-extra",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fs-extra/LICENSE"
   },
   "fs-extra@9.0.1": {
     "licenses": "MIT",
     "repository": "https://github.com/jprichardson/node-fs-extra",
     "publisher": "JP Richardson",
     "email": "jprichardson@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fs-extra",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fs-extra/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc/node_modules/fs-extra",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc/node_modules/fs-extra/LICENSE"
   },
   "fs-minipass@1.2.7": {
     "licenses": "ISC",
@@ -3606,8 +3624,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/has-flag",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/has-flag/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@babel/highlight/node_modules/has-flag",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@babel/highlight/node_modules/has-flag/license"
   },
   "has-flag@4.0.0": {
     "licenses": "MIT",
@@ -3693,7 +3711,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/helmet",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/helmet/LICENSE"
   },
-  "highlight.js@10.2.0": {
+  "highlight.js@10.2.1": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/highlightjs/highlight.js",
     "publisher": "Ivan Sagalaev",
@@ -4147,8 +4165,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/is-fullwidth-code-point",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/is-fullwidth-code-point/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/node_modules/is-fullwidth-code-point",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/node_modules/is-fullwidth-code-point/license"
   },
   "is-generator-fn@2.1.0": {
     "licenses": "MIT",
@@ -4458,19 +4476,19 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/iterate-value",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/iterate-value/LICENSE"
   },
-  "jest-changed-files@26.3.0": {
+  "jest-changed-files@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-changed-files",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-changed-files/LICENSE"
   },
-  "jest-cli@26.4.2": {
+  "jest-cli@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-cli",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-cli/LICENSE"
   },
-  "jest-config@26.4.2": {
+  "jest-config@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-config",
@@ -4482,7 +4500,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/jest/node_modules/jest-diff",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/jest/node_modules/jest-diff/LICENSE"
   },
-  "jest-diff@26.4.2": {
+  "jest-diff@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-diff",
@@ -4494,7 +4512,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-docblock",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-docblock/LICENSE"
   },
-  "jest-each@26.4.2": {
+  "jest-each@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "publisher": "Matt Phillips",
@@ -4502,13 +4520,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-each",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-each/LICENSE"
   },
-  "jest-environment-jsdom@26.3.0": {
+  "jest-environment-jsdom@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-environment-jsdom",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-environment-jsdom/LICENSE"
   },
-  "jest-environment-node@26.3.0": {
+  "jest-environment-node@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-environment-node",
@@ -4526,37 +4544,37 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-get-type",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-get-type/LICENSE"
   },
-  "jest-haste-map@26.3.0": {
+  "jest-haste-map@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-haste-map",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-haste-map/LICENSE"
   },
-  "jest-jasmine2@26.4.2": {
+  "jest-jasmine2@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-jasmine2",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-jasmine2/LICENSE"
   },
-  "jest-leak-detector@26.4.2": {
+  "jest-leak-detector@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-leak-detector",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-leak-detector/LICENSE"
   },
-  "jest-matcher-utils@26.4.2": {
+  "jest-matcher-utils@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-matcher-utils",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-matcher-utils/LICENSE"
   },
-  "jest-message-util@26.3.0": {
+  "jest-message-util@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-message-util",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-message-util/LICENSE"
   },
-  "jest-mock@26.3.0": {
+  "jest-mock@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-mock",
@@ -4574,37 +4592,37 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-regex-util",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-regex-util/LICENSE"
   },
-  "jest-resolve-dependencies@26.4.2": {
+  "jest-resolve-dependencies@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-resolve-dependencies",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-resolve-dependencies/LICENSE"
   },
-  "jest-resolve@26.4.0": {
+  "jest-resolve@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-resolve",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-resolve/LICENSE"
   },
-  "jest-runner@26.4.2": {
+  "jest-runner@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-runner",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-runner/LICENSE"
   },
-  "jest-runtime@26.4.2": {
+  "jest-runtime@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-runtime",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-runtime/LICENSE"
   },
-  "jest-serializer@26.3.0": {
+  "jest-serializer@26.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-serializer",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-serializer/LICENSE"
   },
-  "jest-snapshot@26.4.2": {
+  "jest-snapshot@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-snapshot",
@@ -4613,28 +4631,34 @@
   "jest-util@26.3.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/ts-jest/node_modules/jest-util",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/ts-jest/node_modules/jest-util/LICENSE"
+  },
+  "jest-util@26.5.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-util",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-util/LICENSE"
   },
-  "jest-validate@26.4.2": {
+  "jest-validate@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-validate",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-validate/LICENSE"
   },
-  "jest-watcher@26.3.0": {
+  "jest-watcher@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-watcher",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-watcher/LICENSE"
   },
-  "jest-worker@26.3.0": {
+  "jest-worker@26.5.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-worker",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-worker/LICENSE"
   },
-  "jest@26.4.2": {
+  "jest@26.5.3": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest",
@@ -4886,16 +4910,16 @@
     "repository": "https://github.com/jprichardson/node-jsonfile",
     "publisher": "JP Richardson",
     "email": "jprichardson@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/jsonfile",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/jsonfile/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jsonfile",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jsonfile/LICENSE"
   },
   "jsonfile@6.0.1": {
     "licenses": "MIT",
     "repository": "https://github.com/jprichardson/node-jsonfile",
     "publisher": "JP Richardson",
     "email": "jprichardson@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jsonfile",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jsonfile/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc/node_modules/jsonfile",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc/node_modules/jsonfile/LICENSE"
   },
   "jsonpath-plus@1.1.0": {
     "licenses": "MIT",
@@ -5451,6 +5475,15 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/mime",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/mime/LICENSE"
   },
+  "mime@2.4.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/broofa/mime",
+    "publisher": "Robert Kieffer",
+    "email": "robert@broofa.com",
+    "url": "http://github.com/broofa",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/mime",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/mime/LICENSE"
+  },
   "mimic-fn@1.2.0": {
     "licenses": "MIT",
     "repository": "https://github.com/sindresorhus/mimic-fn",
@@ -5563,6 +5596,15 @@
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/module-not-found-error/license"
   },
   "moment@2.28.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/moment/moment",
+    "publisher": "Iskren Ivov Chernev",
+    "email": "iskren.chernev@gmail.com",
+    "url": "https://github.com/ichernev",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/moment",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/moment/LICENSE"
+  },
+  "moment@2.29.1": {
     "licenses": "MIT",
     "repository": "https://github.com/moment/moment",
     "publisher": "Iskren Ivov Chernev",
@@ -5683,12 +5725,6 @@
     "repository": "https://github.com/electerious/nice-try",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/nice-try",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/nice-try/LICENSE"
-  },
-  "node-addon-api@1.7.2": {
-    "licenses": "MIT",
-    "repository": "https://github.com/nodejs/node-addon-api",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/deasync/node_modules/node-addon-api",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/deasync/node_modules/node-addon-api/LICENSE.md"
   },
   "node-addon-api@2.0.0": {
     "licenses": "MIT",
@@ -6414,8 +6450,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/path-type",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/path-type/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/read-pkg/node_modules/path-type",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/read-pkg/node_modules/path-type/license"
   },
   "path-type@4.0.0": {
     "licenses": "MIT",
@@ -6423,8 +6459,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dir-glob/node_modules/path-type",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/dir-glob/node_modules/path-type/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/path-type",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/path-type/license"
   },
   "pathval@1.1.0": {
     "licenses": "MIT",
@@ -6456,7 +6492,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/performance-now",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/performance-now/license.txt"
   },
-  "pg-connection-string@2.3.0": {
+  "pg-connection-string@2.4.0": {
     "licenses": "MIT",
     "repository": "https://github.com/brianc/node-postgres",
     "publisher": "Blaine Bublitz",
@@ -6478,7 +6514,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg-pool",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg-pool/LICENSE"
   },
-  "pg-protocol@1.2.5": {
+  "pg-protocol@1.3.0": {
     "licenses": "MIT",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg-protocol",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg-protocol/LICENSE"
@@ -6490,7 +6526,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg-types",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg-types/README.md"
   },
-  "pg@8.3.3": {
+  "pg@8.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/brianc/node-postgres",
     "publisher": "Brian Carlson",
@@ -6523,7 +6559,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pify",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pify/license"
   },
-  "pino-pretty@4.2.1": {
+  "pino-pretty@4.3.0": {
     "licenses": "MIT",
     "repository": "https://github.com/pinojs/pino-pretty",
     "publisher": "James Sumners",
@@ -6539,7 +6575,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pino-std-serializers",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pino-std-serializers/LICENSE"
   },
-  "pino@6.6.1": {
+  "pino@6.7.0": {
     "licenses": "MIT",
     "repository": "https://github.com/pinojs/pino",
     "publisher": "Matteo Collina",
@@ -6680,7 +6716,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/jest/node_modules/pretty-format",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@types/jest/node_modules/pretty-format/LICENSE"
   },
-  "pretty-format@26.4.2": {
+  "pretty-format@26.5.2": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
     "publisher": "James Kyle",
@@ -6994,8 +7030,8 @@
   "readable-stream@3.6.0": {
     "licenses": "MIT",
     "repository": "https://github.com/nodejs/readable-stream",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/split2/node_modules/readable-stream",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/split2/node_modules/readable-stream/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/readable-stream",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/readable-stream/LICENSE"
   },
   "readable-web-to-node-stream@2.0.0": {
     "licenses": "MIT",
@@ -7381,12 +7417,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/semver-diff",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/semver-diff/license"
   },
-  "semver@4.3.2": {
-    "licenses": "BSD*",
-    "repository": "https://github.com/npm/node-semver",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg/node_modules/semver",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/pg/node_modules/semver/LICENSE"
-  },
   "semver@5.3.0": {
     "licenses": "ISC",
     "repository": "https://github.com/npm/node-semver",
@@ -7396,8 +7426,8 @@
   "semver@5.7.1": {
     "licenses": "ISC",
     "repository": "https://github.com/npm/node-semver",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/semver",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/semver/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jsonwebtoken/node_modules/semver",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jsonwebtoken/node_modules/semver/LICENSE"
   },
   "semver@6.3.0": {
     "licenses": "ISC",
@@ -7408,8 +7438,8 @@
   "semver@7.3.2": {
     "licenses": "ISC",
     "repository": "https://github.com/npm/node-semver",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-snapshot/node_modules/semver",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/jest-snapshot/node_modules/semver/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/semver",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/semver/LICENSE"
   },
   "send@0.17.1": {
     "licenses": "MIT",
@@ -7895,8 +7925,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/string-width",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/string-width/license"
   },
   "string-width@4.2.0": {
     "licenses": "MIT",
@@ -7904,8 +7934,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/string-width",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/string-width/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/license"
   },
   "string.prototype.trimend@1.0.1": {
     "licenses": "MIT",
@@ -7938,8 +7968,8 @@
   "string_decoder@1.3.0": {
     "licenses": "MIT",
     "repository": "https://github.com/nodejs/string_decoder",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/split2/node_modules/string_decoder",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/split2/node_modules/string_decoder/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/string_decoder",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/node_modules/string_decoder/LICENSE"
   },
   "strip-ansi@3.0.1": {
     "licenses": "MIT",
@@ -7965,8 +7995,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/node_modules/strip-ansi",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/string-width/node_modules/strip-ansi/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/strip-ansi",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/strip-ansi/license"
   },
   "strip-ansi@6.0.0": {
     "licenses": "MIT",
@@ -8044,10 +8074,18 @@
     "repository": "https://github.com/visionmedia/superagent",
     "publisher": "TJ Holowaychuk",
     "email": "tj@vision-media.ca",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/path-loader/node_modules/superagent",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/path-loader/node_modules/superagent/LICENSE"
+  },
+  "superagent@6.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/visionmedia/superagent",
+    "publisher": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/superagent/LICENSE"
   },
-  "supertest@4.0.2": {
+  "supertest@5.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/visionmedia/supertest",
     "publisher": "TJ Holowaychuk",
@@ -8069,8 +8107,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/supports-color",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/supports-color/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@babel/highlight/node_modules/supports-color",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/@babel/highlight/node_modules/supports-color/license"
   },
   "supports-color@7.2.0": {
     "licenses": "MIT",
@@ -8403,7 +8441,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/traverse",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/traverse/LICENSE"
   },
-  "ts-jest@26.3.0": {
+  "ts-jest@26.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/kulshekhar/ts-jest",
     "publisher": "Kulshekhar Kabra",
@@ -8562,26 +8600,26 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedarray",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedarray/LICENSE"
   },
-  "typedoc-default-themes@0.11.3": {
+  "typedoc-default-themes@0.11.4": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/TypeStrong/typedoc-default-themes",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc-default-themes",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc-default-themes/LICENSE"
   },
-  "typedoc-plugin-markdown@2.4.2": {
+  "typedoc-plugin-markdown@3.0.8": {
     "licenses": "MIT",
     "repository": "https://github.com/tgreyuk/typedoc-plugin-markdown",
     "publisher": "Thomas Grey",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc-plugin-markdown",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc-plugin-markdown/LICENSE"
   },
-  "typedoc@0.19.1": {
+  "typedoc@0.19.2": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/TypeStrong/TypeDoc",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typedoc/LICENSE"
   },
-  "typeorm@0.2.26": {
+  "typeorm@0.2.28": {
     "licenses": "MIT",
     "repository": "https://github.com/typeorm/typeorm",
     "publisher": "Umed Khudoiberdiev",
@@ -8603,7 +8641,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/typescript",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/typescript/LICENSE.txt"
   },
-  "typescript@4.0.2": {
+  "typescript@4.0.3": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/Microsoft/TypeScript",
     "publisher": "Microsoft Corp.",
@@ -8670,8 +8708,8 @@
     "repository": "https://github.com/RyanZim/universalify",
     "publisher": "Ryan Zimmerman",
     "email": "opensrc@ryanzim.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/universalify",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/universalify/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fs-extra/node_modules/universalify",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/fs-extra/node_modules/universalify/LICENSE"
   },
   "universalify@1.0.0": {
     "licenses": "MIT",
@@ -8821,7 +8859,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/v8-compile-cache",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/v8-compile-cache/LICENSE"
   },
-  "v8-to-istanbul@5.0.1": {
+  "v8-to-istanbul@6.0.1": {
     "licenses": "ISC",
     "repository": "https://github.com/istanbuljs/v8-to-istanbul",
     "publisher": "Ben Coe",
@@ -9041,8 +9079,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/wrap-ansi",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/wrap-ansi/license"
   },
   "wrap-ansi@6.2.0": {
     "licenses": "MIT",
@@ -9050,8 +9088,17 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/wrap-ansi",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/wrap-ansi/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/wrap-ansi/license"
+  },
+  "wrap-ansi@7.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/chalk/wrap-ansi",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "https://sindresorhus.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/wrap-ansi",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/wrap-ansi/license"
   },
   "wrappy@1.0.2": {
     "licenses": "ISC",
@@ -9155,6 +9202,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/y18n",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/y18n/LICENSE"
   },
+  "y18n@5.0.2": {
+    "licenses": "ISC",
+    "repository": "https://github.com/yargs/y18n",
+    "publisher": "Ben Coe",
+    "email": "bencoe@gmail.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/y18n",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/y18n/LICENSE"
+  },
   "yallist@2.1.2": {
     "licenses": "ISC",
     "repository": "https://github.com/isaacs/yallist",
@@ -9195,14 +9250,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargonaut",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargonaut/LICENSE"
   },
-  "yargs-parser@13.1.2": {
-    "licenses": "ISC",
-    "repository": "https://github.com/yargs/yargs-parser",
-    "publisher": "Ben Coe",
-    "email": "ben@npmjs.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/yargs-parser",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/yargs-parser/LICENSE.txt"
-  },
   "yargs-parser@15.0.1": {
     "licenses": "ISC",
     "repository": "https://github.com/yargs/yargs-parser",
@@ -9212,6 +9259,14 @@
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/tsoa/node_modules/yargs-parser/LICENSE.txt"
   },
   "yargs-parser@18.1.3": {
+    "licenses": "ISC",
+    "repository": "https://github.com/yargs/yargs-parser",
+    "publisher": "Ben Coe",
+    "email": "ben@npmjs.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/yargs-parser",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/node_modules/yargs-parser/LICENSE.txt"
+  },
+  "yargs-parser@20.2.1": {
     "licenses": "ISC",
     "repository": "https://github.com/yargs/yargs-parser",
     "publisher": "Ben Coe",
@@ -9227,12 +9282,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/swagger2openapi/node_modules/yargs-parser",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/swagger2openapi/node_modules/yargs-parser/LICENSE.txt"
   },
-  "yargs@13.3.2": {
-    "licenses": "MIT",
-    "repository": "https://github.com/yargs/yargs",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/yargs",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/yargs/LICENSE"
-  },
   "yargs@14.2.3": {
     "licenses": "MIT",
     "repository": "https://github.com/yargs/yargs",
@@ -9244,6 +9293,12 @@
     "repository": "https://github.com/yargs/yargs",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/yargs/LICENSE"
+  },
+  "yargs@16.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/yargs/yargs",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/yargs",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/express/node_modules/typeorm/node_modules/yargs/LICENSE"
   },
   "yargs@9.0.1": {
     "licenses": "MIT",

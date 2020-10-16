@@ -1,19 +1,4 @@
 {
-  "@ant-design-vue/babel-helper-vue-transform-on@1.0.1": {
-    "licenses": "MIT",
-    "publisher": "Amour1688",
-    "email": "lcz_1996@foxmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-helper-vue-transform-on",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-helper-vue-transform-on/README.md"
-  },
-  "@ant-design-vue/babel-plugin-jsx@1.0.0-rc.1": {
-    "licenses": "MIT",
-    "repository": "https://github.com/vueComponent/jsx",
-    "publisher": "Amour1688",
-    "email": "lcz_1996@foxmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-plugin-jsx",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-plugin-jsx/README.md"
-  },
   "@babel/code-frame@7.10.4": {
     "licenses": "MIT",
     "repository": "https://github.com/babel/babel",
@@ -665,6 +650,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/xvfb",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/xvfb/LICENSE"
   },
+  "@eslint/eslintrc@0.1.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/eslint/eslintrc",
+    "publisher": "Nicholas C. Zakas",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@eslint/eslintrc",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@eslint/eslintrc/LICENSE"
+  },
   "@hapi/address@2.1.4": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/hapijs/address",
@@ -758,6 +750,12 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@jest/types",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@jest/types/LICENSE"
   },
+  "@jest/types@25.5.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/jest",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/@jest/types",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/@jest/types/LICENSE"
+  },
   "@mrmlnc/readdir-enhanced@2.2.1": {
     "licenses": "MIT",
     "repository": "https://github.com/bigstickcarpet/readdir-enhanced",
@@ -766,11 +764,29 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@mrmlnc/readdir-enhanced",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@mrmlnc/readdir-enhanced/LICENSE"
   },
+  "@nodelib/fs.scandir@2.1.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@nodelib/fs.scandir",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@nodelib/fs.scandir/LICENSE"
+  },
   "@nodelib/fs.stat@1.1.3": {
     "licenses": "MIT",
     "repository": "https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fast-glob/node_modules/@nodelib/fs.stat",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fast-glob/node_modules/@nodelib/fs.stat/README.md"
+  },
+  "@nodelib/fs.stat@2.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@nodelib/fs.stat",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@nodelib/fs.stat/README.md"
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@nodelib/fs.stat/LICENSE"
+  },
+  "@nodelib/fs.walk@1.2.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@nodelib/fs.walk",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@nodelib/fs.walk/LICENSE"
   },
   "@prerenderer/prerenderer@0.7.2": {
     "licenses": "MIT",
@@ -857,12 +873,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/connect",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/connect/LICENSE"
   },
-  "@types/eslint-visitor-keys@1.0.0": {
-    "licenses": "MIT",
-    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/eslint-visitor-keys",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/eslint-visitor-keys/LICENSE"
-  },
   "@types/express-serve-static-core@4.17.12": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
@@ -914,6 +924,12 @@
   "@types/jest@24.9.1": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-unit-jest/node_modules/@types/jest",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-unit-jest/node_modules/@types/jest/LICENSE"
+  },
+  "@types/jest@26.0.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/LICENSE"
   },
@@ -928,12 +944,6 @@
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/mime",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/mime/LICENSE"
-  },
-  "@types/mini-css-extract-plugin@0.9.1": {
-    "licenses": "MIT",
-    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/mini-css-extract-plugin",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/mini-css-extract-plugin/LICENSE"
   },
   "@types/minimatch@3.0.3": {
     "licenses": "MIT",
@@ -1071,29 +1081,53 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/yargs",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/yargs/LICENSE"
   },
-  "@typescript-eslint/eslint-plugin@2.34.0": {
+  "@types/yargs@15.0.7": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/@types/yargs",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/@types/yargs/LICENSE"
+  },
+  "@typescript-eslint/eslint-plugin@4.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/eslint-plugin",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/eslint-plugin/LICENSE"
   },
-  "@typescript-eslint/experimental-utils@2.34.0": {
+  "@typescript-eslint/experimental-utils@4.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/experimental-utils",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/experimental-utils/LICENSE"
   },
-  "@typescript-eslint/parser@2.34.0": {
+  "@typescript-eslint/parser@4.4.1": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/parser",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/parser/LICENSE"
   },
-  "@typescript-eslint/typescript-estree@2.34.0": {
+  "@typescript-eslint/scope-manager@4.4.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/scope-manager",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/scope-manager/LICENSE"
+  },
+  "@typescript-eslint/types@4.4.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/types",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/types/LICENSE"
+  },
+  "@typescript-eslint/typescript-estree@4.4.1": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/typescript-eslint/typescript-eslint",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/LICENSE"
+  },
+  "@typescript-eslint/visitor-keys@4.4.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/visitor-keys",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/visitor-keys/LICENSE"
   },
   "@vue/babel-helper-vue-jsx-merge-props@1.0.0": {
     "licenses": "MIT",
@@ -1102,6 +1136,21 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-helper-vue-jsx-merge-props",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-helper-vue-jsx-merge-props/README.md"
   },
+  "@vue/babel-helper-vue-transform-on@1.0.0-rc.2": {
+    "licenses": "MIT",
+    "publisher": "Amour1688",
+    "email": "lcz_1996@foxmail.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-helper-vue-transform-on",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-helper-vue-transform-on/README.md"
+  },
+  "@vue/babel-plugin-jsx@1.0.0-rc.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vuejs/jsx-next",
+    "publisher": "Amour1688",
+    "email": "lcz_1996@foxmail.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-jsx",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-jsx/README.md"
+  },
   "@vue/babel-plugin-transform-vue-jsx@1.1.2": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/jsx/tree/master/packages/babel-plugin-transform-vue-jsx",
@@ -1109,7 +1158,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-transform-vue-jsx",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-transform-vue-jsx/README.md"
   },
-  "@vue/babel-preset-app@4.5.4": {
+  "@vue/babel-preset-app@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
@@ -1156,77 +1205,77 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-sugar-v-on",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-sugar-v-on/README.md"
   },
-  "@vue/cli-overlay@4.5.4": {
+  "@vue/cli-overlay@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-overlay",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-overlay/LICENSE"
   },
-  "@vue/cli-plugin-babel@4.5.4": {
+  "@vue/cli-plugin-babel@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-babel",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-babel/LICENSE"
   },
-  "@vue/cli-plugin-e2e-cypress@4.5.4": {
+  "@vue/cli-plugin-e2e-cypress@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-e2e-cypress",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-e2e-cypress/LICENSE"
   },
-  "@vue/cli-plugin-eslint@4.5.4": {
+  "@vue/cli-plugin-eslint@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-eslint",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-eslint/LICENSE"
   },
-  "@vue/cli-plugin-pwa@4.5.4": {
+  "@vue/cli-plugin-pwa@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-pwa",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-pwa/LICENSE"
   },
-  "@vue/cli-plugin-router@4.5.4": {
+  "@vue/cli-plugin-router@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-router",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-router/LICENSE"
   },
-  "@vue/cli-plugin-typescript@4.5.4": {
+  "@vue/cli-plugin-typescript@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-typescript",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-typescript/LICENSE"
   },
-  "@vue/cli-plugin-unit-jest@4.5.4": {
+  "@vue/cli-plugin-unit-jest@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-unit-jest",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-unit-jest/LICENSE"
   },
-  "@vue/cli-plugin-vuex@4.5.4": {
+  "@vue/cli-plugin-vuex@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-vuex",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-vuex/LICENSE"
   },
-  "@vue/cli-service@4.5.4": {
+  "@vue/cli-service@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-service",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-service/LICENSE"
   },
-  "@vue/cli-shared-utils@4.5.4": {
+  "@vue/cli-shared-utils@4.5.7": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-cli",
     "publisher": "Evan You",
@@ -1247,7 +1296,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/eslint-config-prettier",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/eslint-config-prettier/LICENSE"
   },
-  "@vue/eslint-config-typescript@5.1.0": {
+  "@vue/eslint-config-typescript@7.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/eslint-config-typescript",
     "publisher": "Evan You",
@@ -1263,7 +1312,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/preload-webpack-plugin",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/preload-webpack-plugin/LICENSE"
   },
-  "@vue/test-utils@1.0.5": {
+  "@vue/test-utils@1.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-test-utils",
     "publisher": "vuejs",
@@ -1525,6 +1574,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/ajv",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/ajv/LICENSE"
   },
+  "ajv@6.12.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ajv-validator/ajv",
+    "publisher": "Evgeny Poberezkin",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader/node_modules/ajv",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader/node_modules/ajv/LICENSE"
+  },
   "alphanum-sort@1.0.2": {
     "licenses": "MIT",
     "repository": "https://github.com/TrySound/alphanum-sort",
@@ -1541,6 +1597,14 @@
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/ansi-align/LICENSE"
   },
   "ansi-colors@3.2.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/doowb/ansi-colors",
+    "publisher": "Brian Woodward",
+    "url": "https://github.com/doowb",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/webpack-log/node_modules/ansi-colors",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/webpack-log/node_modules/ansi-colors/LICENSE"
+  },
+  "ansi-colors@4.1.1": {
     "licenses": "MIT",
     "repository": "https://github.com/doowb/ansi-colors",
     "publisher": "Brian Woodward",
@@ -1624,8 +1688,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-styles",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/ansi-styles/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/ansi-styles",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/ansi-styles/license"
   },
   "ansi-styles@3.2.1": {
     "licenses": "MIT",
@@ -1759,6 +1823,15 @@
     "url": "sindresorhus.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/array-union",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/array-union/license"
+  },
+  "array-union@2.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/array-union",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/array-union",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/array-union/license"
   },
   "array-uniq@1.0.3": {
     "licenses": "MIT",
@@ -2217,8 +2290,8 @@
     "repository": "https://github.com/micromatch/braces",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/braces",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/braces/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/braces",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/braces/LICENSE"
   },
   "brorand@1.1.0": {
     "licenses": "MIT",
@@ -2507,8 +2580,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-plugin-jsx/node_modules/camelcase",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-plugin-jsx/node_modules/camelcase/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-jsx/node_modules/camelcase",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-jsx/node_modules/camelcase/license"
   },
   "caniuse-api@3.0.0": {
     "licenses": "MIT",
@@ -2551,8 +2624,8 @@
   "chalk@1.1.3": {
     "licenses": "MIT",
     "repository": "https://github.com/chalk/chalk",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/chalk",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/chalk/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/chalk",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/chalk/license"
   },
   "chalk@2.4.2": {
     "licenses": "MIT",
@@ -2784,14 +2857,6 @@
     "email": "ben@npmjs.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/cliui",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/cliui/LICENSE.txt"
-  },
-  "clone-deep@4.0.1": {
-    "licenses": "MIT",
-    "repository": "https://github.com/jonschlinkert/clone-deep",
-    "publisher": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/clone-deep",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/clone-deep/LICENSE"
   },
   "clone@1.0.4": {
     "licenses": "MIT",
@@ -3453,8 +3518,8 @@
     "repository": "https://github.com/visionmedia/debug",
     "publisher": "TJ Holowaychuk",
     "email": "tj@vision-media.ca",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/debug",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/debug/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/snapdragon/node_modules/debug",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/snapdragon/node_modules/debug/LICENSE"
   },
   "debug@3.2.6": {
     "licenses": "MIT",
@@ -3469,8 +3534,8 @@
     "repository": "https://github.com/visionmedia/debug",
     "publisher": "TJ Holowaychuk",
     "email": "tj@vision-media.ca",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@babel/traverse/node_modules/debug",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@babel/traverse/node_modules/debug/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/debug",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/debug/LICENSE"
   },
   "decamelize@1.2.0": {
     "licenses": "MIT",
@@ -3641,6 +3706,12 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/diff-sequences",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/diff-sequences/LICENSE"
   },
+  "diff-sequences@25.2.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/jest",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/diff-sequences",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/diff-sequences/LICENSE"
+  },
   "diff@4.0.2": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/kpdecker/jsdiff",
@@ -3662,6 +3733,15 @@
     "url": "github.com/kevva",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/dir-glob",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/dir-glob/license"
+  },
+  "dir-glob@3.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/kevva/dir-glob",
+    "publisher": "Kevin Mårtensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "github.com/kevva",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/dir-glob",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/dir-glob/license"
   },
   "dns-equal@1.0.0": {
     "licenses": "MIT",
@@ -3930,6 +4010,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/enhanced-resolve",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/enhanced-resolve/LICENSE"
   },
+  "enquirer@2.3.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/enquirer/enquirer",
+    "publisher": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/enquirer",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/enquirer/LICENSE"
+  },
   "entities@1.1.2": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/fb55/entities",
@@ -4046,6 +4134,14 @@
     "repository": "https://github.com/cypress-io/eslint-plugin-cypress",
     "publisher": "Chris Breiding",
     "url": "chris@cypress.io",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-e2e-cypress/node_modules/eslint-plugin-cypress",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/cli-plugin-e2e-cypress/node_modules/eslint-plugin-cypress/LICENSE"
+  },
+  "eslint-plugin-cypress@2.11.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/cypress-io/eslint-plugin-cypress",
+    "publisher": "Chris Breiding",
+    "url": "chris@cypress.io",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-plugin-cypress",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-plugin-cypress/LICENSE"
   },
@@ -4056,7 +4152,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-plugin-prettier",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-plugin-prettier/LICENSE.md"
   },
-  "eslint-plugin-vue@6.2.2": {
+  "eslint-plugin-vue@7.0.1": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/eslint-plugin-vue",
     "publisher": "Toru Nagashima",
@@ -4076,19 +4172,18 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-scope",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-scope/LICENSE"
   },
-  "eslint-utils@1.4.3": {
-    "licenses": "MIT",
-    "repository": "https://github.com/mysticatea/eslint-utils",
-    "publisher": "Toru Nagashima",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-utils",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-utils/LICENSE"
+  "eslint-scope@5.1.1": {
+    "licenses": "BSD-2-Clause",
+    "repository": "https://github.com/eslint/eslint-scope",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint/node_modules/eslint-scope",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint/node_modules/eslint-scope/LICENSE"
   },
   "eslint-utils@2.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/mysticatea/eslint-utils",
     "publisher": "Toru Nagashima",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/experimental-utils/node_modules/eslint-utils",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/experimental-utils/node_modules/eslint-utils/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-utils",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-utils/LICENSE"
   },
   "eslint-visitor-keys@1.3.0": {
     "licenses": "Apache-2.0",
@@ -4098,7 +4193,15 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-visitor-keys",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint-visitor-keys/LICENSE"
   },
-  "eslint@6.8.0": {
+  "eslint-visitor-keys@2.0.0": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/eslint/eslint-visitor-keys",
+    "publisher": "Toru Nagashima",
+    "url": "https://github.com/mysticatea",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/visitor-keys/node_modules/eslint-visitor-keys/LICENSE"
+  },
+  "eslint@7.11.0": {
     "licenses": "MIT",
     "repository": "https://github.com/eslint/eslint",
     "publisher": "Nicholas C. Zakas",
@@ -4107,6 +4210,14 @@
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint/LICENSE"
   },
   "espree@6.2.1": {
+    "licenses": "BSD-2-Clause",
+    "repository": "https://github.com/eslint/espree",
+    "publisher": "Nicholas C. Zakas",
+    "email": "nicholas+npm@nczconsulting.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/vue-eslint-parser/node_modules/espree",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/vue-eslint-parser/node_modules/espree/LICENSE"
+  },
+  "espree@7.3.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/eslint/espree",
     "publisher": "Nicholas C. Zakas",
@@ -4398,6 +4509,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fast-glob",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fast-glob/LICENSE"
   },
+  "fast-glob@3.2.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/mrmlnc/fast-glob",
+    "publisher": "Denis Malinochkin",
+    "url": "https://mrmlnc.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/fast-glob",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/fast-glob/LICENSE"
+  },
   "fast-json-stable-stringify@2.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/epoberezkin/fast-json-stable-stringify",
@@ -4415,6 +4534,14 @@
     "url": "http://www.hiddentao.com/",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fast-levenshtein",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fast-levenshtein/LICENSE.md"
+  },
+  "fastq@1.8.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/mcollina/fastq",
+    "publisher": "Matteo Collina",
+    "email": "hello@matteocollina.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fastq",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fastq/LICENSE"
   },
   "faye-websocket@0.10.0": {
     "licenses": "MIT",
@@ -4530,8 +4657,8 @@
     "repository": "https://github.com/jonschlinkert/fill-range",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/fill-range",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/fill-range/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/fill-range",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/fill-range/LICENSE"
   },
   "finalhandler@1.1.2": {
     "licenses": "MIT",
@@ -4880,8 +5007,8 @@
     "publisher": "Gulp Team",
     "email": "team@gulpjs.com",
     "url": "https://gulpjs.com/",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/glob-parent",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/glob-parent/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/glob-parent/LICENSE"
   },
   "glob-to-regexp@0.3.0": {
     "licenses": "BSD*",
@@ -4924,8 +5051,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint/node_modules/globals",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/eslint/node_modules/globals/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@eslint/eslintrc/node_modules/globals",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@eslint/eslintrc/node_modules/globals/license"
   },
   "globals@9.18.0": {
     "licenses": "MIT",
@@ -4935,6 +5062,15 @@
     "url": "http://sindresorhus.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-traverse/node_modules/globals",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-traverse/node_modules/globals/license"
+  },
+  "globby@11.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sindresorhus/globby",
+    "publisher": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/globby",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/globby/license"
   },
   "globby@6.1.0": {
     "licenses": "MIT",
@@ -5246,8 +5382,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-plugin-jsx/node_modules/html-tags",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@ant-design-vue/babel-plugin-jsx/node_modules/html-tags/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-jsx/node_modules/html-tags",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/babel-plugin-jsx/node_modules/html-tags/license"
   },
   "html-webpack-plugin@3.2.0": {
     "licenses": "MIT",
@@ -5409,6 +5545,13 @@
     "publisher": "kael",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/ignore",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/ignore/LICENSE-MIT"
+  },
+  "ignore@5.1.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/kaelzhang/node-ignore",
+    "publisher": "kael",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/ignore",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/ignore/LICENSE-MIT"
   },
   "import-cwd@2.1.0": {
     "licenses": "MIT",
@@ -5879,8 +6022,8 @@
     "repository": "https://github.com/jonschlinkert/is-number",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/is-number",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/is-number/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/is-number",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/is-number/LICENSE"
   },
   "is-obj@1.0.1": {
     "licenses": "MIT",
@@ -6177,6 +6320,12 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/jest-diff",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/jest-diff/LICENSE"
   },
+  "jest-diff@25.5.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/jest",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/jest-diff",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/jest-diff/LICENSE"
+  },
   "jest-docblock@24.9.0": {
     "licenses": "MIT",
     "repository": "https://github.com/facebook/jest",
@@ -6214,6 +6363,12 @@
     "repository": "https://github.com/facebook/jest",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/jest-get-type",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/jest-get-type/LICENSE"
+  },
+  "jest-get-type@25.2.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/jest",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/jest-get-type",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/jest-get-type/LICENSE"
   },
   "jest-haste-map@24.9.0": {
     "licenses": "MIT",
@@ -6506,8 +6661,8 @@
     "repository": "https://github.com/aseemk/json5",
     "publisher": "Aseem Kishore",
     "email": "aseem.kishore@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/json5",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/json5/LICENSE.md"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/find-babel-config/node_modules/json5",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/find-babel-config/node_modules/json5/LICENSE.md"
   },
   "json5@1.0.1": {
     "licenses": "MIT",
@@ -6522,8 +6677,8 @@
     "repository": "https://github.com/json5/json5",
     "publisher": "Aseem Kishore",
     "email": "aseem.kishore@gmail.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@babel/core/node_modules/json5",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@babel/core/node_modules/json5/LICENSE.md"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/json5",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/json5/LICENSE.md"
   },
   "jsonfile@4.0.0": {
     "licenses": "MIT",
@@ -6603,6 +6758,15 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/kleur",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/kleur/license"
   },
+  "klona@2.0.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/lukeed/klona",
+    "publisher": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/klona",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/klona/license"
+  },
   "launch-editor-middleware@2.2.1": {
     "licenses": "MIT",
     "repository": "https://github.com/yyx990803/launch-editor",
@@ -6648,6 +6812,14 @@
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/levenary/LICENSE"
   },
   "levn@0.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/gkz/levn",
+    "publisher": "George Zahariev",
+    "email": "z@georgezahariev.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/escodegen/node_modules/levn",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/escodegen/node_modules/levn/LICENSE"
+  },
+  "levn@0.4.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gkz/levn",
     "publisher": "George Zahariev",
@@ -6735,6 +6907,13 @@
     "publisher": "Tobias Koppers @sokra",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/loader-utils",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/loader-utils/LICENSE"
+  },
+  "loader-utils@2.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/webpack/loader-utils",
+    "publisher": "Tobias Koppers @sokra",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader/node_modules/loader-utils",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader/node_modules/loader-utils/LICENSE"
   },
   "locate-path@3.0.0": {
     "licenses": "MIT",
@@ -7095,8 +7274,8 @@
     "repository": "https://github.com/micromatch/micromatch",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/ts-loader/node_modules/micromatch",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/ts-loader/node_modules/micromatch/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/micromatch",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/micromatch/LICENSE"
   },
   "miller-rabin@4.0.1": {
     "licenses": "MIT",
@@ -7305,8 +7484,8 @@
   "ms@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/zeit/ms",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/debug/node_modules/ms",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/debug/node_modules/ms/license.md"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/snapdragon/node_modules/ms",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/snapdragon/node_modules/ms/license.md"
   },
   "ms@2.1.1": {
     "licenses": "MIT",
@@ -7783,6 +7962,14 @@
     "repository": "https://github.com/gkz/optionator",
     "publisher": "George Zahariev",
     "email": "z@georgezahariev.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/escodegen/node_modules/optionator",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/escodegen/node_modules/optionator/LICENSE"
+  },
+  "optionator@0.9.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/gkz/optionator",
+    "publisher": "George Zahariev",
+    "email": "z@georgezahariev.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/optionator",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/optionator/LICENSE"
   },
@@ -8159,8 +8346,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fork-ts-checker-webpack-plugin-v5/node_modules/path-type",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/fork-ts-checker-webpack-plugin-v5/node_modules/path-type/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/path-type",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/path-type/license"
   },
   "pbkdf2@3.1.1": {
     "licenses": "MIT",
@@ -8628,6 +8815,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/prelude-ls",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/prelude-ls/LICENSE"
   },
+  "prelude-ls@1.2.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/gkz/prelude-ls",
+    "publisher": "George Zahariev",
+    "email": "z@georgezahariev.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/levn/node_modules/prelude-ls",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/levn/node_modules/prelude-ls/LICENSE"
+  },
   "prepend-http@1.0.4": {
     "licenses": "MIT",
     "repository": "https://github.com/sindresorhus/prepend-http",
@@ -8653,6 +8848,13 @@
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/prettier-linter-helpers/LICENSE.md"
   },
   "prettier@1.19.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/prettier/prettier",
+    "publisher": "James Long",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/component-compiler-utils/node_modules/prettier",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@vue/component-compiler-utils/node_modules/prettier/LICENSE"
+  },
+  "prettier@2.1.2": {
     "licenses": "MIT",
     "repository": "https://github.com/prettier/prettier",
     "publisher": "James Long",
@@ -8682,6 +8884,14 @@
     "email": "me@thejameskyle.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/pretty-format",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/pretty-format/LICENSE"
+  },
+  "pretty-format@25.5.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/jest",
+    "publisher": "James Kyle",
+    "email": "me@thejameskyle.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/pretty-format",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@types/jest/node_modules/pretty-format/LICENSE"
   },
   "pretty@2.0.0": {
     "licenses": "MIT",
@@ -9072,21 +9282,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/regexp.prototype.flags",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/regexp.prototype.flags/LICENSE"
   },
-  "regexpp@2.0.1": {
+  "regexpp@3.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/mysticatea/regexpp",
     "publisher": "Toru Nagashima",
     "url": "https://github.com/mysticatea",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/regexpp",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/regexpp/LICENSE"
-  },
-  "regexpp@3.1.0": {
-    "licenses": "MIT",
-    "repository": "https://github.com/mysticatea/regexpp",
-    "publisher": "Toru Nagashima",
-    "url": "https://github.com/mysticatea",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/eslint-plugin/node_modules/regexpp",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/eslint-plugin/node_modules/regexpp/LICENSE"
   },
   "regexpu-core@4.7.0": {
     "licenses": "MIT",
@@ -9328,6 +9530,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/retry",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/retry/License"
   },
+  "reusify@1.0.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/mcollina/reusify",
+    "publisher": "Matteo Collina",
+    "email": "hello@matteocollina.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/reusify",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/reusify/LICENSE"
+  },
   "rgb-regex@1.0.1": {
     "licenses": "MIT",
     "repository": "https://github.com/regexps/rgb-regex",
@@ -9380,6 +9590,15 @@
     "email": "admin@simonboudrias.com",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/run-async",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/run-async/LICENSE"
+  },
+  "run-parallel@1.1.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/feross/run-parallel",
+    "publisher": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "http://feross.org/",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/run-parallel",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/run-parallel/LICENSE"
   },
   "run-queue@1.0.3": {
     "licenses": "ISC",
@@ -9449,14 +9668,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sane",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sane/README.md"
   },
-  "sass-loader@8.0.2": {
+  "sass-loader@10.0.3": {
     "licenses": "MIT",
     "repository": "https://github.com/webpack-contrib/sass-loader",
     "publisher": "J. Tangelder",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader/LICENSE"
   },
-  "sass@1.26.10": {
+  "sass@1.27.0": {
     "licenses": "MIT",
     "repository": "https://github.com/sass/dart-sass",
     "publisher": "Natalie Weizenbaum",
@@ -9487,8 +9706,8 @@
     "repository": "https://github.com/webpack-contrib/schema-utils",
     "publisher": "webpack Contrib",
     "url": "https://github.com/webpack-contrib",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/webpack/node_modules/schema-utils",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/webpack/node_modules/schema-utils/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/schema-utils",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/schema-utils/LICENSE"
   },
   "schema-utils@2.7.0": {
     "licenses": "MIT",
@@ -9503,8 +9722,16 @@
     "repository": "https://github.com/webpack/schema-utils",
     "publisher": "webpack Contrib",
     "url": "https://github.com/webpack-contrib",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/schema-utils",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/schema-utils/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-loader/node_modules/schema-utils",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-loader/node_modules/schema-utils/LICENSE"
+  },
+  "schema-utils@3.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/webpack/schema-utils",
+    "publisher": "webpack Contrib",
+    "url": "https://github.com/webpack-contrib",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader/node_modules/schema-utils",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sass-loader/node_modules/schema-utils/LICENSE"
   },
   "select-hose@2.0.0": {
     "licenses": "MIT",
@@ -9625,14 +9852,6 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sha.js",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/sha.js/LICENSE"
   },
-  "shallow-clone@3.0.1": {
-    "licenses": "MIT",
-    "repository": "https://github.com/jonschlinkert/shallow-clone",
-    "publisher": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/shallow-clone",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/shallow-clone/LICENSE"
-  },
   "shebang-command@1.2.0": {
     "licenses": "MIT",
     "repository": "https://github.com/kevva/shebang-command",
@@ -9745,8 +9964,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/jest-watch-typeahead/node_modules/slash",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/jest-watch-typeahead/node_modules/slash/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/slash",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/slash/license"
   },
   "slice-ansi@0.0.4": {
     "licenses": "MIT",
@@ -10147,8 +10366,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/strip-ansi/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/strip-ansi",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/strip-ansi/license"
   },
   "strip-ansi@4.0.0": {
     "licenses": "MIT",
@@ -10254,8 +10473,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/supports-color",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@cypress/listr-verbose-renderer/node_modules/supports-color/license"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/supports-color",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/babel-code-frame/node_modules/supports-color/license"
   },
   "supports-color@5.5.0": {
     "licenses": "MIT",
@@ -10535,8 +10754,8 @@
     "repository": "https://github.com/micromatch/to-regex-range",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/to-regex-range",
-    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/chokidar/node_modules/to-regex-range/LICENSE"
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/to-regex-range",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/@typescript-eslint/typescript-estree/node_modules/to-regex-range/LICENSE"
   },
   "to-regex@3.0.2": {
     "licenses": "MIT",
@@ -10696,6 +10915,14 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/type-check",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/type-check/LICENSE"
   },
+  "type-check@0.4.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/gkz/type-check",
+    "publisher": "George Zahariev",
+    "email": "z@georgezahariev.com",
+    "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/levn/node_modules/type-check",
+    "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/levn/node_modules/type-check/LICENSE"
+  },
   "type-fest@0.11.0": {
     "licenses": "(MIT OR CC0-1.0)",
     "repository": "https://github.com/sindresorhus/type-fest",
@@ -10738,7 +10965,7 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/typedarray",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/typedarray/LICENSE"
   },
-  "typescript@3.9.7": {
+  "typescript@4.0.3": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/Microsoft/TypeScript",
     "publisher": "Microsoft Corp.",
@@ -11076,13 +11303,13 @@
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/vue-loader",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/vue-loader/LICENSE"
   },
-  "vue-loader@16.0.0-beta.7": {
+  "vue-loader@16.0.0-beta.8": {
     "licenses": "MIT",
     "publisher": "Evan You",
     "path": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/vue-loader-v16",
     "licenseFile": "/home/waricoma/Documents/devspace/smart-post-box/vue/node_modules/vue-loader-v16/LICENSE"
   },
-  "vue-router@3.4.3": {
+  "vue-router@3.4.6": {
     "licenses": "MIT",
     "repository": "https://github.com/vuejs/vue-router",
     "publisher": "Evan You",

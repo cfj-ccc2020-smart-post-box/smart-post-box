@@ -4,8 +4,7 @@ process.env.SQLITE = (process.env.SQLITE || 'false').toLowerCase();
 
 const ormConfig = {
   type: 'postgres',
-  synchronize: process.env.NODE_ENV === 'test',
-  keepConnectionAlive: true,
+  synchronize: process.env.IN_DOKKU === 'true',
   entities: [process.env.TS_NODE === 'true' ? './server/api/entities/*.entity.ts' : './dist/api/entities/*.entity.js'],
   migrations: [process.env.TS_NODE === 'true' ? './server/api/db/migrations/*.ts' : './dist/api/db/migrations/*.js'],
   subscribers: [process.env.TS_NODE === 'true' ? './server/api/db/subscribers/*.ts' : './dist/api/db/subscribers/*.js'],
@@ -16,13 +15,9 @@ const ormConfig = {
   },
 };
 
-if (process.env.IN_DOKKU === 'true' || process.env.NODE_ENV === 'test') {
-  ormConfig.synchronize = true;
-}
-
-if (('SQLITE' in process.env && process.env.SQLITE === 'true') || process.env.NODE_ENV === 'test') {
+if ('SQLITE' in process.env && process.env.SQLITE === 'true') {
   ormConfig.type = 'sqlite';
-  ormConfig.database = process.env.NODE_ENV === 'test' ? './db.test.sqlite' : './db.sqlite';
+  ormConfig.database = './db.sqlite';
   // } else if ('DATABASE_URL' in process.env) {
   //   ormConfig.url = process.env.DATABASE_URL;
 } else {
