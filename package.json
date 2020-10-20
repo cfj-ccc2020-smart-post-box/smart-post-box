@@ -91,7 +91,7 @@
     "@vue/cli": "4.5.8",
     "add-text-to-markdown": "2.0.0",
     "codecov": "3.8.0",
-    "commitizen": "4.2.1",
+    "commitizen": "4.2.2",
     "cz-emoji": "1.2.2",
     "generator-express-no-stress-typescript": "10.1.0",
     "husky": "4.3.0",
