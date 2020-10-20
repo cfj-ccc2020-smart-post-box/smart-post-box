@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@types/express": "4.17.8",
-    "@types/jest": "26.0.14",
+    "@types/jest": "26.0.15",
     "@types/pg": "7.14.5",
     "@types/pino": "6.3.3",
     "@types/shelljs": "0.8.8",
