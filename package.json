@@ -88,7 +88,7 @@
   },
   "devDependencies": {
     "@textlint/textlint-plugin-markdown": "5.2.6",
-    "@vue/cli": "4.5.7",
+    "@vue/cli": "4.5.8",
     "add-text-to-markdown": "2.0.0",
     "codecov": "3.8.0",
     "commitizen": "4.2.1",
