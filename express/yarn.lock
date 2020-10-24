@@ -3033,10 +3033,10 @@ express-fileupload@1.2.0:
   dependencies:
     busboy "^0.3.1"
 
-express-openapi-validator@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.2.1.tgz#536b31f35700abe948a1e5f5f23b9e24c07d04f8"
-  integrity sha512-VENw9xEquK5cRnLBgXaJYOYxbpYo9ur+T4wDnwtl5/jfwiDtT5FNf68bnMOA1zT6dE1L8eUtmvG25LAvnA7BJA==
+express-openapi-validator@4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.2.3.tgz#a9ed5cc931a3fadaf07bea54b311636541a816b8"
+  integrity sha512-gYNaCarMA5etpDUxlBsiKAt7666kMzZG9SYpM74GQ+j/bubSufc9gEu8JEv/dg1Ns0IXPGOKbjDFHzyDm4fTEg==
   dependencies:
     ajv "^6.12.5"
     content-type "^1.0.4"
@@ -3048,7 +3048,7 @@ express-openapi-validator@4.2.1:
     media-typer "^1.1.0"
     multer "^1.4.2"
     ono "^7.1.3"
-    path-to-regexp "^6.1.0"
+    path-to-regexp "^6.2.0"
 
 express@4.17.1, express@^4.16.4:
   version "4.17.1"
@@ -6244,10 +6244,10 @@ path-to-regexp@^1.7.0:
   dependencies:
     isarray "0.0.1"
 
-path-to-regexp@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.1.0.tgz#0b18f88b7a0ce0bfae6a25990c909ab86f512427"
-  integrity sha512-h9DqehX3zZZDCEm+xbfU0ZmwCGFCAAraPJWMXJ4+v32NjZJilVg3k1TcKsRgIb8IQ/izZSaydDc1OhJCZvs2Dw==
+path-to-regexp@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
+  integrity sha512-f66KywYG6+43afgE/8j/GoiNyygk/bnoCbps++3ErRKsIYkGGupyv07R2Ok5m9i67Iqc+T2g1eAUGUPzWhYTyg==
 
 path-type@^2.0.0:
   version "2.0.0"
