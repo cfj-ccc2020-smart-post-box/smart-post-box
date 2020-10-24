@@ -1183,10 +1183,20 @@ ajv@^5.0.1:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4, ajv@^6.12.5:
+ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
   version "6.12.5"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.5.tgz#19b0e8bae8f476e5ba666300387775fb1a00a4da"
   integrity sha512-lRF8RORchjpKG50/WFf8xmg7sgCLFiYNNnqdKflk63whMQcWR5ngGjiSXkL9bjxy6B2npOK2HSMN49jEBMSkag==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
+ajv@^6.12.6:
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
+  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
   dependencies:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
@@ -3049,12 +3059,12 @@ express-fileupload@1.2.0:
   dependencies:
     busboy "^0.3.1"
 
-express-openapi-validator@4.2.3:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.2.3.tgz#a9ed5cc931a3fadaf07bea54b311636541a816b8"
-  integrity sha512-gYNaCarMA5etpDUxlBsiKAt7666kMzZG9SYpM74GQ+j/bubSufc9gEu8JEv/dg1Ns0IXPGOKbjDFHzyDm4fTEg==
+express-openapi-validator@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.3.0.tgz#e7c2e190ba0e7dbb1777762293dddc1d9e0ee7c3"
+  integrity sha512-JJFRhFkjRA3U9eeJwnutUthBwRycMmUkd00duMLr9ufryuH7imEtjZPDOdwIgY1q472j1zLRMOsB243EjbcPIQ==
   dependencies:
-    ajv "^6.12.5"
+    ajv "^6.12.6"
     content-type "^1.0.4"
     js-yaml "^3.14.0"
     json-schema-ref-parser "^9.0.6"
