@@ -3059,15 +3059,16 @@ express-fileupload@1.2.0:
   dependencies:
     busboy "^0.3.1"
 
-express-openapi-validator@4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.3.0.tgz#e7c2e190ba0e7dbb1777762293dddc1d9e0ee7c3"
-  integrity sha512-JJFRhFkjRA3U9eeJwnutUthBwRycMmUkd00duMLr9ufryuH7imEtjZPDOdwIgY1q472j1zLRMOsB243EjbcPIQ==
+express-openapi-validator@4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.3.1.tgz#4c85c36e18ee5730897402d8fa4f6978afc1d78f"
+  integrity sha512-ccXpduypUs3b7q2zsAyPg8XaTRRFLXpaLqmH9adyNseXlwz+sY6YUe+74krht87M8dtQIff2sVQvTHwBWCulXQ==
   dependencies:
     ajv "^6.12.6"
     content-type "^1.0.4"
     js-yaml "^3.14.0"
     json-schema-ref-parser "^9.0.6"
+    lodash.clonedeep "^4.5.0"
     lodash.merge "^4.6.2"
     lodash.uniq "^4.5.0"
     lodash.zipobject "^4.1.3"
