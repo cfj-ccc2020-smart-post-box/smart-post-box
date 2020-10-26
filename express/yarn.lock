@@ -3059,10 +3059,10 @@ express-fileupload@1.2.0:
   dependencies:
     busboy "^0.3.1"
 
-express-openapi-validator@4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.3.2.tgz#85c67f7928b1d08afaa641debf2d2e0f893ea7c2"
-  integrity sha512-FHLd1BoJ7JxD6+j8omkeWBsNjm5C+oQFdRIaqZe+hrwPefJeNX0v2oAfKE6bjJfdzCBxb5/S0LavYRO0Y8IFvQ==
+express-openapi-validator@4.3.3:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/express-openapi-validator/-/express-openapi-validator-4.3.3.tgz#9b011d54d13373d28b7cfd34a5de9619604a37d8"
+  integrity sha512-wJ2R3JU9BhAFVnwtr9+aDjvDsClw+lRFSSdCtrUvJzqMmCZlyqLzMc6J/1L5Kk4gnMFM+AekSRT+nzx/hEd2vg==
   dependencies:
     ajv "^6.12.6"
     content-type "^1.0.4"
