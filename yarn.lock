@@ -5763,10 +5763,10 @@ generate-object-property@^1.0.0:
   dependencies:
     is-property "^1.0.0"
 
-generator-express-no-stress-typescript@10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/generator-express-no-stress-typescript/-/generator-express-no-stress-typescript-10.1.0.tgz#d43ad2457cf62c3140efc422ff3d57680794b75f"
-  integrity sha512-X8XWhPMIt9p2Pd2Xme1PADYpEfO+OR0mdsAkJg8auNvPvoA2wYlQswuQk1KD359i3jDBv3/VS3BTo0PPbqzCzg==
+generator-express-no-stress-typescript@10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/generator-express-no-stress-typescript/-/generator-express-no-stress-typescript-10.1.1.tgz#1335bd08b5a370bde35bb0eda851f69c0c363247"
+  integrity sha512-wd/q4LhZ2slj/SPHTTOysZj1Q1mZbb6bmp1bvFzvVzQhcGs6mSaoQZPenxi6oa88JCOFnE1e6JHrh3g3L/LdVw==
   dependencies:
     yeoman-generator "^4.12.0"
 
