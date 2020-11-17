@@ -97,7 +97,7 @@
     "husky": "4.3.0",
     "license-checker": "25.0.1",
     "markdownlint": "0.21.1",
-    "markdownlint-cli": "0.24.0",
+    "markdownlint-cli": "0.25.0",
     "only-allow": "1.0.0",
     "readme-md-generator": "1.0.0",
     "textlint": "11.7.6",
