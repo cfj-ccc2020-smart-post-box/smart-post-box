@@ -51,7 +51,7 @@
     "express": "4.17.1",
     "express-fileupload": "1.2.0",
     "express-openapi-validator": "4.9.2",
-    "file-type": "16.0.1",
+    "file-type": "16.1.0",
     "helmet": "4.2.0",
     "jsonwebtoken": "8.5.1",
     "moment": "2.29.1",
