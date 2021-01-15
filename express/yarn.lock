@@ -625,10 +625,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@slack/bolt@2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@slack/bolt/-/bolt-2.5.0.tgz#d6eb06d55b264990848aab47693fb4bcec2fed76"
-  integrity sha512-dOmUgU4Zw8ExNqFcCK2N9StQCfS/ByQULcA+A7VFRFK5eju548lrkCJy6zDGH6peKnUUO1W54c3TbJC0SObrww==
+"@slack/bolt@2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@slack/bolt/-/bolt-2.7.0.tgz#12f1323f645405eceb5d5a68db632e3fc710fabe"
+  integrity sha512-bGCOlhp92wuG+wsQmy7qCtdaNjcuU/yy8dMsm4TWJ/ZHzZ7SqmStUVaou4n3LcJq0+Q/Xmg7gc117zYOCx/MiA==
   dependencies:
     "@slack/logger" "^2.0.0"
     "@slack/oauth" "^1.4.0"
@@ -637,7 +637,7 @@
     "@types/express" "^4.16.1"
     "@types/node" ">=10"
     "@types/promise.allsettled" "^1.0.3"
-    axios "^0.19.0"
+    axios "^0.21.1"
     express "^4.16.4"
     please-upgrade-node "^3.2.0"
     promise.allsettled "^1.0.2"
@@ -1523,7 +1523,7 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.1.tgz#e1e82e4f3e999e2cfd61b161280d16a111f86428"
   integrity sha512-zg7Hz2k5lI8kb7U32998pRRFin7zJlkfezGJjUc2heaD4Pw2wObakCDVzkKztTm/Ln7eiVvYsjqak0Ed4LkMDA==
 
-axios@0.21.1:
+axios@0.21.1, axios@^0.21.1:
   version "0.21.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
   integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
