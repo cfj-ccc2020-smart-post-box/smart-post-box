@@ -1322,10 +1322,10 @@ api-elements@^0.2.4:
     minim "^0.23.8"
     ramda "^0.27.0"
 
-api-spec-converter@2.11.2:
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/api-spec-converter/-/api-spec-converter-2.11.2.tgz#5aeaf9096b0dbe96858d8e6ff424933bd688b6aa"
-  integrity sha512-T6GcU8qIBB1zQ2eXeOebJOkYr2o/EmzLvEeTS8gHpLX7ldPgZrwGQ/xZYouAjFBMT5FZf5VJcWxZcn9fkiU9cg==
+api-spec-converter@2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/api-spec-converter/-/api-spec-converter-2.12.0.tgz#1e627a80396f7ccafdcb9715f54b04c8b2bcb552"
+  integrity sha512-awKL523vwkmyf3rTzmW/lopAbHRhqJw84IThAovtoQ60u6TblCoGIEhhpDDfb9WycncU2aDrVfqf9LQC5lcUTQ==
   dependencies:
     bluebird "^3.7.2"
     commander "^2.20.0"
@@ -1338,7 +1338,7 @@ api-spec-converter@2.11.2:
     source-map "0.6.0"
     sway "^2.0.5"
     traverse "^0.6.6"
-    urijs "^1.18.10"
+    urijs "^1.19.5"
     xml2js "^0.4.23"
   optionalDependencies:
     apib2swagger "^1.9.0"
@@ -8447,7 +8447,7 @@ uri-template@1.0.1:
   dependencies:
     pct-encode "~1.0.0"
 
-urijs@^1.16.1, urijs@^1.17.0, urijs@^1.18.10:
+urijs@^1.16.1, urijs@^1.17.0, urijs@^1.19.5:
   version "1.19.5"
   resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.5.tgz#119683ab4b2fb0bd637e5ea6dd9117bcac68d3e4"
   integrity sha512-48z9VGWwdCV5KfizHsE05DWS5fhK6gFlx5MjO7xu0Krc5FGPWzjlXEVV0nPMrdVuP7xmMHiPZ2HoYZwKOFTZOg==
