@@ -96,7 +96,7 @@
     "generator-express-no-stress-typescript": "10.1.8",
     "husky": "4.3.6",
     "license-checker": "25.0.1",
-    "markdownlint": "0.22.0",
+    "markdownlint": "0.23.1",
     "markdownlint-cli": "0.26.0",
     "only-allow": "1.0.0",
     "readme-md-generator": "1.0.0",
