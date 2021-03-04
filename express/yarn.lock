@@ -916,12 +916,13 @@
   resolved "https://registry.yarnpkg.com/@types/p-queue/-/p-queue-2.3.2.tgz#16bc5fece69ef85efaf2bce8b13f3ebe39c5a1c8"
   integrity sha512-eKAv5Ql6k78dh3ULCsSBxX6bFNuGjTmof5Q/T6PiECDq0Yf8IIn46jCyp3RJvCi8owaEmm3DZH1PEImjBMd/vQ==
 
-"@types/pg@7.14.9":
-  version "7.14.9"
-  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-7.14.9.tgz#5f09544d0b5b19fca48b63dd15644c475555ba60"
-  integrity sha512-ThTOEwOvYM++zRSGiajRqKyTQboCEJE2VI+30d93WX94sQ7CnrcJ7CICT9oC+QD8Co9JTYJkKEfEXSb5DjUOFA==
+"@types/pg@7.14.11":
+  version "7.14.11"
+  resolved "https://registry.yarnpkg.com/@types/pg/-/pg-7.14.11.tgz#daf5555504a1f7af4263df265d91f140fece52e3"
+  integrity sha512-EnZkZ1OMw9DvNfQkn2MTJrwKmhJYDEs5ujWrPfvseWNoI95N8B4HzU/Ltrq5ZfYxDX/Zg8mTzwr6UAyTjjFvXA==
   dependencies:
     "@types/node" "*"
+    pg-protocol "^1.2.0"
     pg-types "^2.2.0"
 
 "@types/pino-std-serializers@*":
@@ -6423,7 +6424,7 @@ pg-pool@^3.2.2:
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-3.2.2.tgz#a560e433443ed4ad946b84d774b3f22452694dff"
   integrity sha512-ORJoFxAlmmros8igi608iVEbQNNZlp89diFVx6yV5v+ehmpMY9sK6QgpmgoXbmkNaBAx8cOOZh9g80kJv1ooyA==
 
-pg-protocol@^1.4.0:
+pg-protocol@^1.2.0, pg-protocol@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/pg-protocol/-/pg-protocol-1.4.0.tgz#43a71a92f6fe3ac559952555aa3335c8cb4908be"
   integrity sha512-El+aXWcwG/8wuFICMQjM5ZSAm6OWiJicFdNYo+VY3QP+8vI4SvLIWVe51PppTzMhikUJR+PsyIFKqfdXPz/yxA==
