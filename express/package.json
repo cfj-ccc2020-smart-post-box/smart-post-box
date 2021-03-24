@@ -76,7 +76,7 @@
     "dredd": "14.0.0",
     "eslint": "7.16.0",
     "eslint-config-prettier": "7.2.0",
-    "eslint-plugin-jest": "24.1.3",
+    "eslint-plugin-jest": "24.3.2",
     "eslint-plugin-prettier": "3.3.0",
     "jest": "26.6.3",
     "nodemon": "2.0.6",
