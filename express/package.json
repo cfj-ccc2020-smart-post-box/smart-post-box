@@ -41,7 +41,7 @@
     "test:debug": "export TS_NODE='true' && jest --watch"
   },
   "dependencies": {
-    "@line/bot-sdk": "7.2.0",
+    "@line/bot-sdk": "7.0.0",
     "@slack/bolt": "3.3.0",
     "axios": "0.21.1",
     "bcrypt": "5.0.1",
@@ -64,7 +64,7 @@
     "typeorm": "0.2.31"
   },
   "devDependencies": {
-    "@types/express": "4.17.11",
+    "@types/express": "4.17.8",
     "@types/jest": "26.0.21",
     "@types/pg": "7.14.11",
     "@types/pino": "6.3.6",
