@@ -41,7 +41,7 @@
     "test:debug": "export TS_NODE='true' && jest --watch"
   },
   "dependencies": {
-    "@line/bot-sdk": "7.0.0",
+    "@line/bot-sdk": "7.3.0",
     "@slack/bolt": "3.3.0",
     "axios": "0.21.1",
     "bcrypt": "5.0.1",
