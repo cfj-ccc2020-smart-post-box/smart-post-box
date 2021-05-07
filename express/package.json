@@ -64,7 +64,7 @@
     "typeorm": "0.2.31"
   },
   "devDependencies": {
-    "@types/express": "4.17.8",
+    "@types/express": "4.17.11",
     "@types/jest": "26.0.22",
     "@types/pg": "7.14.11",
     "@types/pino": "6.3.6",
