@@ -53,7 +53,7 @@
     "express-openapi-validator": "4.12.15",
     "file-type": "16.5.3",
     "helmet": "4.4.1",
-    "jsonwebtoken": "8.5.1",
+    "jsonwebtoken": "9.0.0",
     "moment": "2.29.1",
     "morgan": "1.10.0",
     "pg": "8.6.0",
