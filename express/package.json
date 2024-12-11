@@ -48,7 +48,7 @@
     "body-parser": "1.19.0",
     "cookie-parser": "1.4.5",
     "dotenv": "8.6.0",
-    "express": "4.17.1",
+    "express": "4.21.2",
     "express-fileupload": "1.2.1",
     "express-openapi-validator": "4.12.15",
     "file-type": "16.5.4",
@@ -64,7 +64,7 @@
     "typeorm": "0.2.31"
   },
   "devDependencies": {
-    "@types/express": "4.17.8",
+    "@types/express": "4.17.21",
     "@types/jest": "26.0.24",
     "@types/pg": "7.14.11",
     "@types/pino": "6.3.12",
