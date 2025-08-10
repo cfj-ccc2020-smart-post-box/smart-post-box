@@ -105,7 +105,7 @@
     "textlint-rule-no-dead-link": "4.7.0",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
     "typedoc": "0.20.34",
-    "typedoc-plugin-markdown": "3.4.3",
+    "typedoc-plugin-markdown": "3.17.1",
     "yo": "3.1.1"
   },
   "engines": {
